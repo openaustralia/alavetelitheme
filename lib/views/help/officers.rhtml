@@ -74,8 +74,8 @@ href="/help/contact">Contact us</a> if there is a better address we can
 use.</p>
 <p>Requests are sometimes not delivered because they are quietly removed by
 "spam filters" in the IT department of the authority. Authorities can make
-sure this doesn't happen by asking their IT departments to "whitelist" 
-any email from <strong>@<%= site_name %>.com</strong>.
+sure this doesn't happen by asking their IT departments to "whitelist"
+any email from <strong>@<%= MySociety::Config.get('INCOMING_EMAIL_DOMAIN', 'localhost') %></strong>.
 If you <a href="/help/contact">ask us</a> we will resend any request,
 and/or give technical details of delivery so an IT department can chase
 up what happened to the message.
@@ -170,7 +170,7 @@ circumstances, see our <a href="/help/privacy#takedown">take down policy</a>.
 
 <dd><p>To prevent spam, we automatically remove most emails and some mobile numbers from
 responses to requests.  Please <a href="/help/contact">contact us</a> if we've
-missed one. 
+missed one.
 For technical reasons we don't always remove them from attachments, such as certain PDFs.</p>
 <p>If you need to know what an address was that we've removed, please <a
   href="/help/contact">get in touch with us</a>. Occasionally, an email address
@@ -181,7 +181,7 @@ form in an annotation.
 <dt id="copyright"><a name="commercial"></a>What is your policy on copyright of documents?<a href="#copyright">#</a> </dt>
 
 <dd>Our Freedom of Information law is "applicant blind", so anyone in the
-world can request the same document and get a copy of it. 
+world can request the same document and get a copy of it.
 
 If you think our making a document available on the internet infringes your
 copyright, you may <a href="/help/contact">contact us</a> and ask us

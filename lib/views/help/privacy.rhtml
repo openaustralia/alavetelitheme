@@ -11,7 +11,8 @@
 
 <dd><p>We will not disclose your email address to anyone unless we are obliged to by law,
 or you ask us to. This includes the public authority that you are sending a
-request to.  They only get to see an email address which is specific to that request.  </p>
+request to.  They only get to see an email address
+@<%= MySociety::Config.get('INCOMING_EMAIL_DOMAIN', 'localhost') %> which is specific to that request.  </p>
 <p>If you send a message to another user on the site, then it will reveal your
 email address to them. You will be told that this is going to happen.</p>
 </dd>
@@ -35,7 +36,7 @@ requests (<a href="#delete_requests">more details</a>).
 Your name is tangled up with your request, so has to be published as well.
 It is only fair, as we're going to publish the name of the civil servant who
 writes the response to your request.  Using your real name also helps people
-get in touch with you to assist you with your research or to campaign with you. 
+get in touch with you to assist you with your research or to campaign with you.
 </p>
 <p>By law, you must use your real name for the request to be a valid Freedom of
 Information request. See the next question for alternatives if you do not want
@@ -68,7 +69,7 @@ that "Mr Arthur Thomas Roberts" can make a valid request as "Arthur Roberts",
 is regularly used".
 <li>Use the name of an organisation, the name of a company, the trading name of
 a company, or the trading name of a sole trader.
-<li>Ask someone else to make the request on your behalf. 
+<li>Ask someone else to make the request on your behalf.
 <li>You may, if you are really stuck, ask us to make the request on
 your behalf. Please <a href="/help/contact">contact us</a> with
 a good reason why you cannot make the request yourself and cannot
@@ -126,7 +127,7 @@ see the section on <a href="#real_name">pseudonyms</a>.</p>
 
 <dt id="takedown">Can you take down personal information about me? <a href="#takedown">#</a> </dt>
 
-<dd> 
+<dd>
 
 <p>If you see any personal information about you on the site which you'd like
 us to remove or hide, then please <a href="/help/contact">let us know</a>.
