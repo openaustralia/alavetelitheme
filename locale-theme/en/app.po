@@ -11,3 +11,12 @@ msgstr "'Pollution levels over time for the Murray River'"
 
 msgid "Requests for personal information and vexatious requests are not considered valid for FOI purposes (<a href="/help/about">read more</a>)."
 msgstr "Requests for personal information should not be made here (<a href="/help/requesting#data_protection">read more</a>)."
+
+msgid "Use OR (in capital letters) where you don't mind which word,  e.g. <strong><code>commons OR lords</code></strong>"
+msgstr "Use OR (in capital letters) where you don't mind which word,  e.g. <strong><code>representatives OR senate</code></strong>"
+
+msgid "Use quotes when you want to find an exact phrase, e.g. <strong><code>"Liverpool City Council"</code></strong>"
+msgstr "Use quotes when you want to find an exact phrase, e.g. <strong><code>"Electoral Commission"</code></strong>"
+
+msgid "<strong><code>requested_from:home_office</code></strong> to search requests from the Home Office, typing the name as in the URL."
+msgstr "<strong><code>requested_from:abc</code></strong> to search requests from the Australian Broadcasting Corporation, typing the name as in the URL."
