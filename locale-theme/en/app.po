@@ -7,7 +7,7 @@
 #msgstr "Make and browse Right to Know (RTI) requests"
 
 msgid "'Crime statistics by ward level for Wales'"
-msgstr "'Pollution levels over time for the Murray River between Jan 2011 and Jan 2012'"
+msgstr "'Pollution levels from 2005 through 2010 for the Murray River'"
 
 msgid "Requests for personal information and vexatious requests are not considered valid for FOI purposes (<a href="/help/about">read more</a>)."
 msgstr "Requests for personal information should not be made here (<a href="/help/requesting#data_protection">read more</a>)."
