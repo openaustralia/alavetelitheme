@@ -147,7 +147,7 @@ background:url(/images/stripes-70-light.png);
 }
 
 #frontpage_splash {
-background:url(/images/flying-computer.png) no-repeat 175px bottom;
+background: none;
 }
 
 #frontpage_splash h1 {
