@@ -9,6 +9,10 @@ background-position:center top;
 background-color:#00DCF0;
 }
 
+#banner_inner a#logo {
+top:15px;
+}
+
 #topnav {
 font-family:'Maven Pro', Arial, sans-serif;
 }
