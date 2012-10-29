@@ -11,6 +11,7 @@ background-color:#00DCF0;
 
 #banner_inner a#logo {
 top:15px;
+z-index: 90;
 }
 
 #topnav {
