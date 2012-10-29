@@ -176,6 +176,7 @@ margin:0 0 20px;
 #frontpage_splash h1 strong {
 font-family:'Actor', Arial, sans-serif;
 font-size:54px;
+line-height: 1em;
 //color:#93278F;
 font-weight:400;
 }
@@ -183,7 +184,7 @@ font-weight:400;
 #frontpage_splash h1 span {
 font-family:'Actor', Arial, sans-serif;
 font-style:inherit;
-font-size:25px;
+font-size:39px;
 //color:#6B3C6A;
 }
 
@@ -207,6 +208,30 @@ font-size:19px;
 font-family: 'Actor', Arial, sans-serif;
 }
 
+#frontpage_splash #frontpage_right_to_know {
+  margin-top: 80px;
+  width: 221px;
+  float: left;
+}
+
+#frontpage_right_to_know h2, #frontpage_search_box h2 {
+  margin-top: 0px;
+}
+
+#frontpage_splash #frontpage_start_request {
+  margin-top: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
+  width: 291px;
+  float: left;
+}
+
+#frontpage_splash #frontpage_search_box {
+  margin-top: 80px;
+  width: 221px;
+  float: left;
+  margin-bottom: 0px;
+}
 
 #ui-datepicker-div.ui-widget {
 font-family:'Maven Pro', Arial, sans-serif;

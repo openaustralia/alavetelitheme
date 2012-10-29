@@ -1,32 +1,30 @@
 <% view_cache :ttl => 5.minutes.to_i, :tag => I18n.locale do %>
   <div id="frontpage_splash">
-    <div id="left_column">
+    <div id="frontpage_right_to_know">
+      <%= render :partial => 'frontpage_intro_sentence'  %>
+    </div>
+    <div id="frontpage_start_request">
       <h1>
         <%= _("Make a new<br/>
         <strong>Freedom <span>of</span><br/>
         Information<br/>
-        request</strong>") %>
+        Request</strong>") %>
       </h1>
       <a class="link_button_green_large" href="/select_authority"><%= _("Start now &raquo;") %></a>
     </div>
-    <div id="right_column">
-      <div id="frontpage_search_box">
-        <h2>
-          <%= _("Search over<br/>
-          <strong>{{number_of_requests}} requests</strong> <span>and</span><br/>
-          <strong>{{number_of_authorities}} authorities</strong>",
-          :number_of_requests => InfoRequest.visible.count, :number_of_authorities => PublicBody.visible.count) %>
-        </h2>
-        <% form_tag({:action => "search_redirect"}, {:id => "search_form"}) do %>
-        <div>
-          <%= text_field_tag 'query', params[:query], { :size => 30 } %>
-          <%= submit_tag _('Search') %>
-        </div>
-        <% end %>
+    <div id="frontpage_search_box">
+      <h2>
+        <%= _("Search over<br/>
+        <strong>{{number_of_requests}} requests</strong> <span>and</span><br/>
+        <strong>{{number_of_authorities}} authorities</strong>",
+        :number_of_requests => InfoRequest.visible.count, :number_of_authorities => PublicBody.visible.count) %>
+      </h2>
+      <% form_tag({:action => "search_redirect"}, {:id => "search_form"}) do %>
+      <div>
+        <%= text_field_tag 'query', params[:query], { :size => 30 } %>
+        <%= submit_tag _('Search') %>
       </div>
-      <div id="frontpage_right_to_know">
-        <%= render :partial => 'frontpage_intro_sentence'  %>
-      </div>
+      <% end %>
     </div>
     <div style="clear:both"></div>
   </div>
