@@ -152,7 +152,7 @@ background: none;
 #frontpage_splash h1 {
 font-family:'Actor', Arial, sans-serif;
 font-size:39px;
-color:#6B3C6A;
+//color:#6B3C6A;
 font-weight:400;
 margin:0 0 20px;
 }
@@ -160,34 +160,33 @@ margin:0 0 20px;
 #frontpage_splash h1 strong {
 font-family:'Actor', Arial, sans-serif;
 font-size:54px;
-color:#93278F;
+//color:#93278F;
 font-weight:400;
 }
 
 #frontpage_splash h1 span {
 font-family:'Actor', Arial, sans-serif;
-font-style:normal;
-font-weight:400;
+font-style:inherit;
 font-size:25px;
-color:#6B3C6A;
+//color:#6B3C6A;
 }
 
 #frontpage_splash h2 {
 font-size:26px;
 font-weight:400;
-color:#6B3C6A;
+//color:#6B3C6A;
 font-family:'Actor', Arial, sans-serif;
 }
 
 #frontpage_splash h2 strong {
 font-size:31px;
-color:#93278F;
+//color:#93278F;
 font-family:'Actor', Arial, sans-serif;
 }
 
 #frontpage_splash h2 span {
-color:#6B3C6A;
-font-style:italic;
+//color:#6B3C6A;
+font-style:inherit;
 font-size:19px;
 font-family: 'Actor', Arial, sans-serif;
 }
