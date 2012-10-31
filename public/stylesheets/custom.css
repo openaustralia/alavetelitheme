@@ -143,6 +143,10 @@ font-family:'Maven Pro', Arial, sans-serif;
   opacity: inherit;
 }
 
+#navigation_search p {
+  margin-right: inherit;
+}
+
 #navigation_search input[type=text] {
  border-color: #888;
 }
