@@ -53,6 +53,10 @@ color:#444;
 color:#92B3FF;
 }
 
+#content {
+  padding-top: 2em;
+}
+
 h1,h2,h3 {
  font-family: 'Actor', Arial, sans-serif;
  color:#555;
