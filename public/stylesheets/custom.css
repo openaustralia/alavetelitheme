@@ -1,6 +1,19 @@
 body {
 color:#444;
 font-family:'Maven Pro', Arial, sans-serif;
+background-color: #f0f0f0;
+}
+
+.entirebody {
+  background-color: white;
+}
+
+.after-footer {
+  background-color: #f0f0f0;
+}
+
+#footer {
+  float: inherit;
 }
 
 #banner {
