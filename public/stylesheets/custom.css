@@ -97,8 +97,16 @@ color:#005068;
 font-weight:400;
 }
 
-a {
-color:#93278F;
+a, a:hover {
+  color:#A60201;
+}
+
+a, .request_listing .requester a {
+  text-decoration: none;
+}
+
+a:hover, .request_listing .requester a:hover {
+  text-decoration: underline;
 }
 
 p.subtitle {
