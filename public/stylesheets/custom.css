@@ -364,12 +364,3 @@ color:#93278F;
 #logged_in_bar a,#logged_in_bar a:visited {
 color:#ffffff;
 }
-
-
-.request_listing span.desc {
-background:url(../images/quote-marks.png) no-repeat;
-}
-
-#frontpage_examples .excerpt {
-background:url(../images/quote-marks.png) no-repeat;
-}
