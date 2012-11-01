@@ -163,13 +163,8 @@ font-family:'Maven Pro', Arial, sans-serif;
 color:#6B3C6A;
 }
 
-
-div.correspondence,div.comment_in_request {
-background:url(/images/stripes-70.png);
-}
-
-div.outgoing.correspondence {
-background:url(/images/stripes-70-light.png);
+div.correspondence {
+border-color:#ccc;
 }
 
 #frontpage_splash {
