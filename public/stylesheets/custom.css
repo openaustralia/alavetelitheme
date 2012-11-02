@@ -38,12 +38,8 @@ top: 100px;
 background: #d0ffff;
 }
 
-#topnav li a,#topnav li a:visited {
-color:#ADADAD;
-}
-
 #topnav li a:hover {
-color:#fff;
+  color:#005068;
 }
 
 #topnav ul li {
@@ -53,10 +49,6 @@ color:#fff;
 
 #topnav ul li.selected {
  background:#fff;
-}
-
-#topnav ul li a {
-color:#6B3C6A !important;
 }
 
 #logged_in_bar {
