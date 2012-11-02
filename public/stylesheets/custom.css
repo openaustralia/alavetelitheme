@@ -339,3 +339,7 @@ padding:0;
  font-family: 'Actor', Arial, sans-serif;
  color:#005068;
 }
+
+div.controller_help dt:hover > a, div.controller_help h1:hover > a, div#help_unhappy h1:hover > a.hover_a {
+color: #a60201;
+}
