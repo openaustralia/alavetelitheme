@@ -323,18 +323,17 @@ color:#FFF;
 #link_box {
 position:absolute;
 text-align:left;
-background-color:#FFF;
+background-color:#fff;
 z-index:999;
-opacity:0.9px;
+opacity:1.0;
 border-radius:6px;
 -moz-border-radius:6px;
-border:1px solid #93278F;
+border:1px solid #005068;
 display:none;
-padding:5px;
+padding:10px;
 }
 
 #link_box .close-button {
-background-color:#93278F;
 margin-left:15px;
 padding:0;
 }
