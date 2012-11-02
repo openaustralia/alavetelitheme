@@ -358,15 +358,6 @@ margin-left:15px;
 padding:0;
 }
 
-div.correspondence p.preview_subject {
-font-family:'Maven Pro';
-color:#6B3C7F;
-}
-
-div.correspondence p.preview_subject strong {
-color:#6B3C7F;
-}
-
 #logged_in_bar a,#logged_in_bar a:visited {
 color:#ffffff;
 }
