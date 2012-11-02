@@ -110,12 +110,11 @@ a:hover, .request_listing .requester a:hover {
 }
 
 p.subtitle {
-font-family:'Maven Pro';
-color:#6B3C7F;
+color:#005068;
 }
 
 .request_listing span.head a,.user_listing span.head a,.body_listing span.head a {
-color:#6B3C6A;
+color:#A60201;
 font-family:'Maven Pro', Arial, sans-serif;
 font-weight:400;
 }
@@ -142,11 +141,8 @@ color:#93278F;
 }
 
 #stepwise_make_request {
-background-color:#d0d0d0;
-background:url(/images/stripes.png);
-border:1px solid #DEBEDD;
-font-family:'Maven Pro', Arial, sans-serif;
-color:#6B3C6A;
+background-color:#f9f9f9;
+border:1px solid #888;
 }
 
 div.comment_in_request {
@@ -380,10 +376,6 @@ color:#6B3C7F;
 
 div.correspondence p.preview_subject strong {
 color:#6B3C7F;
-}
-
-div.controller_help h1 a,#stepwise_make_request strong {
-color:#93278F;
 }
 
 #logged_in_bar a,#logged_in_bar a:visited {
