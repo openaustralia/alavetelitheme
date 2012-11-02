@@ -334,3 +334,8 @@ padding:10px;
 margin-left:15px;
 padding:0;
 }
+
+#follow_count {
+ font-family: 'Actor', Arial, sans-serif;
+ color:#005068;
+}
