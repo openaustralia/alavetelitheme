@@ -150,6 +150,11 @@ form input[type=submit],a.link_button_green,a.link_button_green_large {
 font-family:'Maven Pro', Arial, sans-serif;
 }
 
+a.link_button_green:hover,a.link_button_green_large:hover {
+  text-decoration: none;
+  color: white;
+}
+
 /* Mostly magic for adding page curls */
 
 div#request_show {
