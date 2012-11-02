@@ -150,13 +150,6 @@ form input[type=submit],a.link_button_green,a.link_button_green_large {
 font-family:'Maven Pro', Arial, sans-serif;
 }
 
-div.frontpage-box {
-background:url(/images/stripes.png);
-border:1px solid #DEBEDD;
-font-family:'Maven Pro', Arial, sans-serif;
-color:#6B3C6A;
-}
-
 /* Mostly magic for adding page curls */
 
 div#request_show {
