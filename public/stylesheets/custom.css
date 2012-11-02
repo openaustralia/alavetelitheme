@@ -141,13 +141,6 @@ background-color:#f9f9f9;
 border:1px solid #888;
 }
 
-div.comment_in_request {
-background:url(/images/stripes-70-light2.png);
-border-color:#5F5F5F;
-border-style:dotted;
-border-width:1px;
-}
-
 #request_form label,label.form_label {
 font-family:'Maven Pro', Arial, sans-serif;
 }
