@@ -186,6 +186,10 @@ color:#6B3C6A;
 
 /* Mostly magic for adding page curls */
 
+div#request_show {
+  position: relative;
+  z-index: 10;
+}
 div.correspondence {
   margin-bottom: 2em;
   /* Setting overflow: auto breaks the page-curl */
