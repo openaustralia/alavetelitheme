@@ -307,7 +307,9 @@ color:#FFF;
 }
 
 p.public-body-name-prefix {
-color:#DEB4D8;
+font-family: 'Actor', Arial, sans-serif;
+color:#005068;
+margin-bottom: 0px;
 }
 
 #other-country-notice a {
