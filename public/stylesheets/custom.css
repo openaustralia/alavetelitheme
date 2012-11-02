@@ -56,7 +56,7 @@ color:#444;
 }
 
 #logged_in_bar a,#logged_in_bar a:visited {
-color:#92B3FF;
+color:#ffffff;
 }
 
 #content {
@@ -337,8 +337,4 @@ padding:5px;
 background-color:#93278F;
 margin-left:15px;
 padding:0;
-}
-
-#logged_in_bar a,#logged_in_bar a:visited {
-color:#ffffff;
 }
