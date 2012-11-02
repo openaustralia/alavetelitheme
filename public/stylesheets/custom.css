@@ -124,10 +124,6 @@ background:url(/images/quote-marks.png) no-repeat;
 color:#444;
 }
 
-.feed_link a,.act_link a,#header_right > a {
-color:#6B3C6A;
-}
-
 #request_form label,label.form_label,span#to_public_body {
 color:#6B3C6A;
 }
