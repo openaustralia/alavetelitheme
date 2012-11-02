@@ -288,21 +288,21 @@ font-family: 'Actor', Arial, sans-serif;
 
 #ui-datepicker-div.ui-widget {
 font-family:'Maven Pro', Arial, sans-serif;
-color:#93278F;
+color:#005068;
 }
 
 #ui-datepicker-div .ui-datepicker-header,#ui-datepicker-div .ui-widget-header {
-color:#93278F;
+color:#005068;
 font-family:'Maven Pro';
 }
 
 #ui-datepicker-div .ui-state-default:hover {
-background:#DEB4D8;
+background:#00dcf0;
 color:#FFF;
 }
 
 #ui-datepicker-div .ui-state-active {
-background:#D093C7;
+background:#005068;
 color:#FFF;
 }
 
