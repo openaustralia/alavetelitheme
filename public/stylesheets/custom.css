@@ -369,3 +369,7 @@ padding:0;
 div.controller_help dt:hover > a, div.controller_help h1:hover > a, div#help_unhappy h1:hover > a.hover_a {
 color: #a60201;
 }
+
+form#signin_form input[type=text], form#signin_form input[type=password], form#signup_form input[type=text], form#signup_form input[type=password] {
+width:270px;
+}
