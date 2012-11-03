@@ -133,6 +133,10 @@ border:1px solid #888;
   margin-bottom: 0;
 }
 
+#request_header_subject input {
+  width: 409px;
+}
+
 #request_form label,label.form_label {
 font-family:'Maven Pro', Arial, sans-serif;
 }
