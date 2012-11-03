@@ -133,6 +133,13 @@ border:1px solid #888;
   margin-bottom: 0;
 }
 
+#stepwise_make_request a {
+  display: block;
+  width: 3em;
+  text-align: center;
+  margin: 15px auto 0 auto;
+}
+
 #request_header_subject input {
   width: 409px;
 }
