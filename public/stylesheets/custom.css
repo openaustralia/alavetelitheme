@@ -141,6 +141,12 @@ border:1px solid #888;
 font-family:'Maven Pro', Arial, sans-serif;
 }
 
+#request_form textarea {
+  font-family:'Maven Pro', Arial, sans-serif;
+  font-size: 15px;
+  width: 33em;
+}
+
 #navigation_search {
   opacity: inherit;
 }
