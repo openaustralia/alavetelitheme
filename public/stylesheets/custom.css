@@ -168,10 +168,17 @@ font-family:'Maven Pro', Arial, sans-serif;
   margin-right: inherit;
 }
 
-#navigation_search input[type=text] {
- border-color: #888;
+#navigation_search input#navigation_search_query {
+  border-color: #888;
+  background: url(/alavetelitheme/images/search-icon.png) no-repeat left center;
+  background-color: white;
+  padding-left: 2em;
+  border-radius: 5px;
 }
 
+#navigation_search input#navigation_search_button {
+  display: none;
+}
 
 form input[type=submit],a.link_button_green,a.link_button_green_large {
 font-family:'Maven Pro', Arial, sans-serif;
