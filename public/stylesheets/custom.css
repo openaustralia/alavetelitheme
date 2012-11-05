@@ -22,6 +22,48 @@ position:relative;
 margin:auto;
 }
 
+#oaf_logo {
+  border: 1px #bbb solid;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+#oaf {
+  margin-top: 1em;
+  margin-bottom: 50px;
+  float: left;
+  text-align: left;
+}
+
+#footer img {
+  border: 1px #bbb solid;  
+  vertical-align: middle;
+}
+
+#oaf ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#footer ul li {
+  margin-top: 5px;
+}
+
+#footer p {
+  margin-top: 0;
+}
+
+#footer .right {
+  margin-top: 22px;
+  float: right;
+  text-align: left;
+}
+
+#footer .right ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 #banner {
 background-color:#00DCF0;
 }

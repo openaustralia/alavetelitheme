@@ -1,8 +1,33 @@
 <div id="footer">
   <div id="footer_inner">
-    <%= link_to _("Contact {{site_name}}", :site_name => site_name), help_contact_url %>
-| <img src="/images/twitter-16.png" alt="twitter icon" class="twitter-icon"> <a href="https://twitter.com/<%= Configuration::twitter_username %>"><%= _("Follow us on twitter") %></a>
-<%= render :partial => 'general/credits' %>
+    <div id="oaf">
+      <p><%= Configuration::site_name %> is another project from the
+        <% link_to "http://www.openaustraliafoundation.org.au" do %>
+          <%= image_tag "/alavetelitheme/images/openaustralia_foundation.png", :width => "200", :id => "oaf_logo" %>
+      </p
+      <% end %>
+      <p>Like it? Then also take a look at</p>
+      <ul>
+        <li><%= image_tag "/alavetelitheme/images/oa_logo.png"%> <%= link_to "OpenAustralia.org", "http://www.openaustralia.org" %></li>
+        <li><%= image_tag "/alavetelitheme/images/el_logo.png"%> <%= link_to "ElectionLeaflets.org.au", "http://www.electionleaflets.org.au" %></li>
+        <li><%= image_tag "/alavetelitheme/images/pa_logo.png"%> <%= link_to "PlanningAlerts.org.au", "http://www.planningalerts.org.au" %></li>
+      </ul>
+    </div>
+    <div class="right">
+      <div id="powered">
+        <%= _('Powered by <a href="http://www.alaveteli.org/">Alaveteli</a>') %>
+      </div>
+      <div id="contact">
+        <ul>
+          <li>
+            <%= link_to _("Contact {{site_name}}", :site_name => site_name), help_contact_url %>
+          </li>
+          <li>
+            <img src="/images/twitter-16.png" alt="twitter icon" class="twitter-icon"> <a href="https://twitter.com/<%= Configuration::twitter_username %>"><%= _("Follow us on twitter") %></a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 <div class="after-footer">&nbsp;</div>
