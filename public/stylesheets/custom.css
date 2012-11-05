@@ -16,6 +16,12 @@ background-color: #f0f0f0;
   float: inherit;
 }
 
+#footer_inner {
+width:890px;
+position:relative;
+margin:auto;
+}
+
 #banner {
 background-color:#00DCF0;
 }
