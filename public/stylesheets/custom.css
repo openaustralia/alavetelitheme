@@ -431,4 +431,10 @@ width:270px;
 
 form#set_draft_profile_photo_form label.form_label {
   width: inherit;
-} 
+}
+
+.fieldWithErrors {
+background-color:#fee;
+border: none;
+padding: 0;
+}
