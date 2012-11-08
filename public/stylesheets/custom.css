@@ -91,8 +91,9 @@ background: #d0ffff;
 }
 
 #topnav ul li {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin: 0;
 }
 
 #topnav ul li.selected {
