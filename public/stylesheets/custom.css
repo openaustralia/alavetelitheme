@@ -440,13 +440,13 @@ border: none;
 padding: 0;
 }
 
-.correspondence a.link_to_this {
+.correspondence a.link_to_this, .comment_in_request a.link_to_this {
   opacity: 0;
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
 }
 
-.correspondence:hover a.link_to_this {
+.correspondence:hover a.link_to_this, .comment_in_request:hover a.link_to_this {
   opacity: 1;
 }
