@@ -450,3 +450,7 @@ padding: 0;
 .correspondence:hover a.link_to_this {
   opacity: 1;
 }
+
+div.controller_help dt a,div.controller_help h1 a,div#help_unhappy h1 a.hover_a {
+background-color:inherit;
+}
