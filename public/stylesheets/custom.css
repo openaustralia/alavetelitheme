@@ -454,3 +454,15 @@ padding: 0;
 div.controller_help dt a,div.controller_help h1 a,div#help_unhappy h1 a.hover_a {
 background-color:inherit;
 }
+
+/* Fix button height in Firefox */
+form input[type=submit] {
+height: 30px;
+padding:0px 6px;
+}
+
+input::-moz-focus-inner
+{
+    border: 0;
+    padding: 0;
+}
