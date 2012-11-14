@@ -466,3 +466,11 @@ input::-moz-focus-inner
     border: 0;
     padding: 0;
 }
+
+a.link_button_green_large {
+background:url(/alavetelitheme/images/button-gradient-large.png);
+}
+
+form input[type=submit],a.link_button_green {
+background:url(/alavetelitheme/images/button-gradient.png);
+}
