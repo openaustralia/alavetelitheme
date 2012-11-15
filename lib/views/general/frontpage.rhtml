@@ -16,7 +16,7 @@
       <%= render :partial => "frontpage_requests_list" %>
   </div>
   <div id="frontpage_supporting">
-    <h2>Supporting Organisations</h2>
+    <h2><%= link_to "Supporting Organisations", help_credits_path(:anchor => "supporting") %></h2>
     <div id="frontpage_supporting_australian">
       <% link_to "http://www.openforum.com.au/" do %>
         <%= image_tag "/alavetelitheme/images/openforum_logo.png", :id => "openforum_logo" %>
