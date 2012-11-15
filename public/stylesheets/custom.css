@@ -474,3 +474,62 @@ background:url(/alavetelitheme/images/button-gradient-large.png);
 form input[type=submit],a.link_button_green {
 background:url(/alavetelitheme/images/button-gradient.png);
 }
+
+#frontpage_supporting {
+  clear: both;
+}
+
+#frontpage_supporting_international {
+  margin-top: 10px;
+}
+
+#frontpage_supporting img {
+  margin-right: 80px;
+  vertical-align: middle;
+}
+
+#frontpage_supporting #frontpage_supporting_australian img {
+  margin-right: 136px;
+}
+
+#frontpage_supporting #frontpage_supporting_international img {
+  margin-right: 195px;
+}
+
+#openforum_logo {
+  height: 45px;
+  opacity: 0.8;
+}
+
+#okfa_logo {
+  height: 45px;
+  opacity: 1.0;
+}
+
+#cpd_logo {
+  height: 45px;
+  opacity: 0.6;
+}
+
+#frontpage_supporting img#getup_logo {
+  height: 40px;
+  opacity: 0.55;
+  margin-right: 0;
+}
+
+#mysociety_logo {
+  height: 25px;
+  opacity: 0.95;
+  margin-top: 5px;
+}
+
+#opennorth_logo {
+  height: 50px;
+  opacity: 0.65;
+}
+
+#frontpage_supporting img#opennz_logo {
+  height: 50px;
+  opacity: 0.65;
+  margin-right: 0;
+}
