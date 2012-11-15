@@ -489,7 +489,7 @@ background:url(/alavetelitheme/images/button-gradient.png);
 }
 
 #frontpage_supporting #frontpage_supporting_australian img {
-  margin-right: 136px;
+  margin-right: 75px;
 }
 
 #frontpage_supporting #frontpage_supporting_international img {
@@ -511,8 +511,13 @@ background:url(/alavetelitheme/images/button-gradient.png);
   opacity: 0.6;
 }
 
-#frontpage_supporting img#getup_logo {
+#getup_logo {
   height: 40px;
+  opacity: 0.55;
+}
+
+#frontpage_supporting img#crikey_logo {
+  height: 35px;
   opacity: 0.55;
   margin-right: 0;
 }
