@@ -479,6 +479,10 @@ background:url(/alavetelitheme/images/button-gradient.png);
   clear: both;
 }
 
+#frontpage_supporting a:hover {
+  text-decoration: none;
+}
+
 #frontpage_supporting_international {
   margin-top: 10px;
 }
