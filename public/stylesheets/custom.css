@@ -487,3 +487,7 @@ width:120px;
 .filter-request-types {
   width: 445px;
 }
+
+div.pagination {
+padding-top:1em;
+}
