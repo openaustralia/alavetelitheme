@@ -479,3 +479,11 @@ background:url(/alavetelitheme/images/button-gradient-large.png);
 form input[type=submit],a.link_button_green {
 background:url(/alavetelitheme/images/button-gradient.png);
 }
+
+#date_range label.title,#filter_requests_form label.title,h3.title {
+width:120px;
+}
+
+.filter-request-types {
+  width: 445px;
+}
