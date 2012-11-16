@@ -195,6 +195,11 @@ border:1px solid #888;
 
 #request_form label,label.form_label {
 font-family:'Maven Pro', Arial, sans-serif;
+color:#005068;
+}
+
+.list-filter-item h3 {
+  font-size: 1.1em;
 }
 
 #request_form textarea {
