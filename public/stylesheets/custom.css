@@ -477,6 +477,7 @@ background:url(/alavetelitheme/images/button-gradient.png);
 
 #frontpage_supporting {
   clear: both;
+  padding-top: 1em;
 }
 
 #frontpage_supporting a:hover {
@@ -491,6 +492,9 @@ background:url(/alavetelitheme/images/button-gradient.png);
   text-decoration: underline;
 }
 
+#frontpage_supporting_australian {
+  padding-top: 0.5em;
+}
 #frontpage_supporting_international {
   margin-top: 10px;
 }
