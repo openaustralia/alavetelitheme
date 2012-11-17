@@ -505,11 +505,11 @@ background:url(/alavetelitheme/images/button-gradient.png);
 }
 
 #frontpage_supporting #frontpage_supporting_australian img {
-  margin-right: 75px;
+  margin-right: 30px;
 }
 
 #frontpage_supporting #frontpage_supporting_international img {
-  margin-right: 75px;
+  margin-right: 30px;
 }
 
 #openforum_logo {
@@ -532,9 +532,14 @@ background:url(/alavetelitheme/images/button-gradient.png);
   opacity: 0.55;
 }
 
-#frontpage_supporting img#crikey_logo {
+#crikey_logo {
   height: 35px;
   opacity: 0.55;
+}
+
+#frontpage_supporting img#tia_logo {
+  height: 40px;
+  opacity: 0.9;
   margin-right: 0;
 }
 
