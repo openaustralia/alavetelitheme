@@ -9,7 +9,7 @@
    <%= _("{{site_name}} users have made {{number_of_requests}} requests, including:",
     :site_name => site_name, :number_of_requests => InfoRequest.visible.count) %>
     <ul>
-      <% for event in @request_events %>
+      <% for event in @request_events[0..2] %>
         <li>
           <% if @request_events_all_successful %>
             <%= _("{{public_body_link}} answered a request about",
