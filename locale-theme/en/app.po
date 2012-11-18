@@ -27,7 +27,7 @@ msgid ""
 "           (<a href=\"%s#%s\">why?</a>)."
 msgstr ""
 "First, type in the <strong>name of the Australian public authority</strong> you'd \n"
-"           like information from. <strong>By law, they have to respond</strong>\n"
+"           like information from. <strong>By law, the authority has to respond</strong>\n"
 "           (<a href=\"%s#%s\">why?</a>)."
 
 msgid "Ask for <strong>specific</strong> documents or information, this site is not suitable for general enquiries."
