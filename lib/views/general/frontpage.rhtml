@@ -16,7 +16,7 @@
       <%= render :partial => "frontpage_requests_list" %>
   </div>
   <div id="frontpage_supporting">
-    <h2><%= link_to "Supporting Organisations", help_credits_path(:anchor => "supporting") %></h2>
+    <h2>Supporting Organisations</h2>
     <div id="frontpage_supporting_australian">
       <% link_to "http://www.openforum.com.au/" do %>
         <%= image_tag "/alavetelitheme/images/openforum_logo.png", :id => "openforum_logo" %>
@@ -45,5 +45,8 @@
         <%= image_tag "/alavetelitheme/images/opennz_logo.png", :id => "opennz_logo" %>
       <% end %>
     </div>
+    <p>
+      <strong><%= link_to "Find out more...", help_credits_path(:anchor => "supporting") %></strong>
+    </p>
   </div>
 <% end %>
