@@ -491,3 +491,83 @@ width:120px;
 div.pagination {
 padding-top:1em;
 }
+
+#frontpage_supporting {
+  clear: both;
+  padding-top: 1em;
+}
+
+#frontpage_supporting a:hover {
+  text-decoration: none;
+}
+
+#frontpage_supporting h2 a {
+  color:#005068; 
+}
+
+#frontpage_supporting h2 a:hover {
+  text-decoration: underline;
+}
+
+#frontpage_supporting_australian {
+  padding-top: 0.5em;
+}
+#frontpage_supporting_international {
+  margin-top: 10px;
+}
+
+#frontpage_supporting img {
+  margin-right: 80px;
+  vertical-align: middle;
+}
+
+#frontpage_supporting #frontpage_supporting_australian img {
+  margin-right: 75px;
+}
+
+#frontpage_supporting #frontpage_supporting_international img {
+  margin-right: 75px;
+}
+
+#openforum_logo {
+  height: 45px;
+  opacity: 0.8;
+}
+
+#okfa_logo {
+  height: 45px;
+  opacity: 1.0;
+}
+
+#cpd_logo {
+  height: 45px;
+  opacity: 0.6;
+}
+
+#getup_logo {
+  height: 40px;
+  opacity: 0.55;
+}
+
+#frontpage_supporting img#crikey_logo {
+  height: 35px;
+  opacity: 0.55;
+  margin-right: 0;
+}
+
+#mysociety_logo {
+  height: 25px;
+  opacity: 0.95;
+  margin-top: 5px;
+}
+
+#opennorth_logo {
+  height: 50px;
+  opacity: 0.65;
+}
+
+#frontpage_supporting img#opennz_logo {
+  height: 50px;
+  opacity: 0.65;
+  margin-right: 0;
+}
