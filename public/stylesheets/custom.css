@@ -525,11 +525,11 @@ padding-top:1em;
 }
 
 #frontpage_supporting #frontpage_supporting_australian img {
-  margin-right: 75px;
+  margin-right: 20px;
 }
 
 #frontpage_supporting #frontpage_supporting_international img {
-  margin-right: 75px;
+  margin-right: 20px;
 }
 
 #openforum_logo {
@@ -552,9 +552,14 @@ padding-top:1em;
   opacity: 0.55;
 }
 
-#frontpage_supporting img#crikey_logo {
+#crikey_logo {
   height: 35px;
   opacity: 0.55;
+}
+
+#frontpage_supporting img#newmatilda_logo {
+  height: 28px;
+  opacity: 0.6;
   margin-right: 0;
 }
 
