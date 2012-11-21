@@ -103,7 +103,7 @@ background: #d0ffff;
   margin: 0;
 }
 
-#topnav ul li.selected {
+#topnav ul li.selected, #topnav ul li:hover {
  background:#fff;
 }
 
