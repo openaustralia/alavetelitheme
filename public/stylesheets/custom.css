@@ -540,22 +540,38 @@ padding-top:1em;
 
 #openforum_logo {
   height: 45px;
-  opacity: 0.8;
+  opacity: 0.7;
+}
+
+#openforum_logo:hover {
+  opacity: 0.9;
 }
 
 #okfa_logo {
   height: 45px;
+  opacity: 0.8;
+}
+
+#okfa_logo:hover {
   opacity: 1.0;
 }
 
 #cpd_logo {
   height: 45px;
-  opacity: 0.6;
+  opacity: 0.55;
+}
+
+#cpd_logo:hover {
+  opacity: 0.75;
 }
 
 #getup_logo {
   height: 40px;
-  opacity: 0.55;
+  opacity: 0.5;
+}
+
+#getup_logo:hover {
+  opacity: 0.7;
 }
 
 #crikey_logo {
@@ -563,22 +579,41 @@ padding-top:1em;
   opacity: 0.55;
 }
 
-#frontpage_supporting img#newmatilda_logo {
+#crikey_logo:hover {
+  opacity: 0.75;
+}
+
+#newmatilda_logo {
   height: 28px;
   opacity: 0.6;
+}
+
+#newmatilda_logo:hover {
+  opacity: 0.8;
+}
+
+#frontpage_supporting img#newmatilda_logo {
   margin-right: 0;
 }
 
 #efa_logo {
   height: 45px;
-  opacity: 0.8;
+  opacity: 0.75;
   padding-bottom: 12px;
+}
+
+#efa_logo:hover {
+  opacity: 0.95;
 }
 
 #mysociety_logo {
   height: 25px;
-  opacity: 0.95;
+  opacity: 0.8;
   margin-top: 5px;
+}
+
+#mysociety_logo:hover {
+  opacity: 1.0;
 }
 
 #opennorth_logo {
@@ -586,10 +621,17 @@ padding-top:1em;
   opacity: 0.65;
 }
 
-#frontpage_supporting img#opennz_logo {
+#opennorth_logo:hover {
+  opacity: 0.85;
+}
+
+#opennz_logo {
   height: 50px;
-  opacity: 0.65;
-  margin-right: 0;
+  opacity: 0.6;
+}
+
+#opennz_logo:hover {
+  opacity: 0.8;
 }
 
 #examples_1 ul li:last-child {
