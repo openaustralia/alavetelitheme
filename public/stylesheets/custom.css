@@ -537,13 +537,9 @@ padding-top:1em;
 }
 
 #frontpage_supporting img {
-  margin-right: 80px;
-  vertical-align: middle;
-}
-
-#frontpage_supporting img {
   margin-right: 20px;
   margin-top: 10px;
+  vertical-align: middle;
 }
 
 #openforum_logo {
