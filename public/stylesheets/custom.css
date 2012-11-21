@@ -534,6 +534,10 @@ padding-top:1em;
   vertical-align: middle;
 }
 
+#frontpage_supporting .logos a:hover {
+  text-decoration: none;
+}
+
 #openforum_logo {
   height: 45px;
   opacity: 0.8;
