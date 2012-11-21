@@ -497,6 +497,16 @@ form input[type=submit],a.link_button_green, a.link_button_green_large {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2ef40', endColorstr='#7cae36',GradientType=0 );
 }
 
+form input[type=submit]:hover,a.link_button_green:hover, a.link_button_green_large:hover {
+  background: -moz-linear-gradient(top,  #c2ff50 0%, #8cbe46 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c2ff50), color-stop(100%,#8cbe46));
+  background: -webkit-linear-gradient(top,  #c2ff50 0%,#8cbe46 100%);
+  background: -o-linear-gradient(top,  #c2ff50 0%,#8cbe46 100%);
+  background: -ms-linear-gradient(top,  #c2ff50 0%,#8cbe46 100%);
+  background: linear-gradient(to bottom,  #c2ff50 0%,#8cbe46 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2ff50', endColorstr='#8cbe46',GradientType=0 );
+}
+
 #date_range label.title,#filter_requests_form label.title,h3.title {
 width:120px;
 }
