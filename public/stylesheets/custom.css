@@ -487,6 +487,16 @@ form input[type=submit],a.link_button_green {
 background:url(/alavetelitheme/images/button-gradient.png);
 }
 
+form input[type=submit],a.link_button_green, a.link_button_green_large {
+  background: -moz-linear-gradient(top,  #b2ef40 0%, #7cae36 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b2ef40), color-stop(100%,#7cae36));
+  background: -webkit-linear-gradient(top,  #b2ef40 0%,#7cae36 100%);
+  background: -o-linear-gradient(top,  #b2ef40 0%,#7cae36 100%);
+  background: -ms-linear-gradient(top,  #b2ef40 0%,#7cae36 100%);
+  background: linear-gradient(to bottom,  #b2ef40 0%,#7cae36 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2ef40', endColorstr='#7cae36',GradientType=0 );
+}
+
 #date_range label.title,#filter_requests_form label.title,h3.title {
 width:120px;
 }
