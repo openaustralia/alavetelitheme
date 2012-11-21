@@ -504,6 +504,10 @@ padding-top:1em;
   padding-top: 1em;
 }
 
+#frontpage_supporting h2 {
+  margin-bottom: 1em;
+}
+
 #frontpage_supporting h2 a {
   color:#005068; 
 }
@@ -512,24 +516,14 @@ padding-top:1em;
   text-decoration: underline;
 }
 
-#frontpage_supporting_australian {
-  padding-top: 0.5em;
-}
-#frontpage_supporting_international {
-  margin-top: 10px;
-}
-
 #frontpage_supporting img {
   margin-right: 80px;
   vertical-align: middle;
 }
 
-#frontpage_supporting #frontpage_supporting_australian img {
+#frontpage_supporting img {
   margin-right: 20px;
-}
-
-#frontpage_supporting #frontpage_supporting_international img {
-  margin-right: 20px;
+  margin-top: 10px;
 }
 
 #openforum_logo {
@@ -561,6 +555,12 @@ padding-top:1em;
   height: 28px;
   opacity: 0.6;
   margin-right: 0;
+}
+
+#efa_logo {
+  height: 45px;
+  opacity: 0.8;
+  padding-bottom: 12px;
 }
 
 #mysociety_logo {
