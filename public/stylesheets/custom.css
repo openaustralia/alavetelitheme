@@ -528,14 +528,6 @@ padding-top:1em;
   margin-bottom: 1em;
 }
 
-#frontpage_supporting h2 a {
-  color:#005068; 
-}
-
-#frontpage_supporting h2 a:hover {
-  text-decoration: underline;
-}
-
 #frontpage_supporting img {
   margin-right: 20px;
   margin-top: 10px;
