@@ -586,33 +586,45 @@ padding-top:1em;
   opacity: 0.8;
 }
 
-#frontpage_supporting img#newmatilda_logo {
+#frontpage_supporting img#newmatilda_logo, #frontpage_supporting img#opennz_logo {
   margin-right: 0;
 }
 
-#efa_logo {
+#frontpage_supporting img#efa_logo {
+  margin-right: 16px;
   opacity: 0.75;
-  padding-bottom: 12px;
+  padding-bottom: 6px;
 }
 
-#efa_logo:hover {
+#frontpage_supporting img#efa_logo:hover {
   opacity: 0.95;
 }
 
-#mysociety_logo {
+#frontpage_supporting img#tia_logo {
+  margin-right: 16px;
   opacity: 0.8;
-  margin-top: 5px;
+  height: 45px;
 }
 
-#mysociety_logo:hover {
+#frontpage_supporting img#tia_logo:hover {
   opacity: 1.0;
 }
 
-#opennorth_logo {
+#frontpage_supporting img#mysociety_logo {
+  margin-right: 16px;
+  opacity: 0.8;
+}
+
+#frontpage_supporting img#mysociety_logo:hover {
+  opacity: 1.0;
+}
+
+#frontpage_supporting img#opennorth_logo {
+  margin-right: 16px;
   opacity: 0.65;
 }
 
-#opennorth_logo:hover {
+#frontpage_supporting img#opennorth_logo:hover {
   opacity: 0.85;
 }
 
