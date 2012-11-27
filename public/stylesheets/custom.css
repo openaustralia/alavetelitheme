@@ -644,3 +644,8 @@ padding-top:1em;
 #examples_1 ul li:last-child {
 border-bottom:0;
 }
+
+/* For the time being hide the admin bar in the main app */
+.admin.navbar {
+  display: none;
+}
