@@ -92,14 +92,15 @@ margin-left: 0;
 top: 100px;
 background: #d0ffff;
 }
-
+#topnav li a{
+  padding: 10px 13px;
+}
 #topnav li a:hover {
   color:#005068;
 }
 
 #topnav ul li {
-  padding-left: 13px;
-  padding-right: 13px;
+  padding: 0;
   margin: 0;
 }
 
