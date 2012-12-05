@@ -601,6 +601,14 @@ padding-top:1em;
   opacity: 0.85;
 }
 
+#newdemocracy_logo {
+  opacity: 0.6;
+}
+
+#newdemocracy_logo:hover {
+  opacity: 0.85;
+}
+
 #frontpage_supporting img#newmatilda_logo, #frontpage_supporting img#opennz_logo {
   margin-right: 0;
 }
