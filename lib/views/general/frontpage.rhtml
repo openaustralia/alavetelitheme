@@ -1,4 +1,4 @@
-<% view_cache :ttl => 5.minutes.to_i, :tag => I18n.locale do %>
+<%# TODO: Cache for 5 minutes %>
   <div id="frontpage_splash">
     <div id="frontpage_right_to_know">
       <%= render :partial => 'frontpage_intro_sentence'  %>
@@ -62,4 +62,3 @@
       <strong><%= link_to "Find out more...", help_credits_path(:anchor => "supporting") %></strong>
     </p>
   </div>
-<% end %>
