@@ -1,2 +1,6 @@
 <%= stylesheet_link_tag "/alavetelitheme/stylesheets/custom" %>
+<% if request.ssl? %>
+<link href='https://fonts.googleapis.com/css?family=Maven+Pro:400,700|Actor' rel='stylesheet' type='text/css'>
+<% else %>
 <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700|Actor' rel='stylesheet' type='text/css'>
+<% end %>
