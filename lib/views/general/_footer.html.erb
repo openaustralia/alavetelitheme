@@ -1,7 +1,7 @@
 <div id="footer">
   <div id="footer_inner">
     <div id="oaf">
-      <p><%= Configuration::site_name %> is another project from the
+      <p><%= AlaveteliConfiguration::site_name %> is another project from the
         <% link_to "http://www.openaustraliafoundation.org.au" do %>
           <%= image_tag "/alavetelitheme/images/openaustralia_foundation.png", :width => "200", :id => "oaf_logo", :alt => "OpenAustralia Foundation logo" %>
         <% end %>
@@ -23,7 +23,7 @@
             <%= link_to _("Contact {{site_name}}", :site_name => site_name), help_contact_url %>
           </li>
           <li>
-            <img src="/images/twitter-16.png" alt="twitter icon" class="twitter-icon"> <a href="https://twitter.com/<%= Configuration::twitter_username %>"><%= _("Follow us on twitter") %></a>
+            <img src="/images/twitter-16.png" alt="twitter icon" class="twitter-icon"> <a href="https://twitter.com/<%= AlaveteliConfiguration::twitter_username %>"><%= _("Follow us on twitter") %></a>
           </li>
         </ul>
       </div>
