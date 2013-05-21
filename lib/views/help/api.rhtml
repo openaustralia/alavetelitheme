@@ -21,7 +21,7 @@ lots of things that are similar in use to an API as they are requested.
 
 <p>To encourage your users to make links to a particular public authority, use URLs of the form
 <%= link_to new_request_to_body_url(:url_name => "defence") , new_request_to_body_url(:url_name => "defence") %>. 
-These are the parameters you can add to those URLs, either in the URL or from a form.
+These are the <a href="http://en.wikipedia.org/wiki/URL" title="Wikipedia entry for URL including information on URL syntax">parameters</a> you can add to those URLs, either in the URL or from a form.
 
 <ul>
     <li> <strong>title</strong> - default summary of the new request.</li>
@@ -29,6 +29,12 @@ These are the parameters you can add to those URLs, either in the URL or from a 
     <li> <strong>body</strong> - as an alternative to default_letter, this sets the default entire text of the request, so you can customise the salutation and signoff. </li>
     <li> <strong>tags</strong> - space separated list of tags, so you can find and link up any requests made later, e.g. <em>openlylocal spending_id:12345</em>. The : indicates it is a machine tag. The values of machine tags may also include colons, useful for URIs.
 </ul>
+</p>
+
+<p>Text added to these URLs must be <em><a href="http://en.wikipedia.org/wiki/Percent-encoding" title="Wikipedia entry for Percent-Encoding">URL encoded</a></em>. You can use the <a href="http://meyerweb.com/eric/tools/dencoder/" title="URL Decoder/Encoder">URL Decoder/Encoder at meyerweb.com</a> as a tool to encode your text.</p>
+
+<p>Within a URL, multiple parameters are divided with a semi-colon ";". For example, the link <a href="https://www.righttoknow.org.au/new/diac/?title=FOI%20Request%20for%20Detail%20Incident&20Report%201-3M2Q3P;body=To%20the%20Department%20of%20Immigration%20and%20Citizenship%2C%0A%0ADear%20Sir%2FMadam%2C%0A%0AUnder%20the%20Freedom%20of%20Information%20Act%201982%20(Cth)%20I%20request%20the%20following%20document%3A%0A%0AIncident%20Detail%20Report%201-3M2Q3P%20from%20the%20Department%27s%20Compliance%2C%20Case%20Management%2C%20Detention%20and%20Settlement%20Portal.%20I%20also%20request%20any%20documents%20attached%20to%20the%20detailed%20report.%0A%0AKind%20Regards%2C%0A%0A****ADD%20YOUR%20NAME%20HERE%20BEFORE%20SENDING%20REQUEST****" title="example request for detention centre incident logs">https://www.righttoknow.org.au/new/diac/?title=FOI%20Request%20for%20Detail%20Incident&20Report%201-3M2Q3P;body=To%20the%20Department%20of%20Immigration%20and%20Citizenship%2C%0A%0ADear%20Sir%2FMadam%2C%0A%0AUnder%20the%20Freedom%20of%20Information%20Act%201982%20(Cth)%20I%20request%20the%20following%20document%3A%0A%0AIncident%20Detail%20Report%201-3M2Q3P%20from%20the%20Department%27s%20Compliance%2C%20Case%20Management%2C%20Detention%20and%20Settlement%20Portal.%20I%20also%20request%20any%20documents%20attached%20to%20the%20detailed%20report.%0A%0AKind%20Regards%2C%0A%0A****ADD%20YOUR%20NAME%20HERE%20BEFORE%20SENDING%20REQUEST****</a> uses both the <strong>title</strong> and <strong>body</strong> paramaters.</p>
+
 
 <hr>
 
