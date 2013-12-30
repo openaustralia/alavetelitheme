@@ -38,7 +38,7 @@ Typical usage should be limited to:
 
 To install:
 
-  ./script/plugin install git://github.com/openaustralia/righttoknow.git
+    bundle exec rails plugin install git://github.com/openaustralia/righttoknow.git
 
 Look in the lib/ folder of the plugin to see how the overrides happen.
 
