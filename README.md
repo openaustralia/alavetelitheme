@@ -16,7 +16,7 @@ Typical usage should be limited to:
 
 To install::
 
-  ./script/plugin install git://github.com/openaustralia/alavetelitheme.git
+  ./script/plugin install git://github.com/openaustralia/righttoknow.git
 
 Look in the lib/ folder of the plugin to see how the overrides happen.
 
