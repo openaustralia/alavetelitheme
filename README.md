@@ -36,7 +36,7 @@ Typical usage should be limited to:
    us", at `lib/views/help/about.html.erb` -- and/or localised versions at
    lib/views/help/about.es.html.erb)
 
-To install::
+To install:
 
   ./script/plugin install git://github.com/openaustralia/righttoknow.git
 
