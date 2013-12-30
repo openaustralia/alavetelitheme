@@ -11,8 +11,8 @@ Typical usage should be limited to:
  * Putting CSS-based customisations in `public/stylesheets/custom.css`
 
  * Creating your own versions of non-functional pages (like "about
-   us", at `lib/views/help/about.rhtml` -- and/or localised versions at
-   lib/views/help/about.es.rhtml)
+   us", at `lib/views/help/about.html.erb` -- and/or localised versions at
+   lib/views/help/about.es.html.erb)
 
 To install::
 
