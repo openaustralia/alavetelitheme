@@ -1,6 +1,6 @@
 <div class="view_html_prefix">
     <div class="view_html_logo">
-        <a href="/"><img src="/alavetelitheme/images/logo.png" alt="<%= site_name %>" width="150"></a>
+      <%= link_to(image_tag("logo.png", :alt => "#{site_name}", :width => "150"),"/") %>
     </div>
     <div class="view_html_download_link">
         <%=link_to _("Download original attachment"), @attachment_url %> 

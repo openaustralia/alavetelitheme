@@ -3,14 +3,14 @@
     <div id="oaf">
       <p><%= AlaveteliConfiguration::site_name %> is another project from the
         <%= link_to "http://www.openaustraliafoundation.org.au" do %>
-          <%= image_tag "/alavetelitheme/images/openaustralia_foundation.png", :width => "200", :id => "oaf_logo", :alt => "OpenAustralia Foundation logo" %>
+          <%= image_tag('openaustralia_foundation.png', :width => "200", :id => "oaf_logo", :alt => "OpenAustralia Foundation logo") %>
         <% end %>
       </p>
       <p>Like it? Then also take a look at</p>
       <ul>
-        <li><%= image_tag "/alavetelitheme/images/oa_logo.png"%> <%= link_to "OpenAustralia.org", "http://www.openaustralia.org" %></li>
-        <li><%= image_tag "/alavetelitheme/images/el_logo.png"%> <%= link_to "ElectionLeaflets.org.au", "http://www.electionleaflets.org.au" %></li>
-        <li><%= image_tag "/alavetelitheme/images/pa_logo.png"%> <%= link_to "PlanningAlerts.org.au", "http://www.planningalerts.org.au" %></li>
+        <li><%= image_tag('oa_logo.png', :alt => "")%> <%= link_to "OpenAustralia.org", "http://www.openaustralia.org" %></li>
+        <li><%= image_tag('el_logo.png', :alt => "")%> <%= link_to "ElectionLeaflets.org.au", "http://www.electionleaflets.org.au" %></li>
+        <li><%= image_tag('pa_logo.png', :alt => "")%> <%= link_to "PlanningAlerts.org.au", "http://www.planningalerts.org.au" %></li>
       </ul>
     </div>
     <div class="right">
@@ -22,9 +22,7 @@
           <li>
             <%= link_to _("Contact {{site_name}}", :site_name => site_name), help_contact_url %>
           </li>
-          <li>
-            <img src="/images/twitter-16.png" alt="twitter icon" class="twitter-icon"> <a href="https://twitter.com/<%= AlaveteliConfiguration::twitter_username %>"><%= _("Follow us on twitter") %></a>
-          </li>
+          <li><%= image_tag('twitter-16.png', :alt => "twitter icon", :class => "twitter-icon")%> <%= link_to "Follow us on Twitter", "https://twitter.com/#{AlaveteliConfiguration::twitter_username}" %>
         </ul>
       </div>
     </div>
