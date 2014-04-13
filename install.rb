@@ -5,16 +5,16 @@ main_app_path = File.join(Rails.root, 'public', 'alavetelitheme')
 
 # If the symlink to be created exists, warn the user and do nothing
 
-## Removed Symlink for upgrade
-#if File.exists?(main_app_path)
-#	puts "WARNING: #{main_app_path} already exists, the symbolic link won't be created"
-#else # Create symlink
-#	begin
-#		print "Creating symbolic link from #{main_app_path} to #{plugin_path}... "
-#		File.symlink(plugin_path, main_app_path)
-#		puts "done"
-#	rescue NotImplementedError
-#		puts "failed: symbolic links not supported"
-#	end
+Removed Symlink for upgrade
+if File.exists?(main_app_path)
+	puts "WARNING: #{main_app_path} already exists, the symbolic link won't be created"
+else # Create symlink
+	begin
+		print "Creating symbolic link from #{main_app_path} to #{plugin_path}... "
+		File.symlink(plugin_path, main_app_path)
+		puts "done"
+	rescue NotImplementedError
+		puts "failed: symbolic links not supported"
+	end
 
 end
