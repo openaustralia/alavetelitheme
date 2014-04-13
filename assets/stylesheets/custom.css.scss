@@ -169,7 +169,7 @@ font-weight:400;
 }
 
 .request_listing span.desc {
-background:url(/images/quote-marks.png) no-repeat;
+background-image: image-url('quote-marks.png') no-repeat;
 color:#444;
 }
 
@@ -218,7 +218,7 @@ color:#005068;
 
 #navigation_search input#navigation_search_query {
   border-color: #888;
-  background: url(/alavetelitheme/images/search-icon.png) no-repeat left center;
+  background-image: image-url('search-icon.png') no-repeat left center;
   background-color: white;
   padding-left: 2em;
   border-radius: 5px;
@@ -473,11 +473,11 @@ input::-moz-focus-inner
 }
 
 a.link_button_green_large {
-background:url(/alavetelitheme/images/button-gradient-large.png);
+background-image: image-url('button-gradient-large.png');
 }
 
 form input[type=submit],a.link_button_green {
-background:url(/alavetelitheme/images/button-gradient.png);
+background-image: image-url('button-gradient.png');
 }
 
 form input[type=submit],a.link_button_green, a.link_button_green_large {
