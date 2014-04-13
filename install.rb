@@ -4,8 +4,6 @@ plugin_path = File.expand_path(File.join(File.dirname(__FILE__), "public"))
 main_app_path = File.join(Rails.root, 'public', 'alavetelitheme')
 
 # If the symlink to be created exists, warn the user and do nothing
-
-Removed Symlink for upgrade
 if File.exists?(main_app_path)
 	puts "WARNING: #{main_app_path} already exists, the symbolic link won't be created"
 else # Create symlink
