@@ -12,6 +12,7 @@ else # Create symlink
 		File.symlink(plugin_path, main_app_path)
 		puts "done"
 	rescue NotImplementedError
-		puts "failed: symbolic links not supported"	
+		puts "failed: symbolic links not supported"
 	end
+
 end
