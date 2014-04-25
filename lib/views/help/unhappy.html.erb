@@ -2,7 +2,7 @@
 
 
 <% if !@info_request.nil? %>
-<h1>Unhappy about the response you got 
+<h1>Unhappy about the response you got
 to your request '<%=request_link(@info_request) %>'?
 </h1>
 <% else %>
@@ -57,11 +57,11 @@ then you can ask the Information Commissioner to review the decision or make a c
 </li>
 </ul>
 
-<p>To make it easier to send the relevant information to the 
+<p>To make it easier to send the relevant information to the
 Information Commissioner, either
 <% if !@info_request.nil? %>
-    include a link to your request 
-    <strong><%=h main_url(request_url(@info_request)) %></strong>
+    include a link to your request
+    <strong><%=h request_url(@info_request) %></strong>
 <% else %>
     include a link to your request on <%= site_name %>
 <% end %>
@@ -80,18 +80,15 @@ request keeping people informed of progress.</p>
 
 <ul>
 <li>Make a <strong>new Freedom of Information request</strong> for summary information, or for
-documentation relating indirectly to matters in your refused request.  
+documentation relating indirectly to matters in your refused request.
 <a href="/help/contact">Ask us for ideas</a> if you're stuck.</li>
 <li>If any <strong>other public authorities</strong> or publicly owned companies are involved,
 then make Freedom of Information requests to them.</li>
 <li>Write to <strong>your MP</strong> or other politician and ask for their help
 finding the answer. MPs can write directly to ministers or departments, and
 can ask written questions in Parliament.</li>
-<li>Ask <strong>other researchers</strong> who are interested in a similar 
+<li>Ask <strong>other researchers</strong> who are interested in a similar
 issue to yours for ideas. You can sometimes find them by browsing this site;
 contact any registered user from their page. There may be an Internet
 forum or group that they hang out in.</li>
 </ul>
-
-
-
