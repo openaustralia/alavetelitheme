@@ -29,4 +29,13 @@ PublicBodyCategories.add(:en, [
         [ "prime_minister_and_cabinet","Prime Minister and Cabinet","part of the Prime Minister and Cabinet portfolio" ],
         [ "treasury","Treasury","part of the Treasury portfolio" ],
         [ "veterans_affairs","Veterans' Affairs","part of the Veterans' Affairs portfolio" ],
+    "State Governments",
+        [ "act-government","ACT Government","part of the ACT State Government" ],
+        [ "nsw-government","NSW Government","part of the NSW State Government" ],
+        [ "nt-government","NT Government","part of the NT State Government" ],
+        [ "qld-government","QLD Government","part of the QLD State Government" ],
+        [ "sa-government","SA Government","part of the SA State Government" ],
+        [ "tas-government","TAS Government","part of the TAS State Government" ],
+        [ "vic-government","VIC Government","part of the VIC State Government" ],
+        [ "wa-government","WA Government","part of the WA State Government" ],
 ])
