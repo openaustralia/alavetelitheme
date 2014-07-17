@@ -8,7 +8,7 @@
 # ])
 
 PublicBodyCategories.add(:en, [
-    "Portfolios",
+    "Federal Portfolios",
         [ "attorney-general","Attorney-General","part of the Attorney-General portfolio" ],
         [ "agriculture_fisheries_and_forestry","Agriculture, Fisheries and Forestry","part of the Agriculture, Fisheries and Forestry portfolio" ],
         [ "broadband_communications_and_the_digital_economy","Broadband, Communications and the Digital Economy","part of the Broadband, Communications and the Digital Economy portfolio" ],
@@ -29,4 +29,34 @@ PublicBodyCategories.add(:en, [
         [ "prime_minister_and_cabinet","Prime Minister and Cabinet","part of the Prime Minister and Cabinet portfolio" ],
         [ "treasury","Treasury","part of the Treasury portfolio" ],
         [ "veterans_affairs","Veterans' Affairs","part of the Veterans' Affairs portfolio" ],
+    "Ministers and Assistant Ministers",
+        [ "federal-ministers","Federal Ministers","a minister in the Federal Government" ],
+        [ "act-ministers","ACT Ministers","a minister in the ACT State Government" ],
+        [ "nsw-ministers","NSW Government","a minister in the NSW State Government" ],
+        [ "nt-ministers","NT Government","a minister in the NT State Government" ],
+        [ "qld-ministers","QLD Government","a minister in the QLD State Government" ],
+        [ "sa-ministers","SA Government","a minister in the SA State Government" ],
+        [ "tas-ministers","TAS Government","a minister in the TAS State Government" ],
+        [ "vic-ministers","VIC Government","a minister in the VIC State Government" ],
+        [ "wa-ministers","WA Government","a minister in the WA State Government" ],
+    "State Governments",
+        [ "act-government","ACT Government","part of the ACT State Government" ],
+        [ "nsw-government","NSW Government","part of the NSW State Government" ],
+        [ "nt-government","NT Government","part of the NT State Government" ],
+        [ "qld-government","QLD Government","part of the QLD State Government" ],
+        [ "sa-government","SA Government","part of the SA State Government" ],
+        [ "tas-government","TAS Government","part of the TAS State Government" ],
+        [ "vic-government","VIC Government","part of the VIC State Government" ],
+        [ "wa-government","WA Government","part of the WA State Government" ],
+    "Local Government",
+        [ "act-local","ACT Local Government","an ACT Local Government" ],
+        [ "nsw-local","NSW Local Government","a NSW Local Government" ],
+        [ "nt-Local","NT Local Government","a NT Local Government" ],
+        [ "qld-local","QLD Local Government","a QLD Local Government" ],
+        [ "sa-local","SA Local Government","a SA Local Government" ],
+        [ "tas-local","TAS Local Government","a TAS Local Government" ],
+        [ "vic-local","VIC Local Government","a VIC Local Government" ],
+        [ "wa-local","WA Local Government","a WA Local Government" ],
+
+
 ])
