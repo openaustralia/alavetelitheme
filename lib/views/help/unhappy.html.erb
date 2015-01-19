@@ -26,7 +26,7 @@ to your request '<%=request_link(@info_request) %>'?
 </ol>
 
 <h1 id="internal_review">1. Asking for an internal review <a class="hover_a" href="#internal_review">#</a> </h1>
-<p>In an internal review the request goes back to the original authority but gets handled by a <a href="http://www.oaic.gov.au/publications/guidelines/guidelines-part9_guidelines-internal-review.html#_Toc287345401">different, usually more senior, officer</a>.</p>
+<p>In an internal review the request goes back to the original authority but gets handled by a <a href="http://www.oaic.gov.au/freedom-of-information/applying-the-foi-act/foi-guidelines/part-9-internal-agency-review-of-decisions2#procedures">different, usually more senior, officer</a>.</p>
 <p>
 <% if !@info_request.nil? %>
     <%= link_to "Request an internal review", show_response_no_followup_url(:id => @info_request.id, :incoming_message_id => nil) + "?internal_review=1#followup", :class => 'link_button_green' %> and then write a message asking the authority to review your request.
@@ -39,7 +39,7 @@ to your request '<%=request_link(@info_request) %>'?
 </p>
 
 <p>Internal reviews are free and should be pretty quick. It should take no longer than 30 calendar days. See the
-  <a href="http://www.oaic.gov.au/publications/guidelines/guidelines-part9_guidelines-internal-review.html#_Toc287345402">Information Commissioner Guidelines</a> for the specifics.
+  <a href="http://www.oaic.gov.au/freedom-of-information/applying-the-foi-act/foi-guidelines/part-9-internal-agency-review-of-decisions2#procedures">Information Commissioner Guidelines</a> for the specifics.
 </p>
 
 <h1 id="complaining">2. Information Commissioner <a class="hover_a" href="#complaining">#</a> </h1>
