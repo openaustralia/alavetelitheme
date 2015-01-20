@@ -20,20 +20,30 @@
 
 <dt id="email_address">Who gets to see my email address? <a href="#email_address">#</a> </dt>
 
-<dd><p>We will not disclose your email address to anyone unless we are obliged to by law,
-or you ask us to. This includes the public authority that you are sending a
-request to.  They only get to see an email address
-@<%= AlaveteliConfiguration::incoming_email_domain %> which is specific to that request.  </p>
+<dd>
+
+<p>We will not disclose your email address to anyone unless we are obliged to by law,
+or you ask us to. </p>
+
+<p>This includes the public authority that you are sending a
+request to.  When you make a request to an authority, they will receive an email from a unique
+@<%= AlaveteliConfiguration::incoming_email_domain %> address. </p>
+
 <p>If you send a message to another user on the site, then it will reveal your
 email address to them. You will be told that this is going to happen.</p>
+
 </dd>
 
 <dt id="nasty_spam">Will you send nasty, brutish spam to my email address? <a href="#nasty_spam">#</a> </dt>
-<dd>Nope. After you sign up to <%= site_name %> we will only send you emails
+<dd> <p>Nope. After you sign up to <%= site_name %> we will send you emails
 relating to a request you made, an email alert that you have signed up for,
-or for other reasons that you specifically authorise. We will never give or
-sell your email addresses to anyone else, unless we are obliged to by law, or
-you ask us to.
+or for other reasons that you specifically authorise. </p>
+
+<p>You will also receive emails from the <a href="https://www.openaustraliafoundation.org.au/">OpenAustralia Foundation</a>,
+the charity that runs <%= site_name %>. You can unsubscribe from these emails without affecting any alerts from <%= site_name %>. </p>
+
+<p> We will never give or sell your email addresses to anyone else, unless we are obliged
+to by law, or you ask us to.</p>
 </dd>
 
 <dt id="public_request">Why will my name and my request appear publicly on the site? <a href="#public_request">#</a> </dt>
