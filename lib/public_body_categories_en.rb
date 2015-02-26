@@ -8,7 +8,7 @@
 # ])
 
 PublicBodyCategories.add(:en, [
-    "Portfolios",
+    "Federal",
         [ "attorney-general","Attorney-General","part of the Attorney-General portfolio" ],
         [ "agriculture_fisheries_and_forestry","Agriculture, Fisheries and Forestry","part of the Agriculture, Fisheries and Forestry portfolio" ],
         [ "broadband_communications_and_the_digital_economy","Broadband, Communications and the Digital Economy","part of the Broadband, Communications and the Digital Economy portfolio" ],
@@ -29,4 +29,6 @@ PublicBodyCategories.add(:en, [
         [ "prime_minister_and_cabinet","Prime Minister and Cabinet","part of the Prime Minister and Cabinet portfolio" ],
         [ "treasury","Treasury","part of the Treasury portfolio" ],
         [ "veterans_affairs","Veterans' Affairs","part of the Veterans' Affairs portfolio" ],
+    "Australian Capital Territory (ACT)",
+        [ "ACT_state", "ACT Authorities", "Australian Capital Territory (ACT) Authorities"]
 ])
