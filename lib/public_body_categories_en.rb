@@ -27,4 +27,29 @@ PublicBodyCategories.add(:en,
         [ "social_services","Social Services","part of the Social Services portfolio" ],
         [ "treasury","Treasury","part of the Treasury portfolio" ],
         [ "veterans_affairs","Veterans' Affairs","part of the Veterans' Affairs portfolio" ],
-])
+        [ "minister","Ministers","Politicians who run Government Departments" ],
+        [ "federal", "All Federal Authorities"],
+    "States and Territories",
+        [ "ACT_state","ACT Authorities","Description of ACT Authorities" ],
+
+        [ "NSW_state","NSW Authorities","Includes education, health, the environment, and emergency services in ACT" ],
+        [ "NSW_council","NSW Councils","Includes garbage collections, public parks and sporting grounds, libraries, and local planning" ],
+
+        [ "NT_state","NT Authorities","" ],
+
+        [ "QLD_state","QLD Authorities","State Authorities, including Schools" ],
+        [ "QLD_council","QLD Councils","description of local authorities" ],
+
+        [ "TAS_state","TAS Authorities","including schools" ],
+        [ "TAS_council","TAS Councils","description of local authorities" ],
+
+        [ "SA_state","SA Authorities","including schools" ],
+        [ "SA_council","SA Councils","description of local authorities" ],
+
+        [ "VIC_state","VIC Authorities","including schools" ],
+        [ "VIC_council","VIC Councils","description of local authorities" ],
+
+        [ "WA_state","WA Authorities","including schools" ],
+        [ "WA_council","WA Councils","description of local authorities" ],
+    ]
+)
