@@ -30,5 +30,5 @@ PublicBodyCategories.add(:en, [
         [ "treasury","Treasury","part of the Treasury portfolio" ],
         [ "veterans_affairs","Veterans' Affairs","part of the Veterans' Affairs portfolio" ],
     "Australian Capital Territory (ACT)",
-        [ "ACT_state", "ACT Authorities", "Australian Capital Territory (ACT) Authorities"]
+        [ "ACT_state", "ACT Authorities", "An Australian Capital Territory (ACT) authority"]
 ])
