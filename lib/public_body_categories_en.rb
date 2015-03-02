@@ -40,7 +40,7 @@ PublicBodyCategories.add(:en,
         [ "VIC_state","Victoria","a Victorian authority" ],
         [ "WA_state","Western Australia","a Western Australian authority" ],
 
-    "Local Authorities",
+    "Local",
         [ "NSW_council","NSW","a NSW Council" ],
         [ "NT_council","NT","a Northern Territory Council" ],
         [ "QLD_council","Queensland","a Queensland Council" ],
