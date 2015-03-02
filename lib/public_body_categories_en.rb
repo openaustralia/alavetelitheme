@@ -27,7 +27,6 @@ PublicBodyCategories.add(:en,
         [ "social_services","Social Services","part of the Social Services portfolio" ],
         [ "treasury","Treasury","part of the Treasury portfolio" ],
         [ "veterans_affairs","Veterans' Affairs","part of the Veterans' Affairs portfolio" ],
-        [ "minister","Ministers","Politicians who run Government Departments" ],
         [ "federal", "All Federal authorities", "a Federal authority"],
 
     "State and Territory",
