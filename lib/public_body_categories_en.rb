@@ -31,7 +31,7 @@ PublicBodyCategories.add(:en,
         [ "federal", "All Federal Authorities", "part of the Federal Government"],
 
     "States and Territories",
-        [ "ACT_state","ACT Authorities","Description of ACT Authorities" ],
+        [ "ACT_state","ACT Authorities","part of the ACT Government" ],
 
         [ "NSW_state","NSW Authorities","Includes education, health, the environment, and emergency services in ACT" ],
         [ "NSW_council","NSW Councils","Includes garbage collections, public parks and sporting grounds, libraries, and local planning" ],
