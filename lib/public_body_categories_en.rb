@@ -28,7 +28,7 @@ PublicBodyCategories.add(:en,
         [ "treasury","Treasury","part of the Treasury portfolio" ],
         [ "veterans_affairs","Veterans' Affairs","part of the Veterans' Affairs portfolio" ],
         [ "minister","Ministers","Politicians who run Government Departments" ],
-        [ "federal", "All Federal Authorities"],
+        [ "federal", "All Federal Authorities", "part of the Federal Government"],
 
     "States and Territories",
         [ "ACT_state","ACT Authorities","Description of ACT Authorities" ],
