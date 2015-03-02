@@ -42,6 +42,7 @@ PublicBodyCategories.add(:en,
 
     "Local Authorities",
         [ "NSW_council","NSW","a NSW Council" ],
+        [ "NT_council","NT","a Northern Territory Council" ],
         [ "QLD_council","Queensland","a Queensland Council" ],
         [ "SA_council","South Australia","a South Australian Council" ],
         [ "TAS_council","Tasmania","a Tasmanian Council" ],
