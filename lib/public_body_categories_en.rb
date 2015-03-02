@@ -8,7 +8,7 @@
 # ])
 
 PublicBodyCategories.add(:en,
-    [ "Federal",
+    [ "Federal Government",
         [ "agriculture", "Agriculture", "part of the Agriculture portfolio" ],
         [ "attorney-general","Attorney-General","part of the Attorney-General portfolio" ],
         [ "communications","Communications","part of the Communications portfolio" ],
@@ -28,29 +28,24 @@ PublicBodyCategories.add(:en,
         [ "treasury","Treasury","part of the Treasury portfolio" ],
         [ "veterans_affairs","Veterans' Affairs","part of the Veterans' Affairs portfolio" ],
         [ "minister","Ministers","Politicians who run Government Departments" ],
-        [ "federal", "All Federal Authorities", "part of the Federal Government"],
+        [ "federal", "All Federal Government", "part of the Federal Government"],
 
-    "States and Territories",
-        [ "ACT_state","ACT Authorities","part of the ACT Government" ],
+    "State and Territory Governments",
+        [ "ACT_state","ACT","part of the ACT Government" ],
+        [ "NSW_state","NSW","part of the NSW Government" ],
+        [ "NT_state","Northern Territory","part of the Northern Territory Government" ],
+        [ "QLD_state","Queensland","part of the Queensland Government" ],
+        [ "SA_state","South Australia","part of the South Australian Government" ],
+        [ "TAS_state","Tasmania","part of the Tasmanian Government" ],
+        [ "VIC_state","Victoria","part of the Victorian Government" ],
+        [ "WA_state","Western Australia","part of the Western Australian Government" ],
 
-        [ "NSW_state","NSW Authorities","part of the NSW Government" ],
-        [ "NSW_council","NSW Councils","a NSW Council" ],
-
-        [ "NT_state","NT Authorities","part of the Northern Territory Government" ],
-
-        [ "QLD_state","QLD Authorities","part of the Queensland Government" ],
-        [ "QLD_council","QLD Councils","a Queensland Council" ],
-
-        [ "TAS_state","TAS Authorities","part of the Tasmanian Government" ],
-        [ "TAS_council","TAS Councils","a Tasmanian Council" ],
-
-        [ "SA_state","SA Authorities","part of the South Australian Government" ],
-        [ "SA_council","SA Councils","a South Australian Council" ],
-
-        [ "VIC_state","VIC Authorities","part of the Victorian Government" ],
-        [ "VIC_council","VIC Councils","a Victorian Council" ],
-
-        [ "WA_state","WA Authorities","part of the Western Australian Government" ],
-        [ "WA_council","WA Councils","a Western Australian Council" ],
+    "Councils",
+        [ "NSW_council","NSW","a NSW Council" ],
+        [ "QLD_council","Queensland","a Queensland Council" ],
+        [ "SA_council","South Australia","a South Australian Council" ],
+        [ "TAS_council","Tasmania","a Tasmanian Council" ],
+        [ "VIC_council","Victoria","a Victorian Council" ],
+        [ "WA_council","Western Australia","a Western Australian Council" ],
     ]
 )
