@@ -119,6 +119,26 @@ color:#444;
 color:#ffffff;
 }
 
+#navigation_search {
+  opacity: inherit;
+}
+
+#navigation_search p {
+  margin-right: inherit;
+}
+
+#navigation_search input#navigation_search_query {
+  border-color: #888;
+  background-image: image-url('search-icon.png') no-repeat left center;
+  background-color: white;
+  padding-left: 2em;
+  border-radius: 5px;
+}
+
+#navigation_search input#navigation_search_button {
+  display: none;
+}
+
 // Main Body
 
 #content {
@@ -211,26 +231,6 @@ color:#005068;
   font-family:'Maven Pro', Arial, sans-serif;
   font-size: 15px;
   width: 33em;
-}
-
-#navigation_search {
-  opacity: inherit;
-}
-
-#navigation_search p {
-  margin-right: inherit;
-}
-
-#navigation_search input#navigation_search_query {
-  border-color: #888;
-  background-image: image-url('search-icon.png') no-repeat left center;
-  background-color: white;
-  padding-left: 2em;
-  border-radius: 5px;
-}
-
-#navigation_search input#navigation_search_button {
-  display: none;
 }
 
 // Buttons
