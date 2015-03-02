@@ -33,24 +33,24 @@ PublicBodyCategories.add(:en,
     "States and Territories",
         [ "ACT_state","ACT Authorities","part of the ACT Government" ],
 
-        [ "NSW_state","NSW Authorities","Includes education, health, the environment, and emergency services in ACT" ],
-        [ "NSW_council","NSW Councils","Includes garbage collections, public parks and sporting grounds, libraries, and local planning" ],
+        [ "NSW_state","NSW Authorities","part of the NSW Government" ],
+        [ "NSW_council","NSW Councils","a NSW Council" ],
 
-        [ "NT_state","NT Authorities","" ],
+        [ "NT_state","NT Authorities","part of the Northern Territory Government" ],
 
-        [ "QLD_state","QLD Authorities","State Authorities, including Schools" ],
-        [ "QLD_council","QLD Councils","description of local authorities" ],
+        [ "QLD_state","QLD Authorities","part of the Queensland Government" ],
+        [ "QLD_council","QLD Councils","a Queensland Council" ],
 
-        [ "TAS_state","TAS Authorities","including schools" ],
-        [ "TAS_council","TAS Councils","description of local authorities" ],
+        [ "TAS_state","TAS Authorities","part of the Tasmanian Government" ],
+        [ "TAS_council","TAS Councils","a Tasmanian Council" ],
 
-        [ "SA_state","SA Authorities","including schools" ],
-        [ "SA_council","SA Councils","description of local authorities" ],
+        [ "SA_state","SA Authorities","part of the South Australian Government" ],
+        [ "SA_council","SA Councils","a South Australian Council" ],
 
-        [ "VIC_state","VIC Authorities","including schools" ],
-        [ "VIC_council","VIC Councils","description of local authorities" ],
+        [ "VIC_state","VIC Authorities","part of the Victorian Government" ],
+        [ "VIC_council","VIC Councils","a Victorian Council" ],
 
-        [ "WA_state","WA Authorities","including schools" ],
-        [ "WA_council","WA Councils","description of local authorities" ],
+        [ "WA_state","WA Authorities","part of the Western Australian Government" ],
+        [ "WA_council","WA Councils","a Western Australian Council" ],
     ]
 )
