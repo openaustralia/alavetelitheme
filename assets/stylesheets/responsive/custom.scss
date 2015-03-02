@@ -18,6 +18,7 @@ background-color: #f0f0f0;
 
 #footer {
   float: inherit;
+  border-top: 1px #ddd solid;
 }
 
 #footer_inner {
@@ -75,10 +76,6 @@ background-color:#00DCF0;
 -moz-box-shadow: 0 0 10px;
 -webkit-box-shadow: 0 0 10px;
 box-shadow: 0 0 10px;
-}
-
-#footer {
-  border-top: 1px #ddd solid;
 }
 
 #logo img {
