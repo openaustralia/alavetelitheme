@@ -1,3 +1,5 @@
+// Basic styles
+
 body {
 color:#444;
 font-family:'Maven Pro', Arial, sans-serif;
@@ -11,6 +13,8 @@ background-color: #f0f0f0;
 .after-footer {
   background-color: #f0f0f0;
 }
+
+// Site Footer
 
 #footer {
   float: inherit;
@@ -64,6 +68,8 @@ margin:auto;
   padding-left: 0;
 }
 
+// Site Header
+
 #banner {
 background-color:#00DCF0;
 -moz-box-shadow: 0 0 10px;
@@ -115,6 +121,8 @@ color:#444;
 #logged_in_bar a,#logged_in_bar a:visited {
 color:#ffffff;
 }
+
+// Main Body
 
 #content {
   padding-top: 2em;
@@ -228,6 +236,8 @@ color:#005068;
   display: none;
 }
 
+// Buttons
+
 form input[type=submit],a.link_button_green,a.link_button_green_large {
 font-family:'Maven Pro', Arial, sans-serif;
 }
@@ -301,6 +311,8 @@ div.correspondence:after {
   right: 12px;
 }
 
+// Front Page
+
 #frontpage_splash {
 background: none;
 }
@@ -373,6 +385,8 @@ font-family: 'Actor', Arial, sans-serif;
   margin-bottom: 0px;
 }
 
+// Date Picker
+
 #ui-datepicker-div.ui-widget {
 font-family:'Maven Pro', Arial, sans-serif;
 color:#005068;
@@ -392,6 +406,8 @@ color:#FFF;
 background:#005068;
 color:#FFF;
 }
+
+// Special components
 
 p.public-body-name-prefix {
 font-family: 'Actor', Arial, sans-serif;
@@ -430,6 +446,8 @@ padding:0;
 div.controller_help dt:hover > a, div.controller_help h1:hover > a, div#help_unhappy h1:hover > a.hover_a {
 color: #a60201;
 }
+
+// Forms
 
 form#signin_form input[type=text], form#signin_form input[type=password], form#signup_form input[type=text], form#signup_form input[type=password] {
 width:270px;
@@ -511,6 +529,8 @@ width:120px;
 div.pagination {
 padding-top:1em;
 }
+
+// Front Page Supporting Orgs section
 
 #frontpage_supporting {
   clear: both;
@@ -661,6 +681,8 @@ padding-top:1em;
 #examples_1 ul li:last-child {
 border-bottom:0;
 }
+
+// Overrides
 
 /* For the time being hide the admin bar in the main app */
 .admin.navbar {
