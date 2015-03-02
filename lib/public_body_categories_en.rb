@@ -42,7 +42,7 @@ PublicBodyCategories.add(:en,
 
     "Local",
         [ "NSW_council","NSW","a NSW Council" ],
-        [ "NT_council","NT","a Northern Territory Council" ],
+        [ "NT_council","Northern Territory","a Northern Territory Council" ],
         [ "QLD_council","Queensland","a Queensland Council" ],
         [ "SA_council","South Australia","a South Australian Council" ],
         [ "TAS_council","Tasmania","a Tasmanian Council" ],
