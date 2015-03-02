@@ -21,9 +21,12 @@
           <li>
             <%= link_to _("Contact {{site_name}}", :site_name => site_name), help_contact_url %>
           </li>
-          <li>
-            <%= image_tag "twitter-16.png", :alt => "twitter icon", :class =>"twitter-icon" %> <a href="https://twitter.com/<%= AlaveteliConfiguration::twitter_username %>"><%= _("Follow us on twitter") %></a>
-          </li>
+          <% unless AlaveteliConfiguration::twitter_username.blank? %>
+            <li>
+              <%= image_tag "twitter-16.png", :alt => "twitter icon", :class =>"twitter-icon" %>
+              <a href="https://twitter.com/<%= AlaveteliConfiguration::twitter_username %>"><%= _("Follow us on twitter") %></a>
+            </li>
+          <% end %>
         </ul>
       </div>
     </div>
