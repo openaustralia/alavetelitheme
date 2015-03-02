@@ -10,7 +10,7 @@
 PublicBodyCategories.add(:en,
     [ "Federal",
         [ "agriculture", "Agriculture", "part of the Agriculture portfolio" ],
-        [ "attorney-general","Attorney-General","part of the Attorney-General portfolio" ],
+        [ "attorney_general","Attorney-General","part of the Attorney-General portfolio" ],
         [ "communications","Communications","part of the Communications portfolio" ],
         [ "defence","Defence","part of the Defence portfolio" ],
         [ "education_and_training","Education and Training","part of the Education and Training portfolio" ],
