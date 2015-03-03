@@ -20,14 +20,25 @@ background-color: #f0f0f0;
 // Site Footer
 
 #footer {
-  float: inherit;
   border-top: 1px #ddd solid;
+  background-color: #f0f0f0;
 }
 
 #footer_inner {
 max-width:$row-width;
-position:relative;
-margin:auto;
+margin: auto;
+@include grid-column(12);
+@include clearfix;
+float: none;
+
+  @include ie8{
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+  }
+
+  @include lte-ie7 {
+    width: 56.125em;
+  }
 }
 
 #oaf_logo {
