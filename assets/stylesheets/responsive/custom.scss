@@ -17,71 +17,6 @@ background-color: #f0f0f0;
   background-color: #f0f0f0;
 }
 
-// Site Footer
-
-#footer {
-  border-top: 1px #ddd solid;
-  background-color: #f0f0f0;
-  text-align: left;
-
-  img {
-    border: 1px #ddd solid;
-    vertical-align: middle;
-  }
-
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
-
-  li {
-    margin-top: 5px;
-  }
-
-  p {
-    margin-top: 0;
-  }
-
-  .footer_right {
-    margin-top: 22px;
-
-    @include respond-min(51em) {
-      float: right;
-      text-align: left;
-    }
-  }
-}
-
-#footer_inner {
-max-width:$row-width;
-margin: auto;
-@include grid-column(12);
-@include clearfix;
-float: none;
-
-  @include ie8{
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-  }
-
-  @include lte-ie7 {
-    width: 56.125em;
-  }
-}
-
-#oaf_logo {
-  border: 1px #bbb solid;
-  vertical-align: middle;
-  margin-left: 5px;
-}
-
-#oaf {
-  margin-top: 1em;
-  margin-bottom: 50px;
-  float: left;
-  text-align: left;
-}
-
 // Site Header
 
 #banner {
@@ -150,6 +85,71 @@ color:#ffffff;
 
 #navigation_search input#navigation_search_button {
   display: none;
+}
+
+// Site Footer
+
+#footer {
+  border-top: 1px #ddd solid;
+  background-color: #f0f0f0;
+  text-align: left;
+
+  img {
+    border: 1px #ddd solid;
+    vertical-align: middle;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    margin-top: 5px;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .footer_right {
+    margin-top: 22px;
+
+    @include respond-min(51em) {
+      float: right;
+      text-align: left;
+    }
+  }
+}
+
+#footer_inner {
+max-width:$row-width;
+margin: auto;
+@include grid-column(12);
+@include clearfix;
+float: none;
+
+  @include ie8{
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+  }
+
+  @include lte-ie7 {
+    width: 56.125em;
+  }
+}
+
+#oaf_logo {
+  border: 1px #bbb solid;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+#oaf {
+  margin-top: 1em;
+  margin-bottom: 50px;
+  float: left;
+  text-align: left;
 }
 
 // Main Body
