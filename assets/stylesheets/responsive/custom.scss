@@ -108,7 +108,44 @@ color:#444;
 }
 
 #navigation_search {
+  padding: 0 13px 10px;
   opacity: inherit;
+  background-color: $righttoknow-primary-color-lighter;
+
+  /* hide unless toggled open
+     on small screens */
+  display: none;
+
+  #banner:target & {
+    display: block;
+  }
+
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    display: block;
+    position: absolute;
+    z-index: 150;
+    text-align: right;
+    width: auto;
+    right: 0;
+    top: 10px;
+    background-color: transparent;
+  }
+
+  form {
+    padding: 0;
+  }
+
+  /* Hide the label visually */
+  label {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
 }
 
 #navigation_search p {
@@ -121,6 +158,17 @@ color:#444;
 #navigation_search input#navigation_search_button {
   padding-left: 2em;
   border-radius: 5px;
+  background: image-url('search-icon.png') no-repeat left center #ffffff;
+  width: 100%;
+  border-color: #888;
+
+  @include respond-min( $main_menu-mobile_menu_cutoff ){
+    margin: 5px -1px 0 0;
+    padding: 5px 0 5px 2em;
+    width: 20.25em;
+    height: 24px;
+    font-size: 0.8em;
+  }
 }
 
 // Site Footer
