@@ -76,12 +76,13 @@ background: #d0ffff;
 color:#444;
 
 @include respond-min( $main_menu-mobile_menu_cutoff ){
-  font-size: 0.9em;
+
 }
 
   #logged_in_links {
     a, .greeting {
       @include respond-min( $main_menu-mobile_menu_cutoff ){
+        font-size: 14px;
         font-weight: normal;
         padding: 0;
       }
