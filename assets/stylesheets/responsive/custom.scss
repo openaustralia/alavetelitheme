@@ -40,6 +40,12 @@ box-shadow: 0 0 10px;
   }
 }
 
+#banner_inner {
+  max-width:$row-width;
+  margin: auto;
+  position: relative;
+}
+
 a#logo {
   left: 9px;
   top:75px;
