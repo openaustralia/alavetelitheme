@@ -1,3 +1,4 @@
+$righttoknow-primary-color: #00DCF0;
 $body-font-family: 'Maven Pro', Arial, sans-serif;
 $heading-font-family: 'Actor', Arial, sans-serif;
 
@@ -20,7 +21,7 @@ background-color: #f0f0f0;
 // Site Header
 
 #banner {
-background-color:#00DCF0;
+background-color: $righttoknow-primary-color;
 -moz-box-shadow: 0 0 10px;
 -webkit-box-shadow: 0 0 10px;
 box-shadow: 0 0 10px;
@@ -408,7 +409,7 @@ font-family:'Maven Pro';
 }
 
 #ui-datepicker-div .ui-state-default:hover {
-background:#00dcf0;
+background: $righttoknow-primary-color;
 color:#FFF;
 }
 
