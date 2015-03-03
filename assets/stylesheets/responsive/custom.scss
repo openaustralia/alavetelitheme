@@ -80,6 +80,11 @@ color:#444;
 }
 
   #logged_in_links {
+    @include respond-min( $main_menu-mobile_menu_cutoff ){
+      top: .875em;
+      right: 22em;
+    }
+
     a, .greeting {
       @include respond-min( $main_menu-mobile_menu_cutoff ){
         font-size: 14px;
