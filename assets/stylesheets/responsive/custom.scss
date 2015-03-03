@@ -1,4 +1,5 @@
 $righttoknow-primary-color: #00DCF0;
+$righttoknow-primary-color-lighter: #d0ffff;
 $body-font-family: 'Maven Pro', Arial, sans-serif;
 $heading-font-family: 'Actor', Arial, sans-serif;
 
@@ -50,7 +51,7 @@ font-family: $body-font-family;
 float: right;
 margin-left: 0;
 top: 100px;
-background: #d0ffff;
+background: $righttoknow-primary-color-lighter;
 }
 #topnav li a{
   padding: 10px 13px;
