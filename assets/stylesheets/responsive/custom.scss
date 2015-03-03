@@ -76,16 +76,12 @@ color:#ffffff;
   margin-right: inherit;
 }
 
-#navigation_search input#navigation_search_query {
-  border-color: #888;
-  background-image: image-url('search-icon.png') no-repeat left center;
-  background-color: white;
+// TODO: This id is wong on the template,
+//       we're targeting the text-input not
+//       the button. This should be fixed upstream.
+#navigation_search input#navigation_search_button {
   padding-left: 2em;
   border-radius: 5px;
-}
-
-#navigation_search input#navigation_search_button {
-  display: none;
 }
 
 // Site Footer
