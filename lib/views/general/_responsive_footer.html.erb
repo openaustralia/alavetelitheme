@@ -1,9 +1,8 @@
 <div class="footer" id="footer">
   <div id="footer_inner">
-    <div class="right">
-      <%= render :partial => 'general/responsive_credits' %>
-      <div id="contact_footer">
+    <div class="right" id="contact_footer">
         <ul>
+          <%= render :partial => 'general/responsive_credits' %>
           <li>
             <%= link_to _("Contact {{site_name}}", :site_name => site_name), help_contact_url %>
           </li>
@@ -14,7 +13,6 @@
             </li>
           <% end %>
         </ul>
-      </div>
     </div>
     <div id="oaf">
       <p><%= AlaveteliConfiguration::site_name %> is another project from the
