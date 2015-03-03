@@ -21,12 +21,12 @@ to your request '<%=request_link(@info_request) %>'?
 
 <ol>
 <li>Ask for an <strong>internal review</strong> at the public authority.</li>
-<li>Or go to the <strong>Information Commissioner</strong> to review the decision or make a complaint.</li>
+<li>Or go to an <strong>external reviewer</strong> such as an an Information Commissioner, Ombudsman, or Tribunal to review the decision or make a complaint.</li>
 <li>Either way, also <strong>use other means</strong> to answer your question.</li>
 </ol>
 
 <h1 id="internal_review">1. Asking for an internal review <a class="hover_a" href="#internal_review">#</a> </h1>
-<p>In an internal review the request goes back to the original authority but gets handled by a <a href="http://www.oaic.gov.au/freedom-of-information/applying-the-foi-act/foi-guidelines/part-9-internal-agency-review-of-decisions2#procedures">different, usually more senior, officer</a>.</p>
+<p>In an internal review the request goes back to the original authority but gets handled by a different, often more senior, officer.</p>
 <p>
 <% if !@info_request.nil? %>
     <%= link_to "Request an internal review", show_response_no_followup_url(:id => @info_request.id, :incoming_message_id => nil) + "?internal_review=1#followup", :class => 'link_button_green' %> and then write a message asking the authority to review your request.
@@ -38,27 +38,36 @@ to your request '<%=request_link(@info_request) %>'?
 <% end %>
 </p>
 
-<p>Internal reviews are free and should be pretty quick. It should take no longer than 30 calendar days. See the
-  <a href="http://www.oaic.gov.au/freedom-of-information/applying-the-foi-act/foi-guidelines/part-9-internal-agency-review-of-decisions2#procedures">Information Commissioner Guidelines</a> for the specifics.
+<p>Internal reviews are free and should be pretty quick. It should take no longer than 30 calendar days.</p>
+
+<h1 id="complaining">2. Asking an external reviewer <a class="hover_a" href="#complaining">#</a> </h1>
+
+<p>
+  If you are still unhappy after the public authority has done their internal review,
+  then you can contact an external reviewer to review the decision or make a complaint.
+  You don't have to go through an internal review before going to an external reviewer
+  but they usually recommend it.
 </p>
 
-<h1 id="complaining">2. Information Commissioner <a class="hover_a" href="#complaining">#</a> </h1>
-
-<p>If you are still unhappy after the public authority has done their internal review,
-then you can ask the Information Commissioner to review the decision or make a complaint. You don't have to go through an internal review before going to the Information Commissioner but they do recommend it.
+<p>
+  Who you should contact for an external review depends on what law governs the authority you
+  requested information from. If you need a hand, you can always
+  <%= link_to "contact us", help_contact_path %>.
 </p>
+
 <ul>
-<li>
-  If you were unsatisfied with the previous decision you should ask for a review of the decision. To do this read
-  <a href="http://www.oaic.gov.au/freedom-of-information/foi-reviews">FOI reviews</a> on the Information Commissioner's website.
-</li>
-<li>
-  If you didn't get a reply within 30 days, or are in some other way dissatisfied with the authority's handling of your request and want to make a complaint against the authority then read <a href="http://www.oaic.gov.au/freedom-of-information/foi-complaints">FOI complaints</a> on the Information Commissioner's website.
-</li>
+  <li>
+    For <strong>Federal Authorities</strong>, speak to the
+    <a href="http://www.oaic.gov.au/freedom-of-information/foi-reviews">Information Commissioner</a>.
+  </li>
+  <li>
+    For <strong>ACT Authorities</strong>, you can complain to the
+    <a href="http://ombudsman.act.gov.au/pages/making-a-complaint/complaints-the-ombudsman-can-investigate/freedom-of-information.php">Ombudsman</a>.
+  </li>
 </ul>
 
-<p>To make it easier to send the relevant information to the
-Information Commissioner, either
+<p>
+  To make it easier to send the organisation reviewing your request the relevant information, either
 <% if !@info_request.nil? %>
     include a link to your request
     <strong><%=h request_url(@info_request) %></strong>
@@ -68,11 +77,10 @@ Information Commissioner, either
 in your complaint or print out the whole page of your request and all attachments.
 </p>
 
-<p>Asking for a review or making a complaint at the Information Commissioner is free.</p>
-
-<p><%= site_name %> has no special facilities for handling a request at this stage - it
-passes into the Information Commissioner's system. You can leave annotations on your
-request keeping people informed of progress.</p>
+<p>
+  <%= site_name %> has no special facilities for handling a review at this stage.
+  You can leave annotations on your request keeping people informed of progress.
+</p>
 
 <h1 id="other_means">3. Using other means to answer your question <a class="hover_a" href="#other_means">#</a> </h1>
 
