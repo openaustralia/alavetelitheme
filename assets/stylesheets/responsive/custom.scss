@@ -25,10 +25,11 @@ background-color: $righttoknow-primary-color;
 -moz-box-shadow: 0 0 10px;
 -webkit-box-shadow: 0 0 10px;
 box-shadow: 0 0 10px;
-}
 
-#logo img {
-  width: 250px;
+  #logo_wrapper {
+    width: 53.66667%;
+    padding: .5em 1em;
+  }
 }
 
 #banner_inner a#logo {
