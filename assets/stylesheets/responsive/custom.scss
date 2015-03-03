@@ -22,6 +22,7 @@ background-color: #f0f0f0;
 #footer {
   border-top: 1px #ddd solid;
   background-color: #f0f0f0;
+  text-align: left;
 
   img {
     border: 1px #ddd solid;
@@ -41,10 +42,13 @@ background-color: #f0f0f0;
     margin-top: 0;
   }
 
-  .right {
+  .footer_right {
     margin-top: 22px;
-    float: right;
-    text-align: left;
+
+    @include respond-min(51em) {
+      float: right;
+      text-align: left;
+    }
   }
 }
 
