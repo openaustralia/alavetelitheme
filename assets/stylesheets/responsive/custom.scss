@@ -74,6 +74,12 @@ background: #d0ffff;
 
 #logged_in_bar {
 color:#444;
+
+  #logged_in_links {
+    a, .greeting {
+      font-weight: normal;
+    }
+  }
 }
 
 #logged_in_bar a,#logged_in_bar a:visited {
