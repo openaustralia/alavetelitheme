@@ -74,12 +74,17 @@ background: #d0ffff;
 
 #logged_in_bar {
 color:#444;
-font-size: 0.9em;
+
+@include respond-min( $main_menu-mobile_menu_cutoff ){
+  font-size: 0.9em;
+}
 
   #logged_in_links {
     a, .greeting {
-      font-weight: normal;
-      padding: 0;
+      @include respond-min( $main_menu-mobile_menu_cutoff ){
+        font-weight: normal;
+        padding: 0;
+      }
     }
   }
 }
