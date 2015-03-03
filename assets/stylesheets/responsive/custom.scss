@@ -25,7 +25,7 @@ background-color: #f0f0f0;
 }
 
 #footer_inner {
-width:890px;
+max-width:$row-width;
 position:relative;
 margin:auto;
 }
