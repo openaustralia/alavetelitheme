@@ -304,11 +304,11 @@ color:#005068;
 }
 
 #stepwise_make_request {
-  text-align: center;
-}
+  margin: 2em 0;
 
-#stepwise_make_request a {
-  margin: 15px auto 0 auto;
+  @include respond-min( $main_menu-mobile_menu_cutoff ){
+    margin: 2em 4em 0;
+  }
 }
 
 #request_header_subject input {
