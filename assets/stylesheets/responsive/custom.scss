@@ -330,6 +330,36 @@ color:#005068;
   width: 33em;
 }
 
+.request_listing, .body_listing, .user_listing {
+  margin: 0 0 -1px;
+  border-bottom: 1px solid #DDD;
+  padding: 12px 0 6px;
+  font-size: 0.9em;
+  line-height: normal;
+}
+
+.body_listing, .user_listing {
+  span.desc, span.bottomline {
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.request_listing {
+  span.bottomline {
+    font-style: normal;
+    margin-bottom: 0;
+    margin-top: 12px;
+    background-position: top left;
+    font-size: 1.1em;
+    font-weight: 400;
+    min-height: 36px;
+    padding: 3px 0 0 27px;
+  }
+}
+
 // Buttons
 
 form input[type=submit],a.link_button_green,a.link_button_green_large {
