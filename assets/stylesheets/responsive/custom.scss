@@ -593,6 +593,7 @@ background-image: image-url('button-gradient.png');
 }
 
 form input[type=submit],a.link_button_green, a.link_button_green_large {
+  padding: 0 6px;
   color: #fff;
   font-size: 18px;
   border: solid 1px #69952f;
