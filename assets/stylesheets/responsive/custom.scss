@@ -609,10 +609,10 @@ background-color:inherit;
 }
 
 /* Fix button height in Firefox */
-form input[type=submit] {
-height: 30px;
-padding:0px 6px;
-}
+// form input[type=submit] {
+// height: 30px;
+// padding:0px 6px;
+// }
 
 input::-moz-focus-inner
 {
