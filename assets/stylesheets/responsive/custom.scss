@@ -122,7 +122,7 @@ font-family: $body-font-family;
 background: $righttoknow-primary-color-lighter;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin: 0 5px 0 0;
+    margin: 3px 5px 0 0;
     float: right;
     font-size: 1.2em;
   }
