@@ -79,10 +79,9 @@ background-color: $righttoknow-primary-color;
 -webkit-box-shadow: 0 0 10px;
 box-shadow: 0 0 10px;
 
-  #logo_wrapper {
-    width: 53.66667%;
-    padding: .5em 1em;
-  }
+@include respond-min( $main_menu-mobile_menu_cutoff ) {
+  height: 160px;
+}
 
   .rsp_menu_button {
     background: #fff;
@@ -95,24 +94,43 @@ box-shadow: 0 0 10px;
 #banner_inner {
   max-width:$row-width;
   margin: auto;
-  position: relative;
+
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    @include clearfix;
+    position: relative;
+  }
 }
 
 a#logo {
-  left: 9px;
-  top:75px;
-  z-index: 90;
+  width: 53.66667%;
+  padding: .5em 1em;
+  display: inline-block;
+  float: left;
+
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    padding: 0;
+    width: auto;
+    position: relative;
+    left: 14px;
+    top:75px;
+    z-index: 90;
+  }
 }
 
 #topnav {
 font-family: $body-font-family;
-float: right;
-margin-left: 0;
-top: 100px;
 background: $righttoknow-primary-color-lighter;
+
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    margin: 0 5px 0 0;
+    float: right;
+    font-size: 1.2em;
+  }
 }
+
 #topnav li a{
   padding: 10px 13px;
+  color: #444;
 }
 #topnav li a:hover {
   color:#005068;
@@ -140,13 +158,13 @@ color:#444;
 
   #logged_in_links {
     @include respond-min( $main_menu-mobile_menu_cutoff ){
-      top: .875em;
-      right: 22em;
+      top: .9em;
+      right: 20.8em;
     }
 
     a, .greeting {
       @include respond-min( $main_menu-mobile_menu_cutoff ){
-        font-size: 14px;
+        font-size: 13.5px;
         font-weight: normal;
         padding: 0;
       }
@@ -173,6 +191,7 @@ color:#444;
   }
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    padding: 0 5px;
     display: block;
     position: absolute;
     z-index: 150;
@@ -217,8 +236,8 @@ color:#444;
   @include respond-min( $main_menu-mobile_menu_cutoff ){
     margin: 5px -1px 0 0;
     padding: 5px 0 5px 2em;
-    width: 20.25em;
-    height: 24px;
+    width: 22.8em;
+    height: 26px;
     font-size: 0.8em;
   }
 }
