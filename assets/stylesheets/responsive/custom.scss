@@ -370,6 +370,19 @@ color:#005068;
   }
 }
 
+#public_body_list {
+  ul {
+    margin: 1em 0;
+    padding-left: 40px;
+    line-height: 1.2;
+    list-style-type: disc;
+  }
+
+  li {
+    margin-bottom: 0;
+  }
+}
+
 // Buttons
 
 form input[type=submit],a.link_button_green,a.link_button_green_large {
