@@ -45,16 +45,14 @@ p.subtitle {
 color:#005068;
 }
 
-a, a:hover {
+a {
   color:#A60201;
-}
-
-a, .request_listing .requester a {
   text-decoration: none;
-}
 
-a:hover, .request_listing .requester a:hover {
-  text-decoration: underline;
+  &:hover {
+    color:#A60201;
+    text-decoration: underline;
+  }
 }
 
 .entirebody {
