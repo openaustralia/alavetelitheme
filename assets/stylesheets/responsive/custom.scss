@@ -31,8 +31,17 @@ color:#005068;
 font-weight:400;
 }
 
+dl {
+  line-height: 160%;
+}
+
 dt {
+  margin: 36px 0 18px;
   font-size: 1.8em;
+}
+
+dd {
+  margin-left: 0;
 }
 
 p {
