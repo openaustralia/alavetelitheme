@@ -290,11 +290,6 @@ font-family: $body-font-family;
 font-weight:400;
 }
 
-.request_listing span.desc {
-background: image-url('quote-marks.png') no-repeat;
-color:#444;
-}
-
 span#to_public_body {
 font-family: $body-font-family;
 }
@@ -348,6 +343,11 @@ color:#005068;
 }
 
 .request_listing {
+  span.desc {
+    background: image-url('quote-marks.png') no-repeat;
+    color:#444;
+  }
+
   span.bottomline {
     font-style: normal;
     margin-bottom: 0;
