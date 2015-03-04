@@ -286,12 +286,6 @@ float: none;
   padding-top: 2em;
 }
 
-.request_listing span.head a,.user_listing span.head a,.body_listing span.head a {
-color:#A60201;
-font-family: $body-font-family;
-font-weight:400;
-}
-
 span#to_public_body {
 font-family: $body-font-family;
 }
@@ -333,6 +327,12 @@ color:#005068;
   padding: 12px 0 6px;
   font-size: 0.9em;
   line-height: normal;
+
+  span.head a {
+    color:#A60201;
+    font-family: $body-font-family;
+    font-weight:400;
+  }
 }
 
 .body_listing, .user_listing {
