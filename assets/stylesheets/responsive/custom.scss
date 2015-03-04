@@ -11,6 +11,52 @@ font-family: $body-font-family;
 background-color: #f0f0f0;
 }
 
+h1,h2,h3 {
+font-family: $heading-font-family;
+ color:#005068;
+}
+
+h1 {
+color:#005068;
+font-size:42px;
+}
+
+h2 {
+font-size:1.4em;
+}
+
+h2,dt {
+color:#005068;
+font-family: $heading-font-family;
+font-weight:400;
+}
+
+h3 {
+color:#005068;
+font-weight:400;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+p.subtitle {
+color:#005068;
+}
+
+a, a:hover {
+  color:#A60201;
+}
+
+a, .request_listing .requester a {
+  text-decoration: none;
+}
+
+a:hover, .request_listing .requester a:hover {
+  text-decoration: underline;
+}
+
 .entirebody {
   background-color: white;
 }
@@ -240,53 +286,6 @@ float: none;
 
 #content {
   padding-top: 2em;
-}
-
-h1,h2,h3 {
-font-family: $heading-font-family;
- color:#005068;
-}
-
-h1 {
-color:#005068;
-font-size:42px;
-}
-
-h2 {
-font-size:1.4em;
-}
-
-
-h2,dt {
-color:#005068;
-font-family: $heading-font-family;
-font-weight:400;
-}
-
-h3 {
-color:#005068;
-font-weight:400;
-}
-
-a, a:hover {
-  color:#A60201;
-}
-
-a, .request_listing .requester a {
-  text-decoration: none;
-}
-
-a:hover, .request_listing .requester a:hover {
-  text-decoration: underline;
-}
-
-p {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-p.subtitle {
-color:#005068;
 }
 
 .request_listing span.head a,.user_listing span.head a,.body_listing span.head a {
