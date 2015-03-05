@@ -676,76 +676,77 @@ padding-top:1em;
 // Front Page
 
 #frontpage_splash {
-background: none;
-}
+  background: none;
 
-#frontpage_splash h1 {
-font-family: $heading-font-family;
-font-size:39px;
-color:#005068;
-font-weight:400;
-margin:0 0 20px;
-}
+  h1 {
+    font-family: $heading-font-family;
+    font-size:39px;
+    color:#005068;
+    font-weight:400;
+    margin:0 0 20px;
 
-#frontpage_splash h1 strong {
-font-family: $heading-font-family;
-font-size:54px;
-line-height: 1em;
-color:#005068;
-font-weight:400;
-}
+    strong {
+      font-family: $heading-font-family;
+      font-size:54px;
+      line-height: 1em;
+      color:#005068;
+      font-weight:400;
+    }
 
-#frontpage_splash h1 span {
-font-family: $heading-font-family;
-font-style:inherit;
-font-size:39px;
-color:#005068;
-}
+    span {
+      font-family: $heading-font-family;
+      font-style:inherit;
+      font-size:39px;
+      color:#005068;
+    }
+  }
 
-#frontpage_splash h2 {
-font-size:26px;
-font-weight:400;
-color:#005068;
-font-family: $heading-font-family;
-}
+  h2 {
+    font-size:26px;
+    font-weight:400;
+    color:#005068;
+    font-family: $heading-font-family;
 
-#frontpage_splash h2 strong {
-font-size:31px;
-color:#005068;
-font-family: $heading-font-family;
-}
+    strong {
+      font-size:31px;
+      color:#005068;
+      font-family: $heading-font-family;
+    }
 
-#frontpage_splash h2 span {
-color:#005068;
-font-style:inherit;
-font-size:19px;
-font-family: $heading-font-family;
-}
+    span {
+      color:#005068;
+      font-style:inherit;
+      font-size:19px;
+      font-family: $heading-font-family;
+    }
+  }
 
-#frontpage_splash #frontpage_right_to_know {
-  margin-top: 80px;
-  width: 221px;
-  float: left;
+  #frontpage_right_to_know {
+    margin-top: 80px;
+    width: 221px;
+    float: left;
+  }
+
+  #frontpage_start_request {
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    width: 291px;
+    float: left;
+  }
+
+  #frontpage_search_box {
+    margin-top: 80px;
+    width: 221px;
+    float: left;
+    margin-bottom: 0px;
+  }
 }
 
 #frontpage_right_to_know h2, #frontpage_search_box h2 {
   margin-top: 0px;
 }
 
-#frontpage_splash #frontpage_start_request {
-  margin-top: 50px;
-  margin-left: 70px;
-  margin-right: 70px;
-  width: 291px;
-  float: left;
-}
-
-#frontpage_splash #frontpage_search_box {
-  margin-top: 80px;
-  width: 221px;
-  float: left;
-  margin-bottom: 0px;
-}
 
 // Front Page Supporting Orgs section
 
