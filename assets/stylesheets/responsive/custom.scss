@@ -697,10 +697,35 @@ input::-moz-focus-inner
 
 #date_range label.title,#filter_requests_form label.title,h3.title {
 width:120px;
+padding-right: 0;
+}
+
+.list-filter-item {
+  h3.title {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: 2px;
+    }
+  }
+
+  input {
+    margin-bottom: 0.7em;
+    height: auto;
+  }
+}
+
+#filter_requests_form .list-filter-item, #search_form .list-filter-item, #filter_form .list-filter-item {
+  margin-bottom: 0;
 }
 
 .filter-request-types {
-  width: 445px;
+  margin-bottom: 1em;
+
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    width: 405px;
+    vertical-align: top;
+  }
 }
 
 div.pagination {
