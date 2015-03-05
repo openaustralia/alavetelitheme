@@ -592,6 +592,10 @@ font-family: $heading-font-family;
 
 // Date Picker
 
+#ui-datepicker-div {
+  box-sizing: normal;
+}
+
 #ui-datepicker-div.ui-widget {
 font-family: $body-font-family;
 color:#005068;
