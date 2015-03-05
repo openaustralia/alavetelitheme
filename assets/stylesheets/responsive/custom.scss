@@ -600,32 +600,6 @@ font-family: $heading-font-family;
   margin-bottom: 0px;
 }
 
-// Date Picker
-
-#ui-datepicker-div {
-  box-sizing: normal;
-}
-
-#ui-datepicker-div.ui-widget {
-font-family: $body-font-family;
-color:#005068;
-}
-
-#ui-datepicker-div .ui-datepicker-header,#ui-datepicker-div .ui-widget-header {
-color:#005068;
-font-family:'Maven Pro';
-}
-
-#ui-datepicker-div .ui-state-default:hover {
-background: $righttoknow-primary-color;
-color:#FFF;
-}
-
-#ui-datepicker-div .ui-state-active {
-background:#005068;
-color:#FFF;
-}
-
 // Special components
 
 p.public-body-name-prefix {
@@ -741,6 +715,33 @@ padding-right: 0;
     vertical-align: top;
   }
 }
+
+// Date Picker
+
+#ui-datepicker-div {
+  box-sizing: normal;
+}
+
+#ui-datepicker-div.ui-widget {
+font-family: $body-font-family;
+color:#005068;
+}
+
+#ui-datepicker-div .ui-datepicker-header,#ui-datepicker-div .ui-widget-header {
+color:#005068;
+font-family:'Maven Pro';
+}
+
+#ui-datepicker-div .ui-state-default:hover {
+background: $righttoknow-primary-color;
+color:#FFF;
+}
+
+#ui-datepicker-div .ui-state-active {
+background:#005068;
+color:#FFF;
+}
+
 
 div.pagination {
 padding-top:1em;
