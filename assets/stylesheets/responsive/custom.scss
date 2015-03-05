@@ -359,8 +359,11 @@ color:#005068;
   margin-bottom: -1px;
   border-bottom: 1px solid #DDD;
   padding: 12px 0 6px;
-  font-size: 0.9em;
   line-height: normal;
+
+  @include respond-min( $main_menu-mobile_menu_cutoff ){
+    font-size: 0.9em;
+  }
 
   span.head a {
     font-size: 1.25em;
