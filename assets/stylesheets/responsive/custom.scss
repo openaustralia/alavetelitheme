@@ -247,6 +247,7 @@ color:#444;
 #footer {
   border-top: 1px #ddd solid;
   background-color: #f0f0f0;
+  font-size: 1em;
   text-align: left;
 
   img {
@@ -291,6 +292,12 @@ float: none;
 
   @include lte-ie7 {
     width: 56.125em;
+  }
+
+  > div {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      font-size: .85em;
+    }
   }
 }
 
