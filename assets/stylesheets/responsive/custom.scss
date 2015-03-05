@@ -159,9 +159,12 @@ color:#444;
 }
 
   #logged_in_links {
+    font-weight: bold;
+
     @include respond-min( $main_menu-mobile_menu_cutoff ){
       top: .9em;
       right: 20.8em;
+      font-weight: normal;
     }
 
     a, .greeting {
