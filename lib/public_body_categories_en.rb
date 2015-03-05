@@ -30,8 +30,8 @@ PublicBodyCategories.add(:en,
         [ "federal", "All Federal authorities", "a Federal authority"],
 
     ## Commented out until we add these to the site
-    # "State and Territory",
-    #     [ "ACT_state","ACT","an ACT authority" ],
+     "State and Territory",
+         [ "ACT_state","ACT","an ACT authority" ],
     #     [ "NSW_state","New South Wales","a NSW authority" ],
     #     [ "NT_state","Northern Territory","a Northern Territory authority" ],
     #     [ "QLD_state","Queensland","a Queensland authority" ],
