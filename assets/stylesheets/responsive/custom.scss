@@ -683,17 +683,25 @@ padding-top:1em;
 
   h1 {
     font-family: $heading-font-family;
-    font-size:39px;
     color:#005068;
     font-weight:400;
+    font-size: 2em;
     margin:0 0 20px;
+
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      font-size:39px;
+    }
 
     strong {
       font-family: $heading-font-family;
-      font-size:54px;
+      font-size: 1.5em;
       line-height: 1em;
       color:#005068;
       font-weight:400;
+
+      @include respond-min( $main_menu-mobile_menu_cutoff ) {
+        font-size:54px;
+      }
     }
 
     span {
@@ -728,9 +736,10 @@ padding-top:1em;
 #frontpage_right_to_know {
   @include grid-column($columns:12);
 
-  // @include respond-min( 30em ) {
+  @include respond-min( 30em ) {
+        margin-bottom: 3em;
   //   @include grid-column($columns:6);
-  // }
+  }
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     margin-top: 80px;
