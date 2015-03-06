@@ -389,9 +389,10 @@ color:#005068;
 }
 
 .request_listing, .body_listing, .user_listing {
+  margin-top: 0;
   margin-bottom: -1px;
   border-bottom: 1px solid #DDD;
-  padding: 12px 0 6px;
+  padding: 15px 0 6px;
   line-height: normal;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ){
