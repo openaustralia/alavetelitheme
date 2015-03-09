@@ -818,6 +818,14 @@ padding-right: 0;
   font-style: italic;
 }
 
+#request_search_ahead_results {
+  margin-left: 11em;
+
+  h3:first-child {
+    margin-top: 0;
+  }
+}
+
 .form_item_note, .form_note {
   font-size: 1em;
 }
