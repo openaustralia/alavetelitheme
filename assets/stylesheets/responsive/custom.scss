@@ -382,12 +382,6 @@ color:#005068;
   font-size: 1.1em;
 }
 
-#request_form textarea {
-  font-family: $body-font-family;
-  font-size: 15px;
-  width: 33em;
-}
-
 .request_listing, .body_listing, .user_listing {
   margin-top: 0;
   margin-bottom: -1px;
@@ -717,6 +711,59 @@ padding-right: 0;
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     width: 405px;
     vertical-align: top;
+  }
+}
+
+#request_new {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    @include clearfix;
+  }
+
+  label {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      display: block;
+      float: left;
+      clear: none;
+      width: 110px;
+      text-align: left;
+      margin: 2px 0 0;
+      padding: 0 10px 0 0;
+    }
+  }
+
+  .form_item_note,
+  #request_header_text,
+  #request_form .form_note {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      width: 34em;
+      margin-left: 110px;
+    }
+  }
+
+  #request_advice {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      @include grid-column($columns:3, $float:right);
+      position: static;
+    }
+  }
+
+  #request_form {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      @include grid-column($columns:9, $float:left);
+      position: static;
+    }
+
+    .form_button {
+      @include respond-min( $main_menu-mobile_menu_cutoff ) {
+        margin: 0 0 0 9em;
+      }
+    }
+  }
+
+  #outgoing_message_body {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      width: 34em;
+    }
   }
 }
 
