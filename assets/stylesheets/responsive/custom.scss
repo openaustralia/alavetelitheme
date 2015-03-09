@@ -732,6 +732,10 @@ padding-right: 0;
     @include clearfix;
   }
 
+  span#to_public_body {
+    margin-bottom: 0;
+  }
+
   label {
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
       display: block;
@@ -776,6 +780,12 @@ padding-right: 0;
   #outgoing_message_body {
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
       width: 34em;
+    }
+  }
+
+  input {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      margin-bottom: 0;
     }
   }
 }
