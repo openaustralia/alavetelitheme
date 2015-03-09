@@ -640,6 +640,14 @@ div.correspondence p.preview_subject {
   line-height: 25px;
 }
 
+#notice {
+  padding: 0 1em;
+  font-size: 1.4em;
+  background: #E9FDD3;
+  color: #517704;
+  border: #B0CA86 1px solid;
+}
+
 // Forms
 
 form#signin_form input[type=text], form#signin_form input[type=password], form#signup_form input[type=text], form#signup_form input[type=password] {
