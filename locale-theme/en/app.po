@@ -22,7 +22,7 @@ msgid "<strong><code>requested_from:home_office</code></strong> to search reques
 msgstr "<strong><code>requested_from:abc</code></strong> to search requests from the Australian Broadcasting Corporation, typing the name as in the URL."
 
 msgid "First, type in the <strong>name of the UK public authority</strong> you'd\\n           like information from. <strong>By law, they have to respond</strong>\\n           (<a href=\"{{url}}\">why?</a>)."
-msgstr "First, type in the <strong>name of the Australian public authority</strong> you'd\\n           like information from. <strong>By law, they have to respond</strong>\\n           (<a href=\"{{url}}\">why?</a>)."
+msgstr "First, type in the <strong>name of the Australian Federal Government or ACT Government authority</strong> you'd\\n           like information from. <strong>By law, they have to respond</strong>\\n           (<a href=\"{{url}}\">why?</a>)."
 
 msgid "Ask for <strong>specific</strong> documents or information, this site is not suitable for general enquiries."
 msgstr "Ask for <strong>specific documents</strong>, this site is not suitable for general enquiries (<a href="/help/requesting#documents">why?</a>)."
