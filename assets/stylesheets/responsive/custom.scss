@@ -808,10 +808,18 @@ padding-right: 0;
   background-color: #FFFFE0;
 }
 
+#request_header_text, #request_search_ahead_results {
+  font-size: 0.9em;
+}
+
 #request_header_text {
   background-color: #D5FFD8;
   border: #1EFF38 solid 1px;
   font-style: italic;
+}
+
+.form_item_note, .form_note {
+  font-size: 1em;
 }
 
 // Date Picker
