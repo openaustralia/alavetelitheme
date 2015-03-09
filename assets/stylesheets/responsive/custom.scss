@@ -818,6 +818,15 @@ padding-right: 0;
   font-style: italic;
 }
 
+#request_new #request_header_text,
+#request_new #request_header_subject input {
+  width: 100%;
+
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    width: 409px;
+  }
+}
+
 #request_search_ahead_results {
   margin-left: 11em;
 
