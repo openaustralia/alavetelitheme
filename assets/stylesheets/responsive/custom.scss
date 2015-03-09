@@ -634,6 +634,12 @@ color: #a60201;
   }
 }
 
+div.correspondence p.preview_subject {
+  font-size: 1.2em;
+  margin-left: 10px;
+  line-height: 25px;
+}
+
 // Forms
 
 form#signin_form input[type=text], form#signin_form input[type=password], form#signup_form input[type=text], form#signup_form input[type=password] {
