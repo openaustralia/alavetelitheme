@@ -100,5 +100,32 @@ Rails.configuration.to_prepare do
                 raise "Unknown law used '#{australian_law_used}'"
             end
         end
+
+        def date_response_required_by
+            reply_late_after_days =
+                case
+                when public_body.has_tag?('NSW_state') || public_body.has_tag?('TAS_state')
+                    20
+                when public_body.has_tag?('QLD_state')
+                    25
+                when public_body.has_tag?('federal') || public_body.has_tag?('ACT_state') ||
+                     public_body.has_tag?('NT_state') || public_body.has_tag?('SA_state')
+                    30
+                when public_body.has_tag?('VIC_state') || public_body.has_tag?('WA_state')
+                    45
+                else
+                    AlaveteliConfiguration::reply_late_after_days
+                end
+
+            working_or_calendar_days =
+                case
+                when public_body.has_tag?('NSW_state') || public_body.has_tag?('TAS_state') || public_body.has_tag?('QLD_state')
+                  'working'
+                else
+                  'calendar'
+                end
+
+            Holiday.due_date_from(date_initial_request_last_sent_at, reply_late_after_days, working_or_calendar_days)
+        end
     end
 end
