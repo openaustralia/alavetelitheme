@@ -854,6 +854,7 @@ padding-right: 0;
 #sign_together {
   h1 {
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      margin-bottom: 1em;
       margin-left: 2.4em;
     }
   }
@@ -919,6 +920,20 @@ label.form_label {
 #sign_together .form_button {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     margin-left: 10.5em;
+  }
+}
+
+#sign_together {
+  input {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      margin-top: 0;
+    }
   }
 }
 
