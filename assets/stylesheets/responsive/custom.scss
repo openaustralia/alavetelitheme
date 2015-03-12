@@ -666,6 +666,14 @@ div.correspondence p.preview_subject {
   border: #B0CA86 1px solid;
 }
 
+.request_icon_line {
+  background-repeat: no-repeat;
+  background-position: left center;
+  min-height: 24px;
+  clear: left;
+  padding: 8px 0 10px 42px;
+}
+
 // Forms
 
 form input[type=text], form input[type=password] {
