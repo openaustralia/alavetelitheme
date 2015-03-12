@@ -455,6 +455,10 @@ color:#005068;
   }
 }
 
+.feed_link {
+  padding: 4px 0;
+}
+
 // Buttons
 
 a.link_button_green:hover,a.link_button_green_large:hover {
@@ -468,6 +472,7 @@ background-image: image-url('button-gradient.png');
 
 form input[type=submit],a.link_button_green, a.link_button_green_large {
   padding: 5px 6px;
+  display: inline-block;
   color: #fff;
   font-size: 18px;
   font-family: $body-font-family;
