@@ -886,6 +886,32 @@ p#sign_in_reason, p#superuser_message {
   line-height: 1em;
 }
 
+label.form_label {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    display: block;
+    float: left;
+    clear: none;
+    width: 110px;
+    text-align: left;
+    margin: 2px 0 0;
+    padding: 0 10px 0 0;
+  }
+}
+
+#signup .form_item_note, #signin .form_note {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    font-size: 0.9em;
+    margin-left: 11.5em;
+    width: inherit;
+  }
+}
+
+#sign_together .form_button {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    margin-left: 10.5em;
+  }
+}
+
 // Date Picker
 
 #ui-datepicker-div {
