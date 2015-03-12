@@ -107,6 +107,12 @@ box-shadow: 0 0 10px;
   }
 }
 
+#banner_content {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    height: 97px;
+  }
+}
+
 a#logo {
   width: 53.66667%;
   padding: .5em 1em;
