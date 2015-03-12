@@ -856,7 +856,6 @@ padding-right: 0;
     float: left;
     width: 8%;
     height: 100px;
-    margin-top: 45px;
   }
 }
 
@@ -882,6 +881,7 @@ padding-right: 0;
 }
 
 p#sign_in_reason, p#superuser_message {
+  margin-top: 2em;
   text-align: center;
   font-size: 1.4em;
   font-weight: 700;
@@ -911,8 +911,7 @@ label.form_label {
 #sign_together {
   h1 {
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin-bottom: 1em;
-      margin-left: 2.4em;
+      margin: .25em 0 1em 2.4em;
     }
   }
 
@@ -922,7 +921,7 @@ label.form_label {
     }
   }
 
-  p {
+  form p {
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
       margin-top: 0;
     }
