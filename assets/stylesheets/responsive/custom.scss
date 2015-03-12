@@ -656,6 +656,12 @@ div.correspondence p.preview_subject {
 
 // Forms
 
+form input[type=text], form input[type=password] {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    height: 30px;
+  }
+}
+
 form#signin_form input[type=text], form#signin_form input[type=password], form#signup_form input[type=text], form#signup_form input[type=password] {
 width:270px;
 }
