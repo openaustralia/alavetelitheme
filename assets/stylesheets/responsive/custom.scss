@@ -841,6 +841,44 @@ padding-right: 0;
   font-size: 1em;
 }
 
+#sign_together {
+  h1 {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      margin-left: 2.4em;
+    }
+  }
+}
+
+#middle_strip {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    float: left;
+    width: 8%;
+    height: 100px;
+    margin-top: 45px;
+  }
+}
+
+#left_half,
+#right_half {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    width: 46%;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+#left_half {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    float: left;
+  }
+}
+
+#right_half {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    float: right;
+  }
+}
+
 p#sign_in_reason, p#superuser_message {
   text-align: center;
   font-size: 1.4em;
