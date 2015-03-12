@@ -357,6 +357,13 @@ float: none;
   }
 }
 
+#header_right {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    width: 255px;
+    padding-top: 3em;
+  }
+}
+
 #middle_strip {
 color:#005068;
 font-family: georgia;
