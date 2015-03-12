@@ -42,6 +42,15 @@ Rails.configuration.to_prepare do
                 AlaveteliConfiguration::reply_late_after_days
             end
         end
+
+        def working_or_calendar_days
+            case jurisdiction
+            when :nsw, :tas, :qld
+              'working'
+            else
+              'calendar'
+            end
+        end
     end
 
     InfoRequest.class_eval do
@@ -117,15 +126,7 @@ Rails.configuration.to_prepare do
         end
 
         def date_response_required_by
-            working_or_calendar_days =
-                case
-                when public_body.has_tag?('NSW_state') || public_body.has_tag?('TAS_state') || public_body.has_tag?('QLD_state')
-                  'working'
-                else
-                  'calendar'
-                end
-
-            Holiday.due_date_from(date_initial_request_last_sent_at, public_body.reply_late_after_days, working_or_calendar_days)
+            Holiday.due_date_from(date_initial_request_last_sent_at, public_body.reply_late_after_days, public_body.working_or_calendar_days)
         end
     end
 end
