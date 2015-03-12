@@ -841,6 +841,13 @@ padding-right: 0;
   font-size: 1em;
 }
 
+p#sign_in_reason, p#superuser_message {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 1em;
+}
+
 // Date Picker
 
 #ui-datepicker-div {
