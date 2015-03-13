@@ -128,11 +128,13 @@ box-shadow: 0 0 10px;
 
 a#logo {
   width: 53.66667%;
+  max-width: 228px;
   padding: .5em 1em;
   display: inline-block;
   float: left;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    max-width: none;
     padding: 0;
     width: auto;
     position: relative;
