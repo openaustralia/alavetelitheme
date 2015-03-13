@@ -352,6 +352,7 @@ float: none;
 
 #right_column {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    margin-top: 35px;
     width: 210px;
     box-sizing: content-box;
   }
@@ -359,6 +360,7 @@ float: none;
 
 #right_column_flip {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    margin-top: 38px;
     width: 225px;
     box-sizing: content-box;
   }
@@ -373,6 +375,7 @@ float: none;
 
 #left_column_flip {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    margin-top: 10px;
     width: 615px;
     box-sizing: content-box;
   }
