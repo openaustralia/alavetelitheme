@@ -1071,12 +1071,12 @@ padding-top:1em;
 
   @include respond-min( 30em ) {
         margin-bottom: 3em;
-  //   @include grid-column($columns:6);
   }
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     margin-top: 80px;
-    @include grid-column($columns:4, $float:left);
+    padding-right: 0;
+    width: 236px;
   }
 }
 
@@ -1089,11 +1089,10 @@ padding-top:1em;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     margin-top: 50px;
-    // margin-left: 70px;
-    // margin-right: 70px;
-    // width: 291px;
-    // float: left;
-    @include grid-column($columns:4.5, $float:left);
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 0;
+    width: 291px;
   }
 }
 
@@ -1106,14 +1105,14 @@ padding-top:1em;
   }
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    // width: 221px;
-    // float: left;
     margin-top: 70px;
     margin-bottom: 0px;
-    @include grid-column($columns:3.5, $float:left);
+    padding: 0;
+    width: 221px;
 
     input[type="text"] {
       margin-bottom: 0;
+      width: 210px;
     }
   }
 }
