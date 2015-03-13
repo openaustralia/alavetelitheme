@@ -177,7 +177,7 @@ color:#444;
     font-weight: bold;
 
     @include respond-min( $main_menu-mobile_menu_cutoff ){
-      top: .9em;
+      top: 1.05em;
       right: 20.8em;
       font-weight: normal;
     }
