@@ -100,6 +100,7 @@ box-shadow: 0 0 10px;
 #banner_inner {
   max-width:$row-width;
   margin: auto;
+  min-height: 69px;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     @include clearfix;
