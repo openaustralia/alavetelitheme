@@ -1013,6 +1013,7 @@ padding-top:1em;
 
 #frontpage_splash {
   background: none;
+  padding-top: 7px;
 
   h1 {
     font-family: $heading-font-family;
@@ -1088,7 +1089,7 @@ padding-top:1em;
   }
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-top: 50px;
+    margin-top: 49px;
     margin-left: 70px;
     margin-right: 70px;
     padding: 0;
@@ -1105,7 +1106,7 @@ padding-top:1em;
   }
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-top: 70px;
+    margin-top: 80px;
     margin-bottom: 0px;
     padding: 0;
     width: 221px;
