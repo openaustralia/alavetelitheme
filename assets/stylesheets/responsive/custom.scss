@@ -37,6 +37,11 @@ font-weight:400;
 h3 {
 color:#005068;
 font-weight:400;
+
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    margin-top: 3px;
+    margin-bottom: 10px;
+  }
 }
 
 dl {
