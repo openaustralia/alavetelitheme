@@ -964,6 +964,8 @@ padding-right: 0;
   background-color: #FFFFE0;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    width: auto;
+    margin-right: .7em;
     margin-left: 1em;
   }
 
