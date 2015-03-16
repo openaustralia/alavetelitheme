@@ -932,6 +932,14 @@ padding-right: 0;
       @include grid-column($columns:3, $float:right);
       position: static;
     }
+
+    ul {
+      margin-top: 1em;
+
+      @include respond-min( $main_menu-mobile_menu_cutoff ) {
+        padding: 0;
+      }
+    }
   }
 
   #request_form {
