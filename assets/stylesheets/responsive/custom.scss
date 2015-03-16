@@ -929,7 +929,7 @@ padding-right: 0;
 
   #request_advice {
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      @include grid-column($columns:3, $float:right);
+      @include grid-column($columns:3.2, $float:right);
       position: static;
     }
 
@@ -944,7 +944,7 @@ padding-right: 0;
 
   #request_form {
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      @include grid-column($columns:9, $float:left);
+      @include grid-column($columns:8.6, $float:left);
       position: static;
     }
 
@@ -957,7 +957,7 @@ padding-right: 0;
 
   #outgoing_message_body {
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      width: 34em;
+      width: 33.3em;
     }
   }
 
@@ -1002,7 +1002,7 @@ padding-right: 0;
   width: 100%;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    width: 409px;
+    width: 420px;
   }
 }
 
