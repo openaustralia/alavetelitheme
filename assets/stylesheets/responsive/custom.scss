@@ -719,14 +719,33 @@ div.correspondence p.preview_subject {
     margin: 20px 0;
   }
 
+  div {
+    margin: 0 0 1em;
+
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      margin: 0;
+    }
+  }
+
   input[type="radio"] {
+    margin: 0;
+    height: 1.6em;
+    float: left;
+    clear: left;
+
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
       margin: 3px;
+      float: none;
+      height: auto;
     }
 
     + label {
+      width: 85%;
+      margin-left: .75em;
+
       @include respond-min( $main_menu-mobile_menu_cutoff ) {
         margin: 0;
+        width: auto;
         font-size: 1em;
         line-height: normal;
       }
