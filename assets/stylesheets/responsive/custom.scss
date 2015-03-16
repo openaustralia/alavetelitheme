@@ -996,6 +996,7 @@ padding-right: 0;
 
 #middle_strip {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    margin-top: -.5em;
     float: left;
     width: 8%;
     height: 100px;
@@ -1084,6 +1085,12 @@ label.form_label {
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
       margin-left: 10.5em;
     }
+  }
+}
+
+#signup, #signin {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    margin-top: 47px;
   }
 }
 
