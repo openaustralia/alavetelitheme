@@ -663,7 +663,7 @@ color: #a60201;
 #authority_selection {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     float: left;
-    width: 40%;
+    width: 350px;
   }
 }
 
