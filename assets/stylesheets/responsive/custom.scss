@@ -713,6 +713,20 @@ div.correspondence p.preview_subject {
     border-color: #b0ca86;
     margin: 20px 0;
   }
+
+  input[type="radio"] {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      margin: 3px;
+    }
+
+    + label {
+      @include respond-min( $main_menu-mobile_menu_cutoff ) {
+        margin: 0;
+        font-size: 1em;
+        line-height: normal;
+      }
+    }
+  }
 }
 
 #describe_state_form_1 {
