@@ -1009,20 +1009,22 @@ padding-right: 0;
 #right_half {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     width: 46%;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
   }
 }
 
 #left_half {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     float: left;
+    padding-left: 0.9375rem;
+    padding-right: 0;
   }
 }
 
 #right_half {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     float: right;
+    padding-right: .7em;
+    padding-left: .7em;
   }
 }
 
