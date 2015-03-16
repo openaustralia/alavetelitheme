@@ -961,6 +961,18 @@ padding-right: 0;
 
 #request_header {
   background-color: #FFFFE0;
+
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    margin-left: 1em;
+  }
+
+  #request_header_body,
+  #request_header_subject {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
 }
 
 #request_header_text, #request_search_ahead_results {
