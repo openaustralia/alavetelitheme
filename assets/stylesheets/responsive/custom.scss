@@ -1158,6 +1158,10 @@ padding-top:1em;
   background: none;
   padding-top: 7px;
 
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    min-height: 401px;
+  }
+
   h1 {
     font-family: $heading-font-family;
     color:#005068;
