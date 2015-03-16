@@ -336,6 +336,13 @@ float: none;
     width: 56.125em;
   }
 
+  // TODO: remove this to set footer inline with
+  //       site margin
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    padding-right: .3em;
+    padding-left: .3em;
+  }
+
   > div {
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
       font-size: .85em;
