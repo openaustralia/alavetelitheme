@@ -1054,7 +1054,15 @@ label.form_label {
 #sign_together {
   h1 {
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin: .25em 0 1em 2.4em;
+      margin: .25em 0 1em 2.375em;
+    }
+  }
+
+  #right_half {
+    h1 {
+      @include respond-min( $main_menu-mobile_menu_cutoff ) {
+        margin: .25em 0 1em 2.125em;
+      }
     }
   }
 
