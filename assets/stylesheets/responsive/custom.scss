@@ -535,6 +535,11 @@ form input[type=submit],a.link_button_green, a.link_button_green_large {
   }
 }
 
+form input[type=submit] {
+  padding-top: 3px;
+  padding-bottom: 4px;
+}
+
 a.link_button_green_large {
 // background-image: image-url('button-gradient-large.png');
 display: inline-block;
