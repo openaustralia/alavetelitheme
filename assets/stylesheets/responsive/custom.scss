@@ -695,6 +695,13 @@ div.correspondence p.preview_subject {
   background: #E9FDD3;
   color: #333;
   border-radius: 6px;
+
+  hr {
+    border-width: 0 0 1px;
+    border-style: dotted;
+    border-color: #b0ca86;
+    margin: 20px 0;
+  }
 }
 
 #describe_state_form_1 {
