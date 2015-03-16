@@ -311,11 +311,15 @@ color:#444;
   }
 
   .footer_right {
-    margin-top: 22px;
+    margin-top: 15px;
 
     @include respond-min(51em) {
       float: right;
       text-align: left;
+    }
+
+    ul {
+      margin-top: 0;
     }
   }
 }
