@@ -76,6 +76,12 @@ a {
   }
 }
 
+small {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    font-size: smaller;
+  }
+}
+
 .entirebody {
   background-color: white;
 }
