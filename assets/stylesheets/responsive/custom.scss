@@ -1025,6 +1025,15 @@ padding-right: 0;
   font-size: 1em;
 }
 
+.form_item_note {
+  margin-top: -1em;
+
+  p + & {
+    top: 0;
+    position: static;
+  }
+}
+
 #middle_strip {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     margin-top: -.5em;
