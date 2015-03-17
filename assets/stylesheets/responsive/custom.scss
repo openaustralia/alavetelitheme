@@ -1273,6 +1273,44 @@ padding-top:1em;
     font-size: 28px;
 }
 
+#frontpage_examples {
+  ul {
+    padding-bottom: 1em;
+  }
+
+  #examples_0 {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      padding-right: .5em;
+    }
+  }
+
+  #examples_1 {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      padding-right: .5em;
+      padding-left: .75em;
+    }
+
+    ul li {
+      @include respond-min( $main_menu-mobile_menu_cutoff ) {
+        padding: 5px 0;
+      }
+    }
+
+    li:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .excerpt {
+    cursor: pointer;
+    background: url('/assets/quote-marks.png') no-repeat scroll 0% 0% transparent;
+    color: #444;
+    line-height: 18px;
+    min-height: 30px;
+    padding: 0px 0px 0px 40px;
+  }
+}
+
 // Front Page Supporting Orgs section
 
 #frontpage_supporting {
