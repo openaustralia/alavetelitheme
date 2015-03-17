@@ -1128,6 +1128,22 @@ label.form_label {
   }
 }
 
+.new_public_body_change_request {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    margin-top: -1px;
+  }
+
+  input[type="text"] {
+    margin-bottom: 0;
+  }
+
+  .form_button {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      margin-left: 135px;
+    }
+  }
+}
+
 // Date Picker
 
 #ui-datepicker-div {
