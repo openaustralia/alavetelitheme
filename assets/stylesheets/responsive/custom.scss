@@ -15,6 +15,10 @@ background-color: #f0f0f0;
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+}
+
 h1,h2,h3,dt {
   font-family: $heading-font-family;
   color:#005068;
