@@ -1028,6 +1028,11 @@ padding-right: 0;
 .form_item_note {
   margin-top: -1em;
 
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    margin-left: 110px;
+    width: 510px;
+  }
+
   p + & {
     top: 0;
     position: static;
