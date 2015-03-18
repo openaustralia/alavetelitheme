@@ -102,7 +102,7 @@ Rails.configuration.to_prepare do
         # QLD
           elsif self.public_body.qldstate?
             return _("Right to Information")
-          elsif self.public_body.ntcouncil?
+          elsif self.public_body.qldcouncil?
             return _("Right to Information")
         # SA
           elsif self.public_body.sastate?
