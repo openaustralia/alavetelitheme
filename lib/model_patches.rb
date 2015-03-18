@@ -216,7 +216,7 @@ Rails.configuration.to_prepare do
         # QLD
           elsif self.public_body.qldstate?
             return _("A Right to Information request")
-          elsif self.public_body.ntcouncil?
+          elsif self.public_body.qldcouncil?
             return _("A Right to Information request")
         # TAS
           elsif self.public_body.tasstate?
