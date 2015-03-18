@@ -20,4 +20,13 @@ Rails.configuration.to_prepare do
           def nswcouncil?
             return self.has_tag?('NSW_council')
           end
+      # NT
+          #NT State
+          def ntstate?
+            return self.has_tag?('NT_state')
+          end
+          # NT Council
+          def ntcouncil?
+            return self.has_tag?('NT_council')
+          end
 end
