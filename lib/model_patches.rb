@@ -10,5 +10,14 @@ Rails.configuration.to_prepare do
       # ACT (only has state, no councils)
           def actstate?
             return self.has_tag?('ACT_state')
-          end  
+          end
+      # NSW
+          # NSW State
+          def nswstate?
+            return self.has_tag?('NSW_state')
+          end
+          # NSW Council
+          def nswcouncil?
+            return self.has_tag?('NSW_council')
+          end
 end
