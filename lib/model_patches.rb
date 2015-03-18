@@ -38,4 +38,14 @@ Rails.configuration.to_prepare do
           def qldcouncil?
             return self.has_tag?('QLD_council')
           end
+      #SA
+          # SA State
+          def sastate?
+            return self.has_tag?('SA_state')
+          end
+          # SA Council
+          def sacouncil?
+            return self.has_tag?('SA_council')
+          end
+
 end
