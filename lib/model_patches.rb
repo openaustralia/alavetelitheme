@@ -47,5 +47,13 @@ Rails.configuration.to_prepare do
           def sacouncil?
             return self.has_tag?('SA_council')
           end
-
+      #TAS
+          # TAS State
+          def tasstate?
+            return self.has_tag?('TAS_state')
+          end
+          # TAS Council
+          def tascouncil?
+            return self.has_tag?('TAS_council')
+          end
 end
