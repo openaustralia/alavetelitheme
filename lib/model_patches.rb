@@ -142,9 +142,9 @@ Rails.configuration.to_prepare do
               return _("Government Information (Public Access) Act 2009 (NSW)")
         # NT
           elsif self.public_body.ntstate?
-              return _("Information Act ")
+              return _("Information Act (NT)")
           elsif self.public_body.ntcouncil?
-              return _("Information Act")
+              return _("Information Act (NT)")
         # Fallback
           elsif self.law_used == 'foi'
               return _("Freedom of Information Act")
