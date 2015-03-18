@@ -86,7 +86,9 @@ Rails.configuration.to_prepare do
     InfoRequest.class_eval do
       # Two sorts of laws for requests, FOI or EIR
       def law_used_full
-          if self.law_used == 'foi'
+          if self.public_body.actstate?
+            return _("Freedom of Information")
+          elsif self.law_used == 'foi'
               return _("Freedom of Information")
           elsif self.law_used == 'eir'
               return _("Environmental Information Regulations")
@@ -95,7 +97,9 @@ Rails.configuration.to_prepare do
           end
       end
       def law_used_short
-          if self.law_used == 'foi'
+          if self.public_body.actstate?
+            return _("FOI")
+          elsif self.law_used == 'foi'
               return _("FOI")
           elsif self.law_used == 'eir'
               return _("EIR")
@@ -104,7 +108,9 @@ Rails.configuration.to_prepare do
           end
       end
       def law_used_act
-          if self.law_used == 'foi'
+          if self.public_body.actstate?
+            return _("Freedom of Information Act 1989 (ACT)")
+          elsif self.law_used == 'foi'
               return _("Freedom of Information Act")
           elsif self.law_used == 'eir'
               return _("Environmental Information Regulations")
@@ -113,7 +119,9 @@ Rails.configuration.to_prepare do
           end
       end
       def law_used_with_a
-          if self.law_used == 'foi'
+          if self.public_body.actstate?
+            return _("A Freedom of Information request")
+          elsif self.law_used == 'foi'
               return _("A Freedom of Information request")
           elsif self.law_used == 'eir'
               return _("An Environmental Information Regulations request")
