@@ -140,6 +140,7 @@ Rails.configuration.to_prepare do
           end
       end
       def law_used_with_a
+        # ACT
           if self.public_body.actstate?
             return _("A Freedom of Information request")
         # NSW
@@ -147,7 +148,7 @@ Rails.configuration.to_prepare do
               return _("A Government Information (Public Access) request")
           elsif self.public_body.nswcouncil?
             return _("A Government Information (Public Access) request")
-
+        # Fallback
           elsif self.law_used == 'foi'
               return _("A Freedom of Information request")
           elsif self.law_used == 'eir'
