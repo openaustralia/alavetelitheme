@@ -278,3 +278,4 @@ Rails.configuration.to_prepare do
           end
       end
 end
+end
