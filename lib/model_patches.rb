@@ -119,6 +119,11 @@ Rails.configuration.to_prepare do
             return _("Freedom of Information")
           elsif self.public_body.viccouncil?
             return _("Freedom of Information")
+        # WA
+          elsif self.public_body.wastate?
+            return _("Freedom of Information")
+          elsif self.public_body.wacouncil?
+            return _("Freedom of Information")
         # Fallback
           elsif self.law_used == 'foi'
               return _("Freedom of Information")
@@ -161,6 +166,11 @@ Rails.configuration.to_prepare do
           elsif self.public_body.vicstate?
             return _("FOI")
           elsif self.public_body.viccouncil?
+            return _("FOI")
+        # WA
+          elsif self.public_body.wastate?
+            return _("FOI")
+          elsif self.public_body.wacouncil?
             return _("FOI")
         # Fallback
           elsif self.law_used == 'foi'
@@ -205,6 +215,11 @@ Rails.configuration.to_prepare do
               return _("Freedom of Information Act 1982 (VIC)")
           elsif self.public_body.viccouncil?
               return _("Freedom of Information Act 1982 (VIC)")
+        # WA
+          elsif self.public_body.wastate?
+              return _("Freedom of Information Act 1992 (WA)")
+          elsif self.public_body.wacouncil?
+              return _("Freedom of Information Act 1992 (WA)")
         # Fallback
           elsif self.law_used == 'foi'
               return _("Freedom of Information Act")
@@ -247,6 +262,11 @@ Rails.configuration.to_prepare do
           elsif self.public_body.vicstate?
             return _("A Freedom of Information request")
           elsif self.public_body.viccouncil?
+            return _("A Freedom of Information request")
+        # WA
+          elsif self.public_body.wastate?
+            return _("A Freedom of Information request")
+          elsif self.public_body.wacouncil?
             return _("A Freedom of Information request")
         # Fallback
           elsif self.law_used == 'foi'
