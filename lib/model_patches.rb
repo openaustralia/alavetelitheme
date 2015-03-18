@@ -109,6 +109,11 @@ Rails.configuration.to_prepare do
             return _("Freedom of Information")
           elsif self.public_body.sacouncil?
             return _("Freedom of Information")
+        # TAS
+          elsif self.public_body.tasstate?
+            return _("Right to Information")
+          elsif self.public_body.tascouncil?
+            return _("Right to Information")
         # Fallback
           elsif self.law_used == 'foi'
               return _("Freedom of Information")
@@ -142,6 +147,11 @@ Rails.configuration.to_prepare do
             return _("FOI")
           elsif self.public_body.sacouncil?
             return _("FOI")
+        # TAS
+          elsif self.public_body.tasstate?
+            return _("RTI")
+          elsif self.public_body.tascouncil?
+            return _("RTI")
         # Fallback
           elsif self.law_used == 'foi'
               return _("FOI")
@@ -175,6 +185,11 @@ Rails.configuration.to_prepare do
               return _("Freedom of Information Act 1991 (SA)")
           elsif self.public_body.sacouncil?
               return _("Freedom of Information Act 1991 (SA)")
+        # TAS
+          elsif self.public_body.tasstate?
+              return _("Right to Information Act 2009 (QLD)")
+          elsif self.public_body.tascouncil?
+              return _("Right to Information Act 2009 (QLD)")
         # Fallback
           elsif self.law_used == 'foi'
               return _("Freedom of Information Act")
@@ -202,6 +217,11 @@ Rails.configuration.to_prepare do
           elsif self.public_body.qldstate?
             return _("A Right to Information request")
           elsif self.public_body.ntcouncil?
+            return _("A Right to Information request")
+        # TAS
+          elsif self.public_body.tasstate?
+            return _("A Right to Information request")
+          elsif self.public_body.tascouncil?
             return _("A Right to Information request")
         # SA
           elsif self.public_body.sastate?
