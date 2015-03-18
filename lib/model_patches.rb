@@ -94,6 +94,11 @@ Rails.configuration.to_prepare do
             return _("Government Information (Public Access)")
           elsif self.public_body.nswcouncil?
             return _("Government Information (Public Access)")
+        # NT
+          elsif self.public_body.ntstate?
+            return _("Freedom of Information")
+          elsif self.public_body.ntcouncil?
+            return _("Freedom of Information")
         # Fallback
           elsif self.law_used == 'foi'
               return _("Freedom of Information")
@@ -112,6 +117,11 @@ Rails.configuration.to_prepare do
             return _("GIPA")
           elsif self.public_body.nswcouncil?
                 return _("GIPA")
+        # NT
+          elsif self.public_body.ntstate?
+            return _("FOI")
+          elsif self.public_body.ntcouncil?
+            return _("FOI")
         # Fallback
           elsif self.law_used == 'foi'
               return _("FOI")
@@ -130,6 +140,11 @@ Rails.configuration.to_prepare do
               return _("GIPA")
           elsif self.public_body.nswcouncil?
               return _("GIPA")
+        # NT
+          elsif self.public_body.ntstate?
+              return _("Information Act ")
+          elsif self.public_body.ntcouncil?
+              return _("Information Act")
         # Fallback
           elsif self.law_used == 'foi'
               return _("Freedom of Information Act")
@@ -148,6 +163,11 @@ Rails.configuration.to_prepare do
               return _("A Government Information (Public Access) request")
           elsif self.public_body.nswcouncil?
             return _("A Government Information (Public Access) request")
+        # NT
+          elsif self.public_body.ntstate?
+            return _("A Freedom of Information request")
+          elsif self.public_body.ntcouncil?
+            return _("A Freedom of Information request")
         # Fallback
           elsif self.law_used == 'foi'
               return _("A Freedom of Information request")
