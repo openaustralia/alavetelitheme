@@ -137,9 +137,9 @@ Rails.configuration.to_prepare do
             return _("Freedom of Information Act 1989 (ACT)")
         # NSW
           elsif self.public_body.nswstate?
-              return _("GIPA")
+              return _("Government Information (Public Access) Act 2009 (NSW)")
           elsif self.public_body.nswcouncil?
-              return _("GIPA")
+              return _("Government Information (Public Access) Act 2009 (NSW)")
         # NT
           elsif self.public_body.ntstate?
               return _("Information Act ")
