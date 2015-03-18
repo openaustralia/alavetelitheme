@@ -5,4 +5,10 @@
 # See http://stackoverflow.com/questions/7072758/plugin-not-reloading-in-development-mode
 #
 Rails.configuration.to_prepare do
+  # Define which state each authority belongs in
+      PublicBody.class_eval do
+      # ACT (only has state, no councils)
+          def actstate?
+            return self.has_tag?('ACT_state')
+          end  
 end
