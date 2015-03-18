@@ -80,4 +80,45 @@ Rails.configuration.to_prepare do
             return self.has_tag?('federal')
           end
       end
+
+
+# This uses the defintions above to determine the name of the relevant law
+    InfoRequest.class_eval do
+      # Two sorts of laws for requests, FOI or EIR
+      def law_used_full
+          if self.law_used == 'foi'
+              return _("Freedom of Information")
+          elsif self.law_used == 'eir'
+              return _("Environmental Information Regulations")
+          else
+              raise "Unknown law used '" + self.law_used + "'"
+          end
+      end
+      def law_used_short
+          if self.law_used == 'foi'
+              return _("FOI")
+          elsif self.law_used == 'eir'
+              return _("EIR")
+          else
+              raise "Unknown law used '" + self.law_used + "'"
+          end
+      end
+      def law_used_act
+          if self.law_used == 'foi'
+              return _("Freedom of Information Act")
+          elsif self.law_used == 'eir'
+              return _("Environmental Information Regulations")
+          else
+              raise "Unknown law used '" + self.law_used + "'"
+          end
+      end
+      def law_used_with_a
+          if self.law_used == 'foi'
+              return _("A Freedom of Information request")
+          elsif self.law_used == 'eir'
+              return _("An Environmental Information Regulations request")
+          else
+              raise "Unknown law used '" + self.law_used + "'"
+          end
+      end
 end
