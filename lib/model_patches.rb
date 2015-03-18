@@ -74,5 +74,10 @@ Rails.configuration.to_prepare do
           def wacouncil?
             return self.has_tag?('WA_council')
           end
-
+      # Federal
+      # This is a backup in case the law changes, we can easily modify it here
+          def federalbody?
+            return self.has_tag?('federal')
+          end
+      end
 end
