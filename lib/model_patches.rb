@@ -89,7 +89,11 @@ Rails.configuration.to_prepare do
         # ACT
           if self.public_body.actstate?
             return _("Freedom of Information")
-
+        # NSW
+          elsif self.public_body.nswstate?
+            return _("Government Information (Public Access)")
+          elsif self.public_body.nswcouncil?
+            return _("Government Information (Public Access)")
         # Fallback
           elsif self.law_used == 'foi'
               return _("Freedom of Information")
@@ -103,7 +107,11 @@ Rails.configuration.to_prepare do
         # ACT
           if self.public_body.actstate?
             return _("FOI")
-
+        # NSW
+          elsif self.public_body.nswstate?
+            return _("GIPA")
+          elsif self.public_body.nswcouncil?
+                return _("GIPA")
         # Fallback
           elsif self.law_used == 'foi'
               return _("FOI")
@@ -117,6 +125,11 @@ Rails.configuration.to_prepare do
         # ACT
           if self.public_body.actstate?
             return _("Freedom of Information Act 1989 (ACT)")
+        # NSW
+          elsif self.public_body.nswstate?
+              return _("GIPA")
+          elsif self.public_body.nswcouncil?
+              return _("GIPA")
         # Fallback
           elsif self.law_used == 'foi'
               return _("Freedom of Information Act")
@@ -129,6 +142,12 @@ Rails.configuration.to_prepare do
       def law_used_with_a
           if self.public_body.actstate?
             return _("A Freedom of Information request")
+        # NSW
+          elsif self.public_body.nswstate?
+              return _("A Government Information (Public Access) request")
+          elsif self.public_body.nswcouncil?
+            return _("A Government Information (Public Access) request")
+
           elsif self.law_used == 'foi'
               return _("A Freedom of Information request")
           elsif self.law_used == 'eir'
