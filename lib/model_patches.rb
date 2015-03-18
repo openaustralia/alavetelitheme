@@ -65,4 +65,14 @@ Rails.configuration.to_prepare do
           def viccouncil?
             return self.has_tag?('VIC_council')
           end
+      #WA
+          # WA State
+          def wastate?
+            return self.has_tag?('WA_state')
+          end
+          # WA Council
+          def wacouncil?
+            return self.has_tag?('WA_council')
+          end
+
 end
