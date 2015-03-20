@@ -837,11 +837,18 @@ div.correspondence p.preview_subject {
   h1 {
     margin-bottom: 15px;
   }
+}
 
-  #search_form {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin-bottom: 0;
-    }
+#search_form,
+#search_form p {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    margin-bottom: 0;
+  }
+}
+
+#search_form #query {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    margin-bottom: 7px;
   }
 }
 
@@ -909,15 +916,27 @@ width:125px;
 padding-right: 0;
 }
 
-.list-filter-item {
-  h3.title {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      display: inline-block;
-      vertical-align: middle;
-      margin-top: 11px;
-    }
+h3.title {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 11px;
   }
 
+  #filter_form & {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      margin-top: 0;
+      margin-bottom: 5px;
+      width:120px;
+    }
+  }
+}
+
+#general_search h2 {
+  margin-top: 20px;
+}
+
+.list-filter-item {
   input {
     margin-bottom: 0.7em;
     height: auto;
