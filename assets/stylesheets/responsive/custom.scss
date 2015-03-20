@@ -497,6 +497,19 @@ color:#005068;
   }
 }
 
+#request_list {
+  h1 {
+    @include respond-min( $main_menu-mobile_menu_cutoff ){
+      margin-bottom: 15px;
+    }
+  }
+
+  .foi_results {
+    @include respond-min( $main_menu-mobile_menu_cutoff ){
+      margin-top: 0;
+    }
+  }
+}
 
 .body_listing {
   border-bottom: 1px solid #DDD;
@@ -892,7 +905,7 @@ input::-moz-focus-inner
 }
 
 #date_range label.title,#filter_requests_form label.title,h3.title {
-width:120px;
+width:125px;
 padding-right: 0;
 }
 
@@ -901,7 +914,7 @@ padding-right: 0;
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
       display: inline-block;
       vertical-align: middle;
-      margin-top: 2px;
+      margin-top: 11px;
     }
   }
 
@@ -915,12 +928,19 @@ padding-right: 0;
   margin-bottom: 0;
 }
 
+#filter_requests_form, #filter_requests_form input[type="submit"] {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    margin-bottom: 5px;
+  }
+}
+
 .filter-request-types {
   margin-bottom: 1em;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     width: 405px;
     vertical-align: top;
+    margin-bottom: 11px;
   }
 }
 
@@ -1225,6 +1245,10 @@ background:#005068;
 color:#FFF;
 }
 
+input.use-datepicker[type=text] {
+  width: 142px;
+  background: url(/assets/calendar.png) no-repeat 115px 3px;
+}
 
 div.pagination {
 padding-top:1em;
