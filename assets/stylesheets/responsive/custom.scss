@@ -797,6 +797,14 @@ div.correspondence p.preview_subject {
   padding: 8px 0 10px 42px;
 }
 
+#public_body_list {
+  li {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      line-height: normal;
+    }
+  }
+}
+
 // Forms
 
 form input[type=text], form input[type=password] {
