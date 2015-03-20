@@ -497,6 +497,19 @@ color:#005068;
   }
 }
 
+
+.body_listing {
+  border-bottom: 1px solid #DDD;
+  margin: 0 0 -1px;
+  padding: 12px 0 6px;
+
+  .head {
+    @include respond-min( $main_menu-mobile_menu_cutoff ){
+      margin-bottom: 2px;
+    }
+  }
+}
+
 #public_body_list {
   ul {
     margin: 1em 0;
