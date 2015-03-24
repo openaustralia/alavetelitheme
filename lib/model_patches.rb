@@ -40,6 +40,8 @@ Rails.configuration.to_prepare do
             end
         end
 
+        # Used in messages shown to the user when interacting with a request
+        # and in outbound emails to the authority
         def law_used_full
             case australian_law_used
             when "gipa"
@@ -53,6 +55,8 @@ Rails.configuration.to_prepare do
             end
         end
 
+        # Used in messages shown to the user when interacting with a request
+        # and in outbound emails to the authority
         def law_used_short
             case australian_law_used
             when "gipa"
@@ -66,7 +70,8 @@ Rails.configuration.to_prepare do
             end
         end
 
-        # Unused method
+        # This method isn't currently used in Alaveteli but we're overriding it
+        # for completeness
         def law_used_act
             case australian_law_used
             when "gipa"
@@ -80,7 +85,8 @@ Rails.configuration.to_prepare do
             end
         end
 
-        # Unused method
+        # This method isn't currently used in Alaveteli but we're overriding it
+        # for completeness
         def law_used_with_a
             case australian_law_used
             when "gipa"
