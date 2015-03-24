@@ -41,11 +41,12 @@ Rails.configuration.to_prepare do
         end
 
         def law_used_full
-            if australian_law_used == "gipa"
+            case australian_law_used
+            when "gipa"
                 _("Government Information (Public Access)")
-            elsif australian_law_used == "rti"
+            when "rti"
                 _("Right to Information")
-            elsif australian_law_used == 'foi'
+            when "foi"
                 _("Freedom of Information")
             else
                 raise "Unknown law used '" + australian_law_used + "'"
@@ -53,11 +54,12 @@ Rails.configuration.to_prepare do
         end
 
         def law_used_short
-            if australian_law_used == "gipa"
+            case australian_law_used
+            when "gipa"
                 _("GIPA")
-            elsif australian_law_used == "rti"
+            when "rti"
                 _("RTI")
-            elsif australian_law_used == 'foi'
+            when "foi"
                 _("FOI")
             else
                 raise "Unknown law used '" + australian_law_used + "'"
@@ -66,11 +68,12 @@ Rails.configuration.to_prepare do
 
         # Unused method
         def law_used_act
-            if australian_law_used == "gipa"
+            case australian_law_used
+            when "gipa"
                 _("Government Information (Public Access) Act")
-            elsif australian_law_used == "rti"
+            when "rti"
                 _("Right to Information Act")
-            elsif australian_law_used == 'foi'
+            when "foi"
                 _("Freedom of Information Act")
             else
                 raise "Unknown law used '" + australian_law_used + "'"
@@ -79,11 +82,12 @@ Rails.configuration.to_prepare do
 
         # Unused method
         def law_used_with_a
-            if australian_law_used == "gipa"
+            case australian_law_used
+            when "gipa"
                 _("A Government Information (Public Access) request")
-            elsif australian_law_used == "rti"
+            when "rti"
                 _("A Right to Information request")
-            elsif australian_law_used == 'foi'
+            when "foi"
                 _("A Freedom of Information request")
             else
                 raise "Unknown law used '" + australian_law_used + "'"
