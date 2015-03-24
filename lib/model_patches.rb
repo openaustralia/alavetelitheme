@@ -29,7 +29,6 @@ Rails.configuration.to_prepare do
         end
     end
 
-    # This uses the defintions above to determine the name of the relevant law
     InfoRequest.class_eval do
         def australian_law_used
             if public_body.jurisdiction == :nsw
