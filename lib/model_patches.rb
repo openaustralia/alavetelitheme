@@ -5,79 +5,27 @@
 # See http://stackoverflow.com/questions/7072758/plugin-not-reloading-in-development-mode
 #
 Rails.configuration.to_prepare do
-    # Define which state each authority belongs in
     PublicBody.class_eval do
-        # ACT (only has state, no councils)
-        def actstate?
-            has_tag?('ACT_state')
-        end
-        # NSW
-        # NSW State
-        def nswstate?
-            has_tag?('NSW_state')
-        end
-        # NSW Council
-        def nswcouncil?
-            has_tag?('NSW_council')
-        end
-        # NT
-        #NT State
-        def ntstate?
-            has_tag?('NT_state')
-        end
-        # NT Council
-        def ntcouncil?
-            has_tag?('NT_council')
-        end
-        #QLD
-        # QLD State
-        def qldstate?
-            has_tag?('QLD_state')
-        end
-        # QLD Council
-        def qldcouncil?
-            has_tag?('QLD_council')
-        end
-        #SA
-        # SA State
-        def sastate?
-            has_tag?('SA_state')
-        end
-        # SA Council
-        def sacouncil?
-            has_tag?('SA_council')
-        end
-        #TAS
-        # TAS State
-        def tasstate?
-            has_tag?('TAS_state')
-        end
-        # TAS Council
-        def tascouncil?
-            has_tag?('TAS_council')
-        end
-        #VIC
-        # VIC State
-        def vicstate?
-            has_tag?('VIC_state')
-        end
-        # VIC Council
-        def viccouncil?
-            has_tag?('VIC_council')
-        end
-        #WA
-        # WA State
-        def wastate?
-            has_tag?('WA_state')
-        end
-        # WA Council
-        def wacouncil?
-            has_tag?('WA_council')
-        end
-        # Federal
-        # This is a backup in case the law changes, we can easily modify it here
-        def federalbody?
-            has_tag?('federal')
+        def jurisdiction
+            if has_tag?('ACT_state')
+                :act
+            elsif has_tag?('NSW_state') || has_tag?('NSW_council')
+                :nsw
+            elsif has_tag?('NT_state') || has_tag?('NT_council')
+                :nt
+            elsif has_tag?('QLD_state') || has_tag?('QLD_council')
+                :qld
+            elsif has_tag?('SA_state') || has_tag?('SA_council')
+                :sa
+            elsif has_tag?('TAS_state') || has_tag?('TAS_council')
+                :tas
+            elsif has_tag?('VIC_state') || has_tag?('VIC_council')
+                :vic
+            elsif has_tag?('WA_state') || has_tag?('WA_council')
+                :wa
+            elsif has_tag?('federal')
+                :federal
+            end
         end
     end
 
