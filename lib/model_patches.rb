@@ -49,7 +49,7 @@ Rails.configuration.to_prepare do
             when "foi"
                 _("Freedom of Information")
             else
-                raise "Unknown law used '" + australian_law_used + "'"
+                raise "Unknown law used '#{australian_law_used}'"
             end
         end
 
@@ -62,7 +62,7 @@ Rails.configuration.to_prepare do
             when "foi"
                 _("FOI")
             else
-                raise "Unknown law used '" + australian_law_used + "'"
+                raise "Unknown law used '#{australian_law_used}'"
             end
         end
 
@@ -76,7 +76,7 @@ Rails.configuration.to_prepare do
             when "foi"
                 _("Freedom of Information Act")
             else
-                raise "Unknown law used '" + australian_law_used + "'"
+                raise "Unknown law used '#{australian_law_used}'"
             end
         end
 
@@ -90,7 +90,7 @@ Rails.configuration.to_prepare do
             when "foi"
                 _("A Freedom of Information request")
             else
-                raise "Unknown law used '" + australian_law_used + "'"
+                raise "Unknown law used '#{australian_law_used}'"
             end
         end
     end
