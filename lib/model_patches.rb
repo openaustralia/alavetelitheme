@@ -47,8 +47,6 @@ Rails.configuration.to_prepare do
                 _("Right to Information")
             elsif australian_law_used == 'foi'
                 _("Freedom of Information")
-            elsif australian_law_used == 'eir'
-                _("Environmental Information Regulations")
             else
                 raise "Unknown law used '" + australian_law_used + "'"
             end
@@ -61,8 +59,6 @@ Rails.configuration.to_prepare do
                 _("RTI")
             elsif australian_law_used == 'foi'
                 _("FOI")
-            elsif australian_law_used == 'eir'
-                _("EIR")
             else
                 raise "Unknown law used '" + australian_law_used + "'"
             end
@@ -76,8 +72,6 @@ Rails.configuration.to_prepare do
                 _("Right to Information Act")
             elsif australian_law_used == 'foi'
                 _("Freedom of Information Act")
-            elsif australian_law_used == 'eir'
-                _("Environmental Information Regulations")
             else
                 raise "Unknown law used '" + australian_law_used + "'"
             end
@@ -91,8 +85,6 @@ Rails.configuration.to_prepare do
                 _("A Right to Information request")
             elsif australian_law_used == 'foi'
                 _("A Freedom of Information request")
-            elsif australian_law_used == 'eir'
-                _("An Environmental Information Regulations request")
             else
                 raise "Unknown law used '" + australian_law_used + "'"
             end
