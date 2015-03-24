@@ -31,7 +31,16 @@ Rails.configuration.to_prepare do
 
     # This uses the defintions above to determine the name of the relevant law
     InfoRequest.class_eval do
-        # Two sorts of laws for requests, FOI or EIR
+        def australian_law_used
+            if public_body.jurisdiction == :nsw
+                "gipa"
+            elsif public_body.jurisdiction == :qld || public_body.jurisdiction == :tas
+                "rti"
+            else
+                "foi"
+            end
+        end
+
         def law_used_full
             # ACT
             if public_body.actstate?
