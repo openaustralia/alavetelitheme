@@ -1125,7 +1125,7 @@ h3.title {
     float: left;
     width: 8%;
     height: 100px;
-    padding: 0;
+    padding: 0 0 0 .25em;
     white-space: onwrap;
   }
 }
@@ -1155,6 +1155,7 @@ h3.title {
 
 p#sign_in_reason, p#superuser_message {
   margin-top: 1.85em;
+  padding-left: .95em;
   text-align: center;
   font-size: 1.4em;
   font-weight: 700;
@@ -1185,14 +1186,14 @@ label.form_label {
 #sign_together {
   h1 {
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin: .25em 0 1em 2.375em;
+      margin: .25em 0 1.175em 2.4em;
     }
   }
 
   #right_half {
     h1 {
       @include respond-min( $main_menu-mobile_menu_cutoff ) {
-        margin: .25em 0 1em 2.125em;
+        margin: .25em 0 1.175em 2.23em;
       }
     }
   }
