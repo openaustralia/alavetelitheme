@@ -1203,12 +1203,6 @@ label.form_label {
     }
   }
 
-  form p {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin-top: 0;
-    }
-  }
-
   .form_button {
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
       margin-left: 10.5em;
