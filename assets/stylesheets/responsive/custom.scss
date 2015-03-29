@@ -1387,9 +1387,13 @@ padding-top:1em;
     padding: 0;
     width: 221px;
 
-    input[type="text"] {
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    #query {
       margin-bottom: 0;
-      width: 210px;
+      width: 212px;
     }
   }
 }
