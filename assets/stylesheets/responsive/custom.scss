@@ -881,7 +881,7 @@ padding: 0;
 }
 
 .correspondence .event_actions, .comment_in_request .event_actions {
-  opacity: 0;
+  opacity: .6;
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
