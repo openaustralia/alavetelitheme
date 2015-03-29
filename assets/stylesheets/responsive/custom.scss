@@ -882,9 +882,9 @@ padding: 0;
 
 .correspondence .event_actions, .comment_in_request .event_actions {
   opacity: .6;
-  transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
 }
 
 .correspondence:hover .event_actions, .comment_in_request:hover .event_actions {
