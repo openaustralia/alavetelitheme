@@ -1209,6 +1209,19 @@ label.form_label {
       margin-left: 10.5em;
     }
   }
+
+  input[type="checkbox"] {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      margin: .2em;
+    }
+
+    + label {
+      @include respond-min( $main_menu-mobile_menu_cutoff ) {
+        margin: 0;
+        line-height: normal;
+      }
+    }
+  }
 }
 
 #signup, #signin {
