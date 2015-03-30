@@ -52,6 +52,12 @@ font-weight:400;
   }
 }
 
+h4 {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    font-size: 1em;
+  }
+}
+
 dl {
   line-height: 160%;
 }
