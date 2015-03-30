@@ -852,8 +852,7 @@ div.correspondence p.preview_subject {
   }
 }
 
-#search_form,
-#search_form p {
+#search_form {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     margin-bottom: 0;
   }
