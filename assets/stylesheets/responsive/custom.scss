@@ -55,6 +55,10 @@ dl {
 dt {
   margin: 36px 0 18px;
   font-size: 1.8em;
+
+  &:first-child {
+    margin-top: 23px;
+  }
 }
 
 dd {
