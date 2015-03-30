@@ -36,6 +36,10 @@ font-size:42px;
 h2 {
 font-size:1.4em;
 font-weight:400;
+
+  #right_column_flip & {
+    margin-bottom: 17.340px;
+  }
 }
 
 h3 {
@@ -841,10 +845,6 @@ div.correspondence p.preview_subject {
 }
 
 #public_body_list {
-  #right_column_flip h2 {
-    margin-bottom: 17.340px;
-  }
-
   li {
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
       line-height: normal;
