@@ -67,6 +67,11 @@ dt {
 
 dd {
   margin-left: 0;
+
+  // override _global_style.scss:84
+  dt + & > p {
+    margin-top: 1em;
+  }
 }
 
 p {
