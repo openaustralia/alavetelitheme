@@ -840,11 +840,15 @@ div.correspondence p.preview_subject {
 }
 
 #notice {
-  padding: 0 1em;
+  padding: .75em 1em;
   font-size: 1.4em;
   background: #E9FDD3;
   color: #517704;
   border: #B0CA86 1px solid;
+
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    padding: 0 1em;
+  }
 }
 
 .request_icon_line {
