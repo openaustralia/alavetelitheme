@@ -1132,10 +1132,14 @@ h3.title {
 }
 
 #request_search_ahead_results {
-  margin-left: 11em;
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    margin-left: 11em;
+  }
 
   h3:first-child {
-    margin-top: 0;
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      margin-top: 0;
+    }
   }
 }
 
