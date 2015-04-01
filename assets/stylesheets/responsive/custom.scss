@@ -807,7 +807,8 @@ div.correspondence p.preview_subject {
 
   input[type="radio"] {
     margin: 0;
-    height: 1.6em;
+    height: 1.2em;
+    width: 1.2em;
     float: left;
     clear: left;
 
@@ -818,8 +819,10 @@ div.correspondence p.preview_subject {
     }
 
     + label {
-      width: 85%;
+      width: 84%;
+      margin-top: -.25em;
       margin-left: .75em;
+      vertical-align: top;
 
       @include respond-min( $main_menu-mobile_menu_cutoff ) {
         margin: 0;
