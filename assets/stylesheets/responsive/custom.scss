@@ -907,6 +907,7 @@ h2.publicbody_results {
 
 // header of the 'View as HTML' screen for viewing documents
 .view_html_prefix {
+  min-height: 4em;
   background-color: $righttoknow-primary-color;
 }
 
