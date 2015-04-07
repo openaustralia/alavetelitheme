@@ -905,6 +905,11 @@ h2.publicbody_results {
   margin-right: 0;
 }
 
+// header of the 'View as HTML' screen for viewing documents
+.view_html_prefix {
+  background-color: $righttoknow-primary-color;
+}
+
 // Forms
 
 form input[type=text], form input[type=password] {
