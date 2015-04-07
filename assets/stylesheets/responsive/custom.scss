@@ -849,8 +849,7 @@ div.correspondence p.preview_subject {
   border: #B0CA86 1px solid;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    padding: 0 1em;
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 }
 
