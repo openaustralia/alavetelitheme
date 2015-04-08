@@ -910,6 +910,11 @@ h2.publicbody_results {
   background-color: $righttoknow-primary-color;
 }
 
+// fix for cascading document <p>s
+.correspondence p.attachment {
+  clear: both;
+}
+
 // Forms
 
 form input[type=text], form input[type=password] {
