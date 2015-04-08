@@ -842,6 +842,39 @@ div.correspondence p.preview_subject {
   }
 }
 
+.new_outgoing_message .fieldWithErrors {
+  padding: 1em 1em .25em;
+
+  input[type="radio"] {
+    margin: 0;
+    height: 1.2em;
+    width: 1.2em;
+    float: left;
+    clear: left;
+
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      margin: 3px;
+      float: none;
+      height: auto;
+    }
+
+    + label {
+      width: 84%;
+      margin-top: -.25em;
+      margin-bottom: .75em;
+      margin-left: .75em;
+      vertical-align: top;
+
+      @include respond-min( $main_menu-mobile_menu_cutoff ) {
+        margin: 0 0 .75em;
+        width: auto;
+        font-size: 1em;
+        line-height: normal;
+      }
+    }
+  }
+}
+
 #notice {
   padding: .75em 1em;
   background: #E9FDD3;
