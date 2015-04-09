@@ -1,5 +1,4 @@
-Right To Know
-=============
+# Right To Know [![Stories in Ready](https://badge.waffle.io/openaustralia/righttoknow.svg?label=ready&title=Ready)](http://waffle.io/openaustralia/righttoknow)
 
 Right To Know lets you make and browse Freedom of Information (FOI) requests in
 Australia. It is powered by the open source FOI request platform
