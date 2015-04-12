@@ -26,3 +26,6 @@ msgstr "First, type in the <strong>name of the Australian public authority</stro
 
 msgid "Ask for <strong>specific</strong> documents or information, this site is not suitable for general enquiries."
 msgstr "Ask for <strong>specific documents</strong>, this site is not suitable for general enquiries (<a href="/help/requesting#documents">why?</a>)."
+
+msgid "e.g. Ministry of Defence"
+msgstr "e.g. Department of Health"
