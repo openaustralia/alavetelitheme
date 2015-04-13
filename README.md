@@ -30,10 +30,15 @@ them in the [Alaveteli documentation](http://alaveteli.org/docs/customising/them
 Contributing
 ------------
 
-If you want to contribute an enhancement or a fix:
+If you want to modify the customised look and feel of Right To Know then you
+should edit this repository however if it's something more general you probably
+want to edit the upstream
+[core Alaveteli software](https://github.com/mysociety/alaveteli/).
+
+To contribute an enhancement or a fix to this theme:
 
 * Fork the project on GitHub.
-* Make a topic branch from the production branch.
+* Make a topic branch from the `production` branch.
 * Make your changes and test.
 * Commit the changes without making changes to any files that aren't related to your enhancement or fix.
-* Send a pull request against the production branch.
+* Send a pull request against the `production` branch.
