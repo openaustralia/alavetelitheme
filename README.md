@@ -22,6 +22,11 @@ all using the same code as much as possible.
 However if you'd like to adjust the look and feel of Right To Know, or to update
 copy like that found on the help pages, this is the place to make those changes.
 
+To get a development copy up-and-running, follow the
+[Alaveteli installation instructions](http://alaveteli.org/docs/installing/)
+and then install this theme. You can read more about themes and how to install
+them in the [Alaveteli documentation](http://alaveteli.org/docs/customising/themes/).
+
 ### Alaveteli Themes
 
 The intention of Alaveteli's theming system is to support simple overlaying of
