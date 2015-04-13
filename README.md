@@ -71,3 +71,13 @@ from the table below is present on the authority:
 | TAS          | `TAS_state` or `TAS_council` |
 | VIC          | `VIC_state` or `VIC_council` |
 | WA           | `WA_state` or `WA_council`   |
+
+### Categories
+
+Prior to Alaveteli v0.20 categories were set in your theme code but they're now
+stored in the database. We had all the categories for the states and
+territories
+[ready to go](https://github.com/openaustralia/righttoknow/blob/b7e2e634fd2a7d1d03c99420e7881dd549ffbea4/lib/public_body_categories_en.rb)
+but now we'll need to add them in the admin backend as we roll-out the states
+and territories. You can use the code linked to see how we wanted the
+categories organised when rolling out other jurisdictions.
