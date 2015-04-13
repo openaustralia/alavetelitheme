@@ -27,28 +27,6 @@ To get a development copy up-and-running, follow the
 and then install this theme. You can read more about themes and how to install
 them in the [Alaveteli documentation](http://alaveteli.org/docs/customising/themes/).
 
-### Alaveteli Themes
-
-The intention of Alaveteli's theming system is to support simple overlaying of
-templates and resources without the need to touch the core Alaveteli software.
-
-Typical usage should be limited to:
-
- * Putting CSS-based customisations in `public/stylesheets/custom.css`
-
- * Creating your own versions of non-functional pages (like "about
-   us", at `lib/views/help/about.html.erb` -- and/or localised versions at
-   lib/views/help/about.es.html.erb)
-
-To install:
-
-    bundle exec rails plugin install git://github.com/openaustralia/righttoknow.git
-
-Look in the lib/ folder of the plugin to see how the overrides happen.
-
-Note that the `install.rb` plugin point sets up a symlink to include
-local resource files within the Rails `public/` directory.
-
 Contributing
 ------------
 
