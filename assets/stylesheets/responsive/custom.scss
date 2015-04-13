@@ -93,7 +93,8 @@ a {
   color:#A60201;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:visited {
     color:#A60201;
     text-decoration: underline;
   }
@@ -217,7 +218,7 @@ color:#444;
 
 }
 
-  #logged_in_links {
+#logged_in_links {
     font-weight: bold;
 
     @include respond-min( $main_menu-mobile_menu_cutoff ){
@@ -728,14 +729,6 @@ float: right;
 
 div.controller_help dt:hover > a, div.controller_help h1:hover > a, div#help_unhappy h1:hover > a.hover_a {
 color: #a60201;
-}
-
-
-#authority_selection {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    float: left;
-    width: 350px;
-  }
 }
 
 #authority_preview {
