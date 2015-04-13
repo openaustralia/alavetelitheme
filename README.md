@@ -1,8 +1,8 @@
 # Right To Know [![Stories in Ready](https://badge.waffle.io/openaustralia/righttoknow.svg?label=ready&title=Ready)](http://waffle.io/openaustralia/righttoknow)
 
-Right To Know lets you make and browse Freedom of Information (FOI) requests in
-Australia. It is powered by the open source FOI request platform
-[Alaveteli](http://www.alaveteli.org/).
+[Right To Know](https://www.righttoknow.org.au/) lets you make and browse
+Freedom of Information (FOI) requests in Australia. It is powered by the open
+source FOI request platform [Alaveteli](http://www.alaveteli.org/).
 
 This repository contains the the theme package for Alaveteli for the Australian
 deployment. If you find a problem with Right to Know, please report it to this
