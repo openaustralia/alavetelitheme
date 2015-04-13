@@ -731,14 +731,6 @@ div.controller_help dt:hover > a, div.controller_help h1:hover > a, div#help_unh
 color: #a60201;
 }
 
-
-#authority_selection {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    float: left;
-    width: 350px;
-  }
-}
-
 #authority_preview {
   background-color: #FFFFE0;
 
