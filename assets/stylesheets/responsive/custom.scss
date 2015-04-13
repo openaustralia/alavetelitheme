@@ -910,6 +910,22 @@ h2.publicbody_results {
   }
 }
 
+// this is a temp fix
+// remove if https://github.com/mysociety/alaveteli/pull/2314
+// is merged and we've deployed it
+div.comment_in_request {
+  padding: 0 1em;
+
+  .comment_in_request_text {
+    margin: 0;
+
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      margin: 2em 0 0;
+    }
+  }
+}
+// end temp fix
+
 #preview_form div.comment_in_request {
   margin-left: 0;
 
