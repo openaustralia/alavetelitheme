@@ -494,12 +494,6 @@ color:#005068;
     min-height: 36px;
     padding: 3px 0 0 27px;
   }
-
-  .request_right {
-    @include respond-min( $main_menu-mobile_menu_cutoff ){
-      padding-left: 0;
-    }
-  }
 }
 
 #request_list {
