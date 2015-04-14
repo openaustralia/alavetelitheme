@@ -438,14 +438,6 @@ font-family: georgia;
 font-style: italic;
 }
 
-#stepwise_make_request {
-  margin: 2em 0;
-
-  @include respond-min( $main_menu-mobile_menu_cutoff ){
-    margin: 2em 4em 0;
-  }
-}
-
 #request_header_subject input {
   width: 409px;
 }
