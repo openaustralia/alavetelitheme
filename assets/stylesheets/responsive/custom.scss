@@ -1237,55 +1237,7 @@ label.form_label {
 #signup .form_item_note, #signin .form_note {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     font-size: 0.9em;
-    margin-left: 11.5em;
     width: inherit;
-  }
-}
-
-#sign_together {
-  h1 {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin: .25em 0 1.175em 2.4em;
-    }
-  }
-
-  #right_half {
-    h1 {
-      @include respond-min( $main_menu-mobile_menu_cutoff ) {
-        margin: .25em 0 1.175em 2.23em;
-      }
-    }
-  }
-
-  input {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin-bottom: 0;
-    }
-  }
-
-  .form_button {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin-left: 10.5em;
-    }
-  }
-
-  input[type="checkbox"] {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin: .2em;
-    }
-
-    + label {
-      @include respond-min( $main_menu-mobile_menu_cutoff ) {
-        margin: 0;
-        line-height: normal;
-      }
-    }
-  }
-}
-
-#signup, #signin {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-top: 47px;
   }
 }
 
