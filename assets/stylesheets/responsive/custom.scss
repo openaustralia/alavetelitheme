@@ -607,6 +607,11 @@ line-height: 22px;
 padding-bottom: 7px;
 }
 
+input#reedit_button {
+  background: none;
+  text-shadow: none;
+}
+
 /* Mostly magic for adding page curls */
 
 div#request_show {
