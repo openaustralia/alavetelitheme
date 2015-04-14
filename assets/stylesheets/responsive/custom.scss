@@ -1045,16 +1045,6 @@ h3.title {
   }
 }
 
-.filter-request-types {
-  margin-bottom: 1em;
-
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    width: 405px;
-    vertical-align: top;
-    margin-bottom: 11px;
-  }
-}
-
 .errorExplanation {
   border-radius: 6px;
   -moz-border-radius: 6px;
