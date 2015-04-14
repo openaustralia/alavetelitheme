@@ -442,7 +442,7 @@ font-style: italic;
   width: 409px;
 }
 
-#request_form label,label.form_label {
+#request_form label,label.form_label,.to_public_body_label {
 font-family: $body-font-family;
 color:#005068;
 }
@@ -1048,7 +1048,7 @@ h3.title {
     font-size: 1.1em;
   }
 
-  label {
+  label, .to_public_body_label {
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
       display: block;
       float: left;
@@ -1115,8 +1115,8 @@ h3.title {
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     width: auto;
-    margin-right: .7em;
-    margin-left: 1em;
+    margin: 0 -0.9375rem;
+    padding-left: 0.9375rem;
   }
 
   #request_header_body,
