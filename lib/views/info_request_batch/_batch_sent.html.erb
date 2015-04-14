@@ -8,9 +8,10 @@
         <p class="subtitle">
           <%= _("<strong>We will email you</strong> when they have been sent. " \
                 "We will also email you when there is a response to any of them, or " \
-                "after {{late_number_of_days}} working days if the authorities still " \
+                "after {{late_number_of_days}} {{working_or_calendar}} days if the authorities still " \
                 "haven't replied by then.",
-                :late_number_of_days => @info_request.public_body.reply_late_after_days) %>
+                :late_number_of_days => @info_request.public_body.reply_late_after_days,
+                :working_or_calendar => @info_request.public_body.working_or_calendar_days) %>
         </p>
 
         <h2><%= _("Share your batch request") %></h2>
