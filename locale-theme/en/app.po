@@ -21,8 +21,8 @@ msgstr "Use quotes when you want to find an exact phrase, e.g. <strong><code>"El
 msgid "<strong><code>requested_from:home_office</code></strong> to search requests from the Home Office, typing the name as in the URL."
 msgstr "<strong><code>requested_from:abc</code></strong> to search requests from the Australian Broadcasting Corporation, typing the name as in the URL."
 
-msgid "First, type in the <strong>name of the UK public authority</strong> you'd\\n           like information from. <strong>By law, they have to respond</strong>\\n           (<a href=\"{{url}}\">why?</a>)."
-msgstr "First, type in the <strong>name of the Australian public authority</strong> you'd\\n           like information from. <strong>By law, they have to respond</strong>\\n           (<a href=\"{{url}}\">why?</a>)."
-
 msgid "Ask for <strong>specific</strong> documents or information, this site is not suitable for general enquiries."
 msgstr "Ask for <strong>specific documents</strong>, this site is not suitable for general enquiries (<a href="/help/requesting#documents">why?</a>)."
+
+msgid "e.g. Ministry of Defence"
+msgstr "e.g. Department of Health"
