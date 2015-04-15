@@ -12,7 +12,7 @@ to your request '<%=request_link(@info_request) %>'?
 <p>If ...</p>
 
 <ul>
-<li>You didn't get a reply within 30 calendar days</li>
+<li>You didn't get a reply within <%= link_to "a reasonable timeframe", help_requesting_path(:anchor => "quickly_response")%></li>
 <li>You did not get all of the information that you requested <strong>or</strong></li>
 <li>Your request was refused, but without a reason valid under the law</li>
 </ul>
