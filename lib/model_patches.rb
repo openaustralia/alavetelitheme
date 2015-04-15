@@ -7,21 +7,21 @@
 Rails.configuration.to_prepare do
     PublicBody.class_eval do
         def jurisdiction
-            if has_tag?('ACT_state')
+            if has_tag?('ACT')
                 :act
-            elsif has_tag?('NSW_state') || has_tag?('NSW_council')
+            elsif has_tag?('NSW')
                 :nsw
-            elsif has_tag?('NT_state') || has_tag?('NT_council')
+            elsif has_tag?('NT')
                 :nt
-            elsif has_tag?('QLD_state') || has_tag?('QLD_council')
+            elsif has_tag?('QLD')
                 :qld
-            elsif has_tag?('SA_state') || has_tag?('SA_council')
+            elsif has_tag?('SA')
                 :sa
-            elsif has_tag?('TAS_state') || has_tag?('TAS_council')
+            elsif has_tag?('TAS')
                 :tas
-            elsif has_tag?('VIC_state') || has_tag?('VIC_council')
+            elsif has_tag?('VIC')
                 :vic
-            elsif has_tag?('WA_state') || has_tag?('WA_council')
+            elsif has_tag?('WA')
                 :wa
             elsif has_tag?('federal')
                 :federal
