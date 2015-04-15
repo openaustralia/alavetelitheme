@@ -438,19 +438,11 @@ font-family: georgia;
 font-style: italic;
 }
 
-#stepwise_make_request {
-  margin: 2em 0;
-
-  @include respond-min( $main_menu-mobile_menu_cutoff ){
-    margin: 2em 4em 0;
-  }
-}
-
 #request_header_subject input {
   width: 409px;
 }
 
-#request_form label,label.form_label {
+#request_form label,label.form_label,.to_public_body_label {
 font-family: $body-font-family;
 color:#005068;
 }
@@ -485,6 +477,10 @@ color:#005068;
   }
 }
 
+.make-request-quick-button {
+  margin-top: 1em;
+}
+
 .request_listing {
   span.desc {
     background: image-url('quote-marks.png') no-repeat;
@@ -501,12 +497,6 @@ color:#005068;
     font-weight: 400;
     min-height: 36px;
     padding: 3px 0 0 27px;
-  }
-
-  .request_right {
-    @include respond-min( $main_menu-mobile_menu_cutoff ){
-      padding-left: 0;
-    }
   }
 }
 
@@ -547,11 +537,6 @@ color:#005068;
   li {
     margin-bottom: 0;
   }
-}
-
-.feed_link {
-  padding: 4px 0;
-  clear: left;
 }
 
 // Buttons
@@ -607,6 +592,11 @@ line-height: 22px;
 padding-bottom: 7px;
 }
 
+input#reedit_button {
+  background: none;
+  text-shadow: none;
+}
+
 /* Mostly magic for adding page curls */
 
 div#request_show {
@@ -614,6 +604,7 @@ div#request_show {
   z-index: 10;
 }
 div.correspondence {
+  padding: 0.5em 1em 0 1.3em;
   margin-bottom: 2em;
   /* Setting overflow: auto breaks the page-curl */
   overflow: inherit;
@@ -716,17 +707,6 @@ overflow: hidden;
 float: right;
 }
 
-#follow_count {
- font-family: 'Actor', Arial, sans-serif;
- color:#005068;
- font-size: 60px;
- line-height: 60px;
- float: left;
- margin-top: -15px;
- margin-right: 5px;
- position: static;
-}
-
 div.controller_help dt:hover > a, div.controller_help h1:hover > a, div#help_unhappy h1:hover > a.hover_a {
 color: #a60201;
 }
@@ -762,12 +742,6 @@ color: #a60201;
     margin-right: 0;
     margin-left: 0;
   }
-}
-
-div.correspondence p.preview_subject {
-  font-size: 1.2em;
-  margin-left: 10px;
-  line-height: 25px;
 }
 
 .describe_state_form {
@@ -1045,16 +1019,6 @@ h3.title {
   }
 }
 
-.filter-request-types {
-  margin-bottom: 1em;
-
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    width: 405px;
-    vertical-align: top;
-    margin-bottom: 11px;
-  }
-}
-
 .errorExplanation {
   border-radius: 6px;
   -moz-border-radius: 6px;
@@ -1084,7 +1048,7 @@ h3.title {
     font-size: 1.1em;
   }
 
-  label {
+  label, .to_public_body_label {
     @include respond-min( $main_menu-mobile_menu_cutoff ) {
       display: block;
       float: left;
@@ -1151,8 +1115,8 @@ h3.title {
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     width: auto;
-    margin-right: .7em;
-    margin-left: 1em;
+    margin: 0 -0.9375rem;
+    padding-left: 0.9375rem;
   }
 
   #request_header_body,
@@ -1273,55 +1237,7 @@ label.form_label {
 #signup .form_item_note, #signin .form_note {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     font-size: 0.9em;
-    margin-left: 11.5em;
     width: inherit;
-  }
-}
-
-#sign_together {
-  h1 {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin: .25em 0 1.175em 2.4em;
-    }
-  }
-
-  #right_half {
-    h1 {
-      @include respond-min( $main_menu-mobile_menu_cutoff ) {
-        margin: .25em 0 1.175em 2.23em;
-      }
-    }
-  }
-
-  input {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin-bottom: 0;
-    }
-  }
-
-  .form_button {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin-left: 10.5em;
-    }
-  }
-
-  input[type="checkbox"] {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin: .2em;
-    }
-
-    + label {
-      @include respond-min( $main_menu-mobile_menu_cutoff ) {
-        margin: 0;
-        line-height: normal;
-      }
-    }
-  }
-}
-
-#signup, #signin {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-top: 47px;
   }
 }
 
