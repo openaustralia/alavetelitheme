@@ -73,13 +73,56 @@ below, for the authority you're adding.
 
 ### Categories
 
-Prior to Alaveteli v0.20 categories were set in your theme code but they're now
-stored in the database. We had all the categories for the states and
-territories
-[ready to go](https://github.com/openaustralia/righttoknow/blob/b7e2e634fd2a7d1d03c99420e7881dd549ffbea4/lib/public_body_categories_en.rb)
-but now we'll need to add them in the admin backend as we roll-out the states
-and territories. You can use the code linked to see how we wanted the
-categories organised when rolling out other jurisdictions.
+Public authority categories are configured in the Alaveteli admin interface.
+This how we want Right To Know's categories organised:
+
+#### Federal
+
+| Title | Description | Tag |
+|-------|-------------|-----|
+| Agriculture | part of the Agriculture portfolio | `agriculture`
+| Attorney-General | part of the Attorney-General portfolio | `attorney_general`
+| Communications | part of the Communications portfolio | `communications`
+| Defence | part of the Defence portfolio | `defence`
+| Education and Training | part of the Education and Training portfolio | `education_and_training`
+| Employment | part of the Employment portfolio | `employment`
+| Environment | part of the Environment portfolio | `environment`
+| Finance | part of the Finance portfolio | `finance`
+| Foreign Affairs and Trade | part of the Foreign Affairs and Trade portfolio | `foreign_affairs_and_trade`
+| Health | part of the Health portfolio | `health`
+| Immigration & Border Protection | part of the Immigration & Border Protection portfolio | `immigration_and_border_protection`
+| Industry and Science | part of the Industry and Science portfolio | `industry_and_science`
+| Infrastructure and Regional Development | part of the Infrastructure and Regional Development portfolio | `infrastructure_and_regional_development`
+| Prime Minister | part of the Prime Minister portfolio | `prime_minister`
+| Social Services | part of the Social Services portfolio | `social_services`
+| Treasury | part of the Treasury portfolio | `treasury`
+| Veterans' Affairs | part of the Veterans' Affairs portfolio | `veterans_affairs`
+| All Federal authorities | a Federal authority | `federal`
+
+#### State and Territory
+
+| Title | Description | Tag |
+|-------|-------------|-----|
+| ACT | an ACT authority | `ACT_state`
+| New South Wales | a NSW authority | `NSW_state`
+| Northern Territory | a Northern Territory authority | `NT_state`
+| Queensland | a Queensland authority | `QLD_state`
+| South Australia | a South Australian authority | `SA_state`
+| Tasmania | a Tasmanian authority | `TAS_state`
+| Victoria | a Victorian authority | `VIC_state`
+| Western Australia | a Western Australian authority | `WA_state`
+
+#### Local
+
+| Title | Description | Tag |
+|-------|-------------|-----|
+| New South Wales | a NSW Council | `NSW_council`
+| Northern Territory | a Northern Territory Council | `NT_council`
+| Queensland | a Queensland Council | `QLD_council`
+| South Australia | a South Australian Council | `SA_council`
+| Tasmania | a Tasmanian Council | `TAS_council`
+| Victoria | a Victorian Council | `VIC_council`
+| Western Australia | a Western Australian Council | `WA_council`
 
 ### Adding more jurisdictions
 
