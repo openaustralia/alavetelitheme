@@ -27,6 +27,30 @@ Rails.configuration.to_prepare do
                 :federal
             end
         end
+
+        def reply_late_after_days
+            case jurisdiction
+            when :nsw, :tas
+                20
+            when :qld
+                25
+            when :federal, :act, :nt, :sa
+                30
+            when :vic, :wa
+                45
+            else
+                AlaveteliConfiguration::reply_late_after_days
+            end
+        end
+
+        def working_or_calendar_days
+            case jurisdiction
+            when :nsw, :tas, :qld
+              'working'
+            else
+              'calendar'
+            end
+        end
     end
 
     InfoRequest.class_eval do
@@ -99,6 +123,10 @@ Rails.configuration.to_prepare do
             else
                 raise "Unknown law used '#{australian_law_used}'"
             end
+        end
+
+        def date_response_required_by
+            Holiday.due_date_from(date_initial_request_last_sent_at, public_body.reply_late_after_days, public_body.working_or_calendar_days)
         end
     end
 end
