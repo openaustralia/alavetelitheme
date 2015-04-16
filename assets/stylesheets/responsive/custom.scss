@@ -1607,6 +1607,12 @@ padding-top:1em;
 border-bottom:0;
 }
 
+table, th, tr, td {
+  border: 1px solid #ddd;
+  padding: 5px 20px 5px 5px;
+  text-align: left;
+}
+
 // Overrides
 
 /* For the time being hide the admin bar in the main app */
