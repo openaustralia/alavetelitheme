@@ -192,10 +192,8 @@ spent on marshmallows in the past year than in the past ten years.
 </p>
 
 <p>
-  Within <strong>14 days</strong> after they receive your request they must give you
-  <strong>written acknowledgement</strong> and within <strong>30 days</strong> they
-  must provide you with either <strong>the documents you have asked for or a written
-  decision on your request</strong>.
+  They must provide you with a decision within a certain timeframe, depending
+  on the law that applies to that authority. It's between <%= link_to "20 to 45 days", :anchor => "ico_help" %>.
 </p>
 
 <p>
@@ -266,21 +264,88 @@ allowed to do so.  See <a href="/help/officers#copyright">our policy on copyrigh
 
 <dd>
   <p>
-    Right To Know will guide you through each step of the way, giving you just
-    enough information at just the right time. However if you're still keen to get your
-    hands dirty, you'll want to check out information that relates to the jurisdiction
-    you're making a request in:
+    When you use Right To Know we guide you through each step of the request
+    process, giving you just enough information at just the right time. However
+    if you're still keen to get your hands dirty you'll find some useful links
+    and information below.
   </p>
 
+  <p>
+    There are 9 different laws governing Freedom of Information in Australia.
+    There's a Federal law and a different law for each state or territory.
+    We've created a detailed spreadsheet of all the
+    <%= link_to "key differences", "https://docs.google.com/spreadsheets/d/1KP2efKvCP3jAknTGYUOq8EYpjNElcWDhb0qUX2Rm4lg/edit#gid=0" %>.
+    Two of the differences most relevant to requesters are applications fees
+    and required response times:
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Jurisdiction</th>
+        <th>Response Timeframe</th>
+        <th>Application Fee</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Federal</td>
+        <td>30 calendar days</td>
+        <td>Free</td>
+      </tr>
+      <tr>
+        <td>ACT</td>
+        <td>30 days</td>
+        <td>Free</td>
+      </tr>
+      <tr>
+        <td>NSW</td>
+        <td>20 working days</td>
+        <td>$30.00</td>
+      </tr>
+      <tr>
+        <td>NT</td>
+        <td>30 days</td>
+        <td>$30.00</td>
+      </tr>
+      <tr>
+        <td>QLD</td>
+        <td>25 business days</td>
+        <td>$43.35</td>
+      </tr>
+      <tr>
+        <td>SA</td>
+        <td>30 calendar days</td>
+        <td>$30.50</td>
+      </tr>
+      <tr>
+        <td>TAS</td>
+        <td>20 working days</td>
+        <td>$37.00</td>
+      </tr>
+      <tr>
+        <td>VIC</td>
+        <td>45 days</td>
+        <td>$26.50</td>
+      </tr>
+      <tr>
+        <td>WA</td>
+        <td>45 days</td>
+        <td>$30.00</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Each jurisdiction has a body that oversees FOI, which generally has useful resources too:</p>
   <ul>
     <li>
-      For <strong>Federal Authorities</strong>, have a look at the Freedom of Information
+      For <%= link_to "Federal Authorities", list_public_bodies_path(:tag => "federal") %>, have a look at the Freedom of Information
       <a href="http://www.oaic.gov.au/freedom-of-information/applying-the-foi-act/foi-guidelines/">guidelines</a>
       and <a href="http://www.oaic.gov.au/freedom-of-information/foi-resources/freedom-of-information-fact-sheets/">fact sheets</a>
       on the Information Commissioner's website.
     </li>
     <li>
-      For <strong>ACT Authorities</strong>, see the website for the Directorate
+      For <%= link_to "ACT Authorities", list_public_bodies_path(:tag => "ACT") %>, see the website for the Directorate
       in charge of <a href="http://www.cmd.act.gov.au/functions/foi">Freedom of Information</a>.
     </li>
   </ul>
