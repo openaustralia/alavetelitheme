@@ -58,11 +58,15 @@ to your request '<%=request_link(@info_request) %>'?
 <ul>
   <li>
     For <%= link_to "Federal Authorities", list_public_bodies_path(:tag => "federal") %>, contact the
-    <a href="http://www.oaic.gov.au/freedom-of-information/foi-reviews">Information Commissioner</a>.
+    <a href="http://www.oaic.gov.au/freedom-of-information/foi-reviews">Federal Information Commissioner</a>.
   </li>
   <li>
     For <%= link_to "ACT Authorities", list_public_bodies_path(:tag => "ACT") %>, contact the
     <a href="http://ombudsman.act.gov.au/pages/making-a-complaint/complaints-the-ombudsman-can-investigate/freedom-of-information.php">Ombudsman</a>.
+  </li>
+  <li>
+    For <%= link_to "NT Authorities", list_public_bodies_path(:tag => "NT") %>, contact the
+    <a href="http://www.infocomm.nt.gov.au/complaints/ca_1.htm">NT Information Commissioner</a>.
   </li>
 </ul>
 
