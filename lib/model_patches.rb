@@ -55,11 +55,15 @@ Rails.configuration.to_prepare do
 
     InfoRequest.class_eval do
         def australian_law_used
-            case public_body.jurisdiction
-            when :nsw
-                "gipa"
-            when :qld, :tas
-                "rti"
+            if public_body
+                case public_body.jurisdiction
+                when :nsw
+                    "gipa"
+                when :qld, :tas
+                    "rti"
+                else
+                    "foi"
+                end
             else
                 "foi"
             end
