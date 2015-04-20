@@ -133,7 +133,5 @@ When adding authorities for jurisdictions we don't yet cover we need to:
 * Update help and other text:
   * [https://www.righttoknow.org.au/help/unhappy#complaining](https://github.com/openaustralia/righttoknow/blob/338b2d26891b81f326fb5e4dda9a26861f01d2d5/lib/views/help/unhappy.html.erb#L58-L67)
   * [https://www.righttoknow.org.au/help/requesting#missing_body](https://github.com/openaustralia/righttoknow/blob/338b2d26891b81f326fb5e4dda9a26861f01d2d5/lib/views/help/requesting.html.erb#L59-L70)
-  * [https://www.righttoknow.org.au/help/requesting#fees](https://github.com/openaustralia/righttoknow/blob/338b2d26891b81f326fb5e4dda9a26861f01d2d5/lib/views/help/requesting.html.erb#L150-L183)
-  * [https://www.righttoknow.org.au/help/requesting#quickly_response](https://github.com/openaustralia/righttoknow/blob/338b2d26891b81f326fb5e4dda9a26861f01d2d5/lib/views/help/requesting.html.erb#L187-L211)
   * [https://www.righttoknow.org.au/help/requesting#ico_help](https://github.com/openaustralia/righttoknow/blob/338b2d26891b81f326fb5e4dda9a26861f01d2d5/lib/views/help/requesting.html.erb#L265-L287)
   * [https://www.righttoknow.org.au/body/list/all](https://github.com/openaustralia/righttoknow/blob/338b2d26891b81f326fb5e4dda9a26861f01d2d5/lib/views/public_body/_list_sidebar_extra.html.erb#L1-L3)
