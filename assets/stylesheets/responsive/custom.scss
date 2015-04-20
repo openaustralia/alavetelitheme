@@ -1039,7 +1039,7 @@ h3.title {
 }
 
 
-#request_new {
+#request_new, #request_new_batch {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     @include clearfix;
   }
