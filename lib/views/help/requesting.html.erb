@@ -323,18 +323,21 @@ allowed to do so.  See <a href="/help/officers#copyright">our policy on copyrigh
 
   <ul>
     <li>
-      For <strong>Federal Authorities</strong>, have a look at the Freedom of Information
+      For <%= link_to "Federal Authorities", list_public_bodies_path(:tag => "federal") %>,
+      have a look at the Freedom of Information
       <a href="http://www.oaic.gov.au/freedom-of-information/applying-the-foi-act/foi-guidelines/">guidelines</a>
       and <a href="http://www.oaic.gov.au/freedom-of-information/foi-resources/freedom-of-information-fact-sheets/">fact sheets</a>
       on the Information Commissioner's website.
     </li>
     <li>
-      For <strong>ACT Authorities</strong>, see the website for the Directorate
-      in charge of <a href="http://www.cmd.act.gov.au/functions/foi">Freedom of Information</a>.
+      For <%= link_to "ACT Authorities", list_public_bodies_path(:tag => "ACT") %>,
+      see the website for the Directorate in charge of
+      <a href="http://www.cmd.act.gov.au/functions/foi">Freedom of Information</a>.
     </li>
     <li>
-      For <strong>NT Authorities</strong>, information can be found on the
-       <a href="http://www.infocomm.nt.gov.au/foi/index.htm">NT Information Commissioner website</a>.
+      For <%= link_to "NT Authorities", list_public_bodies_path(:tag => "NT") %>,
+      information can be found on the
+      <a href="http://www.infocomm.nt.gov.au/foi/index.htm">NT Information Commissioner website</a>.
     </li>
   </ul>
 </dd>
