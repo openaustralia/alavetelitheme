@@ -937,7 +937,7 @@ input::-moz-focus-inner
     padding: 0;
 }
 
-#date_range label.title,#filter_requests_form label.title,h3.title {
+#date_range label.title,h3.title {
 width:125px;
 padding-right: 0;
 }
@@ -948,35 +948,10 @@ h3.title {
     vertical-align: middle;
     margin-top: 11px;
   }
-
-  #filter_form & {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin-top: 0;
-      margin-bottom: 5px;
-      width:120px;
-    }
-  }
 }
 
 #general_search h2 {
   margin-top: 20px;
-}
-
-.list-filter-item {
-  input {
-    margin-bottom: 0.7em;
-    height: auto;
-  }
-}
-
-#filter_requests_form .list-filter-item, #search_form .list-filter-item, #filter_form .list-filter-item {
-  margin-bottom: 0;
-}
-
-#filter_requests_form, #filter_requests_form input[type="submit"] {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-bottom: 5px;
-  }
 }
 
 .errorExplanation {
