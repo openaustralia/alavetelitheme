@@ -394,44 +394,6 @@ float: none;
   padding-top: .8em;
 }
 
-#right_column {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-top: 35px;
-    width: 210px;
-    box-sizing: content-box;
-  }
-}
-
-#right_column_flip {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-top: 38px;
-    width: 225px;
-    box-sizing: content-box;
-  }
-}
-
-#left_column {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    width: 630px;
-    box-sizing: content-box;
-  }
-}
-
-#left_column_flip {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-top: 10px;
-    width: 615px;
-    box-sizing: content-box;
-  }
-}
-
-#header_right {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    width: 255px;
-    padding-top: 3em;
-  }
-}
-
 #middle_strip {
 color:#005068;
 font-family: georgia;
@@ -1367,8 +1329,7 @@ padding-top:1em;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     margin-top: 80px;
-    padding-right: 0;
-    width: 236px;
+    @include grid-column($columns:4);
   }
 }
 
@@ -1381,10 +1342,7 @@ padding-top:1em;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     margin-top: 49px;
-    margin-left: 70px;
-    margin-right: 70px;
-    padding: 0;
-    width: 291px;
+    @include grid-column($columns:4);
   }
 }
 
@@ -1399,8 +1357,8 @@ padding-top:1em;
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     margin-top: 80px;
     margin-bottom: 0px;
-    padding: 0;
-    width: 221px;
+    @include grid-column($columns:4);
+    padding-left: 2.5%;
 
     h2 {
       margin-bottom: 15px;
