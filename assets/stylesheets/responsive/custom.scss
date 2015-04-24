@@ -394,37 +394,6 @@ float: none;
   padding-top: .8em;
 }
 
-#right_column {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-top: 35px;
-    width: 210px;
-    box-sizing: content-box;
-  }
-}
-
-#right_column_flip {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-top: 38px;
-    width: 225px;
-    box-sizing: content-box;
-  }
-}
-
-#left_column {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    width: 630px;
-    box-sizing: content-box;
-  }
-}
-
-#left_column_flip {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-top: 10px;
-    width: 615px;
-    box-sizing: content-box;
-  }
-}
-
 #header_right {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     width: 255px;
