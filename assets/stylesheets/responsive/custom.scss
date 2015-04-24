@@ -1,6 +1,7 @@
 $righttoknow-primary-color: #00DCF0;
 $righttoknow-primary-color-lighter: #d0ffff;
 $righttoknow-heading-color: #005068;
+$righttoknow-link-color: #A60201;
 $heading-font-family: 'Actor', Arial, sans-serif;
 
 // Basic styles
@@ -89,12 +90,12 @@ color: $righttoknow-heading-color;
 }
 
 a {
-  color:#A60201;
+  color: $righttoknow-link-color;
   text-decoration: none;
 
   &:hover,
   &:visited {
-    color:#A60201;
+    color: $righttoknow-link-color;
     text-decoration: underline;
   }
 }
@@ -669,7 +670,7 @@ float: right;
 }
 
 div.controller_help dt:hover > a, div.controller_help h1:hover > a, div#help_unhappy h1:hover > a.hover_a {
-color: #a60201;
+color: $righttoknow-link-color;
 }
 
 #authority_preview {
