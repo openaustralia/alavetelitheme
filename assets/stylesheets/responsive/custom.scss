@@ -943,7 +943,7 @@ input::-moz-focus-inner
     padding: 0;
 }
 
-#date_range label.title,#filter_requests_form label.title,h3.title {
+#date_range label.title,h3.title {
 width:125px;
 padding-right: 0;
 }
@@ -953,14 +953,6 @@ h3.title {
     display: inline-block;
     vertical-align: middle;
     margin-top: 11px;
-  }
-
-  #filter_form & {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin-top: 0;
-      margin-bottom: 5px;
-      width:120px;
-    }
   }
 }
 
