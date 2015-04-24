@@ -1,5 +1,6 @@
 $righttoknow-primary-color: #00DCF0;
 $righttoknow-primary-color-lighter: #d0ffff;
+$righttoknow-heading-color: #005068;
 $heading-font-family: 'Actor', Arial, sans-serif;
 
 // Basic styles
@@ -19,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1,h2,h3,dt {
   font-family: $heading-font-family;
-  color:#005068;
+  color:$righttoknow-heading-color;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     line-height: 1em;
@@ -27,7 +28,7 @@ h1,h2,h3,dt {
 }
 
 h1 {
-color:#005068;
+color: $righttoknow-heading-color;
 font-size:42px;
 }
 
@@ -41,7 +42,7 @@ font-weight:400;
 }
 
 h3 {
-color:#005068;
+color: $righttoknow-heading-color;
 font-weight:400;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
@@ -84,7 +85,7 @@ p {
 }
 
 p.subtitle {
-color:#005068;
+color: $righttoknow-heading-color;
 }
 
 a {
@@ -193,7 +194,7 @@ background: $righttoknow-primary-color-lighter;
   color: #444;
 }
 #topnav li a:hover {
-  color:#005068;
+  color: $righttoknow-heading-color;
 }
 
 #topnav ul li {
@@ -404,7 +405,7 @@ font-style: italic;
 
 #request_form label,label.form_label,.to_public_body_label {
 font-family: $body-font-family;
-color:#005068;
+color: $righttoknow-heading-color;
 }
 
 .list-filter-item h3 {
@@ -627,7 +628,7 @@ div.correspondence:after {
 p.public-body-name-prefix {
 font-size: 1.2em;
 font-family: 'Actor', Arial, sans-serif;
-color:#005068;
+color: $righttoknow-heading-color;
 margin-bottom: 0px;
 }
 
@@ -644,7 +645,7 @@ z-index:999;
 opacity:1.0;
 border-radius:6px;
 -moz-border-radius:6px;
-border:1px solid #005068;
+border:1px solid $righttoknow-heading-color;
 display:none;
 padding:10px;
 }
@@ -1229,11 +1230,11 @@ label.form_label {
 
 #ui-datepicker-div.ui-widget {
 font-family: $body-font-family;
-color:#005068;
+color: $righttoknow-heading-color;
 }
 
 #ui-datepicker-div .ui-datepicker-header,#ui-datepicker-div .ui-widget-header {
-color:#005068;
+color: $righttoknow-heading-color;
 font-family:'Maven Pro';
 }
 
@@ -1243,7 +1244,7 @@ color:#FFF;
 }
 
 #ui-datepicker-div .ui-state-active {
-background:#005068;
+background: $righttoknow-heading-color;
 color:#FFF;
 }
 
@@ -1268,7 +1269,7 @@ padding-top:1em;
 
   h1 {
     font-family: $heading-font-family;
-    color:#005068;
+    color: $righttoknow-heading-color;
     font-weight:400;
     font-size: 2em;
     margin:0 0 20px;
@@ -1281,7 +1282,7 @@ padding-top:1em;
       font-family: $heading-font-family;
       font-size: 1.5em;
       line-height: 1em;
-      color:#005068;
+      color: $righttoknow-heading-color;
       font-weight:400;
 
       @include respond-min( $main_menu-mobile_menu_cutoff ) {
@@ -1293,24 +1294,24 @@ padding-top:1em;
       font-family: $heading-font-family;
       font-style:inherit;
       font-size:39px;
-      color:#005068;
+      color: $righttoknow-heading-color;
     }
   }
 
   h2 {
     font-size:26px;
     font-weight:400;
-    color:#005068;
+    color: $righttoknow-heading-color;
     font-family: $heading-font-family;
 
     strong {
       font-size:31px;
-      color:#005068;
+      color: $righttoknow-heading-color;
       font-family: $heading-font-family;
     }
 
     span {
-      color:#005068;
+      color: $righttoknow-heading-color;
       font-style:inherit;
       font-size:19px;
       font-family: $heading-font-family;
