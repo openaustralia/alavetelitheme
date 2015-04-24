@@ -917,6 +917,10 @@ div.comment_in_request {
 .view_html_prefix {
   min-height: 4em;
   background-color: $righttoknow-primary-color;
+
+  p {
+    margin-top: 0;
+  }
 }
 
 // fix for cascading document <p>s
