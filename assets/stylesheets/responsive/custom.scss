@@ -960,23 +960,6 @@ h3.title {
   margin-top: 20px;
 }
 
-.list-filter-item {
-  input {
-    margin-bottom: 0.7em;
-    height: auto;
-  }
-}
-
-#filter_requests_form .list-filter-item, #search_form .list-filter-item, #filter_form .list-filter-item {
-  margin-bottom: 0;
-}
-
-#filter_requests_form, #filter_requests_form input[type="submit"] {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-bottom: 5px;
-  }
-}
-
 .errorExplanation {
   border-radius: 6px;
   -moz-border-radius: 6px;
