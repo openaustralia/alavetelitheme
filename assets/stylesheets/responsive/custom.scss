@@ -1325,8 +1325,7 @@ padding-top:1em;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     margin-top: 80px;
-    padding-right: 0;
-    width: 236px;
+    @include grid-column($columns:4);
   }
 }
 
@@ -1339,10 +1338,7 @@ padding-top:1em;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     margin-top: 49px;
-    margin-left: 70px;
-    margin-right: 70px;
-    padding: 0;
-    width: 291px;
+    @include grid-column($columns:4);
   }
 }
 
@@ -1357,8 +1353,8 @@ padding-top:1em;
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     margin-top: 80px;
     margin-bottom: 0px;
-    padding: 0;
-    width: 221px;
+    @include grid-column($columns:4);
+    padding-left: 2.5%;
 
     h2 {
       margin-bottom: 15px;
