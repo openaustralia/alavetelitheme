@@ -1380,28 +1380,7 @@ padding-top:1em;
 }
 
 #frontpage_examples {
-  ul {
-    padding-bottom: 1em;
-  }
-
-  #examples_0 {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      padding-right: .5em;
-    }
-  }
-
   #examples_1 {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      padding-right: .5em;
-      padding-left: .75em;
-    }
-
-    ul li {
-      @include respond-min( $main_menu-mobile_menu_cutoff ) {
-        padding: 5px 0;
-      }
-    }
-
     li:last-child {
       border-bottom: 0;
     }
