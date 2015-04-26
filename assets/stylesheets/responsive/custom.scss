@@ -654,39 +654,6 @@ div.controller_help dt:hover > a, div.controller_help h1:hover > a, div#help_unh
 color: #a60201;
 }
 
-#authority_preview {
-  background-color: #FFFFE0;
-
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-top: -67px;
-    padding-left: 1em;
-    padding-right: 1em;
-    overflow: hidden;
-    width: 48%;
-    float: right;
-  }
-
-  h1 {
-    margin-top: 15px;
-    margin-top: 1rem;
-  }
-
-  #stepwise_make_request {
-    margin: 2em 0;
-    text-align: center;
-  }
-
-  .link_button_green {
-    display: inline-block;
-    text-align: center;
-  }
-
-  #public_body_show {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-
 .describe_state_form {
   font-weight: 400;
   background: #E9FDD3;
