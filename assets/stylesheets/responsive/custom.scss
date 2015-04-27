@@ -840,10 +840,6 @@ form input[type=text], form input[type=password] {
   }
 }
 
-form#signin_form input[type=text], form#signin_form input[type=password], form#signup_form input[type=text], form#signup_form input[type=password] {
-width:282px;
-}
-
 form#set_draft_profile_photo_form label.form_label {
   width: inherit;
 }
@@ -1045,43 +1041,6 @@ h3.title {
 
 .form_item_note, .form_note {
   font-size: 1em;
-}
-
-.form_item_note {
-  margin-top: -1em;
-
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-left: 110px;
-    width: 510px;
-  }
-
-  p + & {
-    top: 0;
-    position: static;
-  }
-}
-
-#left_half,
-#right_half {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    width: 46%;
-  }
-}
-
-#left_half {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    float: left;
-    padding-left: 0.9375rem;
-    padding-right: 0;
-  }
-}
-
-#right_half {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    float: right;
-    padding-right: .7em;
-    padding-left: .7em;
-  }
 }
 
 p#sign_in_reason, p#superuser_message {
