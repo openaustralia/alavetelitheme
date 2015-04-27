@@ -394,10 +394,6 @@ float: none;
   padding-top: .8em;
 }
 
-#request_header_subject input {
-  width: 409px;
-}
-
 #request_form label,label.form_label,.to_public_body_label {
 font-family: $body-font-family;
 color: $righttoknow-heading-color;
@@ -840,16 +836,11 @@ form input[type=text], form input[type=password] {
   }
 }
 
-form#signin_form input[type=text], form#signin_form input[type=password], form#signup_form input[type=text], form#signup_form input[type=password] {
-width:282px;
-}
-
 form#set_draft_profile_photo_form label.form_label {
   width: inherit;
 }
 
 .fieldWithErrors {
-background-color:#fee;
 border: none;
 padding: 0;
 }
@@ -874,10 +865,6 @@ background-color:inherit;
 // height: 30px;
 // padding:0px 6px;
 // }
-
-form input[type="text"] {
-  width: 212px;
-}
 
 input::-moz-focus-inner
 {
@@ -906,11 +893,6 @@ h3.title {
   border-radius: 6px;
   -moz-border-radius: 6px;
   font-weight: 400;
-  margin: 20px 0 30px;
-
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    width: 554px;
-  }
 }
 
 #error, .errorExplanation, #hidden_request {
@@ -921,94 +903,8 @@ h3.title {
   border-width: 1px;
 }
 
-
-#request_new, #request_new_batch {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    @include clearfix;
-  }
-
-  span#to_public_body {
-    font-size: 1.1em;
-  }
-
-  label, .to_public_body_label {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      display: block;
-      float: left;
-      clear: none;
-      width: 110px;
-      text-align: left;
-      margin: 2px 0 0;
-      padding: 0 10px 0 0;
-    }
-  }
-
-  .form_item_note,
-  #request_header_text,
-  #request_form .form_note {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      width: 34em;
-      margin-left: 110px;
-    }
-  }
-
-  #request_advice {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      @include grid-column($columns:3.2, $float:right);
-      position: static;
-    }
-
-    ul {
-      margin-top: 1em;
-
-      @include respond-min( $main_menu-mobile_menu_cutoff ) {
-        padding: 0;
-      }
-    }
-  }
-
-  #request_form {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      @include grid-column($columns:8.6, $float:left);
-      position: static;
-    }
-
-    .form_button {
-      @include respond-min( $main_menu-mobile_menu_cutoff ) {
-        margin: 0 0 0 9em;
-      }
-    }
-  }
-
-  #outgoing_message_body {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      width: 33.3em;
-    }
-  }
-
-  input {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin-bottom: 0;
-    }
-  }
-}
-
 #request_header {
   background-color: #FFFFE0;
-
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    width: auto;
-    margin: 0 -0.9375rem;
-    padding-left: 0.9375rem;
-  }
-
-  #request_header_body,
-  #request_header_subject {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      padding-right: 0;
-      padding-left: 0;
-    }
-  }
 }
 
 #request_header_text, #request_search_ahead_results {
@@ -1022,66 +918,8 @@ h3.title {
   padding: 0.5em;
 }
 
-#request_new #request_header_text,
-#request_new #request_header_subject input {
-  width: 100%;
-
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    width: 420px;
-  }
-}
-
-#request_search_ahead_results {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-left: 11em;
-  }
-
-  h3:first-child {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin-top: 0;
-    }
-  }
-}
-
 .form_item_note, .form_note {
   font-size: 1em;
-}
-
-.form_item_note {
-  margin-top: -1em;
-
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-left: 110px;
-    width: 510px;
-  }
-
-  p + & {
-    top: 0;
-    position: static;
-  }
-}
-
-#left_half,
-#right_half {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    width: 46%;
-  }
-}
-
-#left_half {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    float: left;
-    padding-left: 0.9375rem;
-    padding-right: 0;
-  }
-}
-
-#right_half {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    float: right;
-    padding-right: .7em;
-    padding-left: .7em;
-  }
 }
 
 p#sign_in_reason, p#superuser_message {
@@ -1091,42 +929,6 @@ p#sign_in_reason, p#superuser_message {
   font-size: 1.4em;
   font-weight: 700;
   line-height: 1em;
-}
-
-label.form_label {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    display: block;
-    float: left;
-    clear: none;
-    width: 110px;
-    text-align: left;
-    margin: 2px 0 0;
-    padding: 0 10px 0 0;
-    line-height: normal;
-  }
-}
-
-#signup .form_item_note, #signin .form_note {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    font-size: 0.9em;
-    width: inherit;
-  }
-}
-
-.new_public_body_change_request {
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-top: -1px;
-  }
-
-  input[type="text"] {
-    margin-bottom: 0;
-  }
-
-  .form_button {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      margin-left: 135px;
-    }
-  }
 }
 
 // Date Picker
