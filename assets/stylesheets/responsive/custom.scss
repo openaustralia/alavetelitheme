@@ -885,7 +885,7 @@ input::-moz-focus-inner
     padding: 0;
 }
 
-#date_range label.title,h3.title {
+h3.title {
 width:125px;
 padding-right: 0;
 }
@@ -1131,10 +1131,6 @@ label.form_label {
 
 // Date Picker
 
-#ui-datepicker-div {
-  box-sizing: normal;
-}
-
 #ui-datepicker-div.ui-widget {
 font-family: $body-font-family;
 color: $righttoknow-heading-color;
@@ -1153,11 +1149,6 @@ color:#FFF;
 #ui-datepicker-div .ui-state-active {
 background: $righttoknow-heading-color;
 color:#FFF;
-}
-
-input.use-datepicker[type=text] {
-  width: 142px;
-  background: url(/assets/calendar.png) no-repeat 115px 3px;
 }
 
 div.pagination {
