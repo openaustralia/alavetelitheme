@@ -47,7 +47,7 @@ $alaveteli_route_extensions << 'custom-routes.rb'
 # it isn't found, look in the Alaveteli locale directory next:
 repos = [
     FastGettext::TranslationRepository.build('app', :path=>File.join(File.dirname(__FILE__), '..', 'locale-theme'), :type => :po),
-    FastGettext::TranslationRepository.build('app', :path=>'locale', :type => :po)
+    FastGettext::TranslationRepository.build('app', :path=>Rails.root.join('locale'), :type => :po)
 ]
 FastGettext.add_text_domain 'app', :type=>:chain, :chain=>repos
 FastGettext.default_text_domain = 'app'
