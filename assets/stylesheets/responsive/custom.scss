@@ -1004,9 +1004,6 @@ padding-top:1em;
 
 #frontpage_splash {
   @include grid-row($behavior: nest);
-  @include respond-min( $main_menu-mobile_menu_cutoff ){
-    min-height: 375px;
-  }
 
   #left_column {
     @include grid-column(12);
