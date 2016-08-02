@@ -213,13 +213,9 @@ background: $righttoknow-primary-color-lighter;
 }
 
 #logged_in_bar {
-color:#444;
+  color: #444;
 
-@include respond-min( $main_menu-mobile_menu_cutoff ){
-
-}
-
-#logged_in_links {
+  #logged_in_links {
     font-weight: bold;
 
     @include respond-min( $main_menu-mobile_menu_cutoff ){
