@@ -215,6 +215,18 @@ background: $righttoknow-primary-color-lighter;
 #logged_in_bar {
   color: #444;
 
+  @include respond-min( $main_menu-mobile_menu_cutoff ){
+    @include grid-column(8);
+    @include ie8{
+      padding-left: 0.9375em;
+      padding-right: 0.9375em;
+    }
+    @include lte-ie7 {
+      width: 36.813em;
+    }
+  }
+  position: unset;
+
   #logged_in_links {
     font-weight: bold;
 
@@ -222,6 +234,7 @@ background: $righttoknow-primary-color-lighter;
       top: 1.05em;
       right: 20.8em;
       font-weight: normal;
+      transform: unset;
     }
 
     a, .greeting {
