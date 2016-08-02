@@ -1293,3 +1293,8 @@ table, th, tr, td {
 .admin.navbar {
   display: none;
 }
+
+// Fix upstream regression on blog page
+#general_blog .act_link a {
+  padding-left: 0px;
+}
