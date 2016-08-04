@@ -1,0 +1,16 @@
+.act_link a {
+  line-height: 1.5em;
+  padding-left: 20px;
+  background-size: 16px;
+  background-position: 0 3px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.act_link--twitter a {
+  background-image: image-url('twitter-16.png');
+}
+
+.act_link--wordpress a {
+  background-image: image-url('wordpress.png');
+}

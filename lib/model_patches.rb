@@ -54,79 +54,39 @@ Rails.configuration.to_prepare do
     end
 
     InfoRequest.class_eval do
+        AUSTRALIAN_LAW_USED_READABLE_DATA =
+          { foi: { short: _('FOI'),
+                   full: _('Freedom of Information'),
+                   act: _('Freedom of Information Act') },
+            gipa: { short: _('GIPA'),
+                    full: _("Government Information (Public Access)"),
+                    act: _("Government Information (Public Access) Act") },
+            rti: { short: _('RTI'),
+                   full: _("Right to Information"),
+                   act: _("Right to Information Act") }
+          }
+
         def australian_law_used
             if public_body
                 case public_body.jurisdiction
                 when :nsw
-                    "gipa"
+                    :gipa
                 when :qld, :tas
-                    "rti"
+                    :rti
                 else
-                    "foi"
+                    :foi
                 end
             else
-                "foi"
+                :foi
             end
         end
 
-        # Used in messages shown to the user when interacting with a request
-        # and in outbound emails to the authority
-        def law_used_full
-            case australian_law_used
-            when "gipa"
-                _("Government Information (Public Access)")
-            when "rti"
-                _("Right to Information")
-            when "foi"
-                _("Freedom of Information")
-            else
-                raise "Unknown law used '#{australian_law_used}'"
-            end
-        end
-
-        # Used in messages shown to the user when interacting with a request
-        # and in outbound emails to the authority
-        def law_used_short
-            case australian_law_used
-            when "gipa"
-                _("GIPA")
-            when "rti"
-                _("RTI")
-            when "foi"
-                _("FOI")
-            else
-                raise "Unknown law used '#{australian_law_used}'"
-            end
-        end
-
-        # This method isn't currently used in Alaveteli but we're overriding it
-        # for completeness
-        def law_used_act
-            case australian_law_used
-            when "gipa"
-                _("Government Information (Public Access) Act")
-            when "rti"
-                _("Right to Information Act")
-            when "foi"
-                _("Freedom of Information Act")
-            else
-                raise "Unknown law used '#{australian_law_used}'"
-            end
-        end
-
-        # This method isn't currently used in Alaveteli but we're overriding it
-        # for completeness
-        def law_used_with_a
-            case australian_law_used
-            when "gipa"
-                _("A Government Information (Public Access) request")
-            when "rti"
-                _("A Right to Information request")
-            when "foi"
-                _("A Freedom of Information request")
-            else
-                raise "Unknown law used '#{australian_law_used}'"
-            end
+        def applicable_law
+          begin
+            AUSTRALIAN_LAW_USED_READABLE_DATA.fetch(australian_law_used)
+          rescue KeyError
+            raise "Unknown law used '#{australian_law_used}'"
+          end
         end
 
         def date_response_required_by

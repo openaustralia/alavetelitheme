@@ -310,6 +310,7 @@ color:#444;
 // Site Footer
 
 #footer {
+  padding: 0.5em 0;
   margin-top: 4.95em;
   border-top: 1px #ddd solid;
   background-color: #f0f0f0;
@@ -348,6 +349,10 @@ color:#444;
 
     li:first-child {
       margin-bottom: 1em;
+    }
+
+    p {
+      margin-top: 5px;
     }
   }
 }
@@ -1002,6 +1007,52 @@ padding-top:1em;
   }
 }
 
+// These styles added back after being remove in Alaveteli 0.23
+#frontpage_splash {
+  @include grid-row($behavior: nest);
+
+  #left_column {
+    @include grid-column(12);
+    @include respond-min( $main_menu-mobile_menu_cutoff ){
+      @include grid-column(8);
+      margin-top:66px;
+      @include ie8{
+        padding-right: 0.9375em;
+      }
+      @include lte-ie7{
+        width: 36.813em;
+      }
+    }
+  }
+
+  #right_column {
+    @include grid-column(12);
+    @include respond-min( $main_menu-mobile_menu_cutoff ){
+      @include grid-column(4);
+      margin-top: 30px;
+      @include ie8{
+        padding-left: 0.9375em;
+      }
+      @include lte-ie7{
+        width: 17.438em;
+      }
+    }
+
+    input[type=text] {
+      width:180px;
+    }
+  }
+
+  #frontpage_splash #frontpage_search_box {
+    margin-bottom:30px;
+    margin-top:-10px;
+  }
+
+  #frontpage_right_to_know {
+    line-height:20px;
+  }
+}
+
 #frontpage_right_to_know {
   @include grid-column($columns:12);
 
@@ -1241,4 +1292,13 @@ table, th, tr, td {
 /* For the time being hide the admin bar in the main app */
 .admin.navbar {
   display: none;
+}
+
+// Fix upstream regression on blog page
+#general_blog .act_link a {
+  padding-left: 0px;
+}
+
+dt {
+  font-weight: normal;
 }
