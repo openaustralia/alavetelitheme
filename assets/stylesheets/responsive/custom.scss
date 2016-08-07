@@ -881,7 +881,11 @@ h3.title {
   border-radius: 6px;
   -moz-border-radius: 6px;
   font-weight: 400;
-  padding-right: 1em;
+  padding: 0 1em;
+
+  ul {
+    padding-left: 1em;
+  }
 }
 
 #error, .errorExplanation, #hidden_request {
