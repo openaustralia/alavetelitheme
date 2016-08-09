@@ -1292,6 +1292,12 @@ table, th, tr, td {
   border: 1px solid #ddd;
   padding: 5px 20px 5px 5px;
   text-align: left;
+
+  .game_sidebar & {
+    border: 0;
+    padding: 0;
+    text-align: center;
+  }
 }
 
 // Overrides
