@@ -65,6 +65,22 @@ This is the order of preference for the authority’s request email:
 
 A person’s address is the absolute last resort.
 
+#### Public notes
+
+You can add public notes about the authority. The notes are displayed on
+the authority’s page, as an excerpt in lists of authorities, and as a highlighted
+notice when someone makes a request to the authority. They are covered in the site search.
+
+The note could include important information about requesting from this
+department, key terms people might use when searching for the agency, and a
+basic description of the authority. For example:
+
+> HomeStart was created by the South Australian Government in 1989,
+> as a response to high interest rates and a lack of affordable home loan
+> finance options. HomeStart was established as a statutory corporation under
+> the Housing and Urban Development (Administrative Arrangements) Act 1995 and
+> reports to the Minister for Housing and Urban Development.
+
 ### Jurisdictions
 
 A unique aspect of Right To Know compared to other Alaveteli installations is
