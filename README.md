@@ -60,8 +60,8 @@ This is the order of preference for the authority’s FOI email:
 2. Specific address for sub-department agency at department (e.g.
    special_agency@department.gov.au)
 3. Specific FOI address for department (e.g. foi@department.gov.au)
-4. Generic address for department (e.g. info@department.gov)
-5. Address for a specific person at the agency (e.g. jane.zhang@dept.gov)
+4. Generic address for department (e.g. info@department.gov.au)
+5. Address for a specific person at the agency (e.g. jane.zhang@dept.gov.au)
 
 A person’s address is the absolute last resort.
 
