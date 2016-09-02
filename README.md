@@ -81,6 +81,17 @@ basic description of the authority. For example:
 > the Housing and Urban Development (Administrative Arrangements) Act 1995 and
 > reports to the Minister for Housing and Urban Development.
 
+#### Short name
+
+You can add abbreviated version of the authority’s name as it’s *short name*.
+These are really useful because the common name for an agency might not be it’s
+full formal name. For example, people commonly search “ABS” when looking for
+the “Australian Bureau of Statistics”.
+
+It’s very important to only add acronyms or abbreviations that people *really* do use.
+These are displayed on authority pages and lists of authorities, and having lots
+of irrelevant short names adds unnecessary noise to the page.
+
 ### Jurisdictions
 
 A unique aspect of Right To Know compared to other Alaveteli installations is
