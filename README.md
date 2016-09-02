@@ -48,12 +48,12 @@ Authorities
 
 ### Adding new authorities
 
-#### Authority FOI email
+#### Authority request email
 
-When collecting the FOI email address for an authority we need to find the
+When collecting the email address that requests to the authority are sent to, we need to find the
 best address to deal with them directly. A specific address for the authority
 isn’t always available, especially when they exist within a bigger department.
-This is the order of preference for the authority’s FOI email:
+This is the order of preference for the authority’s request email:
 
 1. Specific FOI address for sub-department agency (e.g.
    foi@special_agency.gov.au)
