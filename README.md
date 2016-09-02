@@ -48,7 +48,7 @@ Authorities
 
 ### Adding new authorities
 
-#### Authority request email
+#### Request email
 
 When collecting the email address that requests to the authority are sent to, we need to find the
 best address to deal with them directly. A specific address for the authority
