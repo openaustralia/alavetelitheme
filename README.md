@@ -46,6 +46,27 @@ To contribute an enhancement or a fix to this theme:
 Authorities
 -----------
 
+### Adding new authorities
+
+#### Authority FOI email
+
+When collecting the FOI email address for an authority we need to find the
+best address to deal with them directly. A specific address for the authority
+isn’t always available, especially when they exist within a bigger department.
+This is the order of preference for the authority’s FOI email:
+
+1. Specific FOI address for sub-department agency (e.g.
+   foi@special_agency.gov.au)
+2. Specific address for sub-department agency at department (e.g.
+   special_agency@department.gov.au)
+3. Specific FOI address for department (e.g. foi@department.gov.au)
+4. Generic address for department (e.g. info@department.gov)
+5. Address for a specific person at the agency (e.g. jane.zhang@dept.gov)
+
+A person’s address is the absolute last resort.
+
+### Jurisdictions
+
 A unique aspect of Right To Know compared to other Alaveteli installations is
 that we're in the process of supporting 9 different jurisdictions - Federal and
 all the states and territories.
