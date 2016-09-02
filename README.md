@@ -92,6 +92,13 @@ It’s very important to only add acronyms or abbreviations that people *really*
 These are displayed on authority pages and lists of authorities, and having lots
 of irrelevant short names adds unnecessary noise to the page.
 
+#### Removing an authority
+
+Authorities that are defunct aren’t actually removed from Right To Know.
+Add the `defunct` tag to the authority and it will no longer be available for requests.
+People can still find requests to the authority in search results and see all
+the requests that were made to them while they were active.
+
 ### Jurisdictions
 
 A unique aspect of Right To Know compared to other Alaveteli installations is
