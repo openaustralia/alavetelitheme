@@ -48,6 +48,22 @@ Authorities
 
 ### Adding new authorities
 
+#### Should an agency be added?
+
+Not everything that the government considers to be a distinct agency is an
+entity that people actually want to make requests to. It is very much a
+subjective call, but always try and make the site most useful to the people who
+use it. If there is a lot of unnecessary sub-division authorities for example,
+requests will be more difficult to find in the site. Try to avoid this.
+For example, the IT division or the head office of an agency are probably
+just part of the agency itself for the purpose of information requests.
+
+If a sub-department agency has a distinct office, it’s own website and
+information request email address, and does stuff that people would want to make
+requests about, it should probably be a distinct authority in Right To Know.
+
+If in doubt, ask the team.
+
 #### Request email
 
 When collecting the email address that requests to the authority are sent to, we need to find the
