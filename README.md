@@ -64,6 +64,14 @@ requests about, it should probably be a distinct authority in Right To Know.
 
 If in doubt, ask the team.
 
+#### Format of state name in authority names
+
+For state authorities often the name of the state appears in the name of the authority.
+
+On the [_Art Gallery of NSW_ website](http://www.artgallery.nsw.gov.au/about-us/) they refer to their own name in three different forms: _Art Gallery NSW_, _Art Gallery of New South Wales_, and _Art Gallery of NSW_. We're currently using [_Art Gallery of NSW_](https://www.righttoknow.org.au/body/agnsw) because it is commonly used, succinct, and searchable. Therefore if the name of the state is in the name of the authority, use the form they use or the form in most common use.
+
+When you need to choose, use real acronyms (NSW, ACT, WA, SA, NT) but not contractions (use Victoria, Tasmania, and Queensland, not VIC, TAS, or QLD).
+
 #### Request email
 
 When collecting the email address that requests to the authority are sent to, we need to find the
