@@ -627,6 +627,13 @@ margin-bottom: 0px;
 .popup {
   .entirebody > & {
     margin: 0;
+    position: relative;
+
+    .popup-close {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+    }
   }
 }
 
