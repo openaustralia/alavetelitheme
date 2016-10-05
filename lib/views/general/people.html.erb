@@ -5,39 +5,11 @@
 <div class="leaderboard-block">
   <div class="leaderboard-item">
     <h3>Last 28 days</h3>
-
-    <ol class="leaderboard-people">
-    <% @last_28_day_requesters.each do |user, count| %>
-      <li class="leaderboard-person">
-        <%= link_to user, class: "leaderboard-person-details" do %>
-          <img src="<%= get_profile_photo_url(:url_name => user.url_name) %>" alt="Avatar image for <%= user.name %>" />
-          <div>
-            <h4 class="u-name"><%= user.name %></h4>
-            <p><%= _('Joined in {{year}}.', :year => user.created_at.year) %></p>
-          </div>
-        <% end %>
-        <p class="leaderboard-count"><%= count %></p>
-      </li>
-    <% end %>
-    </ol>
+    <%= render "people_leaderboard", users_with_counts: @last_28_day_requesters %>
   </div>
   <div class="leaderboard-item">
     <h3>All time</h3>
-
-    <ol class="leaderboard-people">
-    <% @all_time_requesters.each do |user, count| %>
-      <li class="leaderboard-person">
-        <%= link_to user, class: "leaderboard-person-details" do %>
-          <img src="<%= get_profile_photo_url(:url_name => user.url_name) %>" alt="Avatar image for <%= user.name %>" />
-          <div>
-            <h4 class="u-name"><%= user.name %></h4>
-            <p><%= _('Joined in {{year}}.', :year => user.created_at.year) %></p>
-          </div>
-        <% end %>
-        <p class="leaderboard-count"><%= count %></p>
-      </li>
-    <% end %>
-    </ol>
+    <%= render "people_leaderboard", users_with_counts: @all_time_requesters %>
   </div>
 </div>
 
@@ -46,38 +18,10 @@
 <div class="leaderboard-block">
   <div class="leaderboard-item">
     <h3>Last 28 days</h3>
-
-    <ol class="leaderboard-people">
-    <% @last_28_day_commenters.each do |user, count| %>
-      <li class="leaderboard-person">
-        <%= link_to user, class: "leaderboard-person-details" do %>
-          <img src="<%= get_profile_photo_url(:url_name => user.url_name) %>" alt="Avatar image for <%= user.name %>" />
-          <div>
-            <h4 class="u-name"><%= user.name %></h4>
-            <p><%= _('Joined in {{year}}.', :year => user.created_at.year) %></p>
-          </div>
-        <% end %>
-        <p class="leaderboard-count"><%= count %></p>
-      </li>
-    <% end %>
-    </ol>
+    <%= render "people_leaderboard", users_with_counts: @last_28_day_commenters %>
   </div>
   <div class="leaderboard-item">
     <h3>All time</h3>
-
-    <ol class="leaderboard-people">
-    <% @all_time_commenters.each do |user, count| %>
-      <li class="leaderboard-person">
-        <%= link_to user, class: "leaderboard-person-details" do %>
-          <img src="<%= get_profile_photo_url(:url_name => user.url_name) %>" alt="Avatar image for <%= user.name %>" />
-          <div>
-            <h4 class="u-name"><%= user.name %></h4>
-            <p><%= _('Joined in {{year}}.', :year => user.created_at.year) %></p>
-          </div>
-        <% end %>
-        <p class="leaderboard-count"><%= count %></p>
-      </li>
-    <% end %>
-    </ol>
+    <%= render "people_leaderboard", users_with_counts: @all_time_commenters %>
   </div>
 </div>
