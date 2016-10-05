@@ -10,5 +10,9 @@ Rails.configuration.to_prepare do
         def mycontroller
             @say_something = "Greetings friend"
         end
+
+        def people
+
+        end
     end
 end
