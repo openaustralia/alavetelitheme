@@ -1334,6 +1334,13 @@ dt {
 
 // For People experiment
 
+#general_people {
+  h2 {
+    margin-top: 2em;
+    font-weight: bold;
+  }
+}
+
 .leaderboard-block {
   margin: 0 0 4em;
   @include respond-min( 35em ) {
