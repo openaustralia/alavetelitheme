@@ -6,4 +6,6 @@ Alaveteli::Application.routes.draw do
 
     # Additional help page example
     match '/help/help_out' => 'help#help_out', :as => :help_out
+
+    match '/people' => 'general#people', :as => :people
 end
