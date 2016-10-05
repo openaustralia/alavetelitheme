@@ -9,7 +9,7 @@
       <% end %>
       <div>
         <h4 class="u-name"><%= user.name %></h4>
-        <p><%= _('Joined in {{year}}.', :year => user.created_at.year) %></p>
+        <p><%= _('Joined in {{year}}', :year => user.created_at.year) %></p>
       </div>
     <% end %>
     <p class="leaderboard-count"><%= count %></p>
