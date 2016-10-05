@@ -5,14 +5,14 @@
 # See http://stackoverflow.com/questions/7072758/plugin-not-reloading-in-development-mode
 #
 Rails.configuration.to_prepare do
-    # Example adding an instance variable to the frontpage controller
-    GeneralController.class_eval do
-        def mycontroller
-            @say_something = "Greetings friend"
-        end
-
-        def people
-
-        end
+  # Example adding an instance variable to the frontpage controller
+  GeneralController.class_eval do
+    def mycontroller
+      @say_something = "Greetings friend"
     end
+
+    def people
+
+    end
+  end
 end
