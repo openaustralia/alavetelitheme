@@ -14,10 +14,10 @@ Rails.configuration.to_prepare do
     def people
       @all_time_requesters = InfoRequest.visible.joins(:user).group(:user).order("count_all DESC").limit(10).count
       @last_28_day_requesters = InfoRequest.visible.where("info_requests.created_at >= ?", 28.days.ago).joins(:user).group(:user).order("count_all DESC").limit(10).count
-      # TODO: Only do visible comments
-      @all_time_commenters = Comment.joins(:user).group(:user).order("count_all DESC").limit(10).count
-      # TODO: Only do visible comments
-      @last_28_day_commenters = Comment.where("comments.created_at >= ?", 28.days.ago).joins(:user).group(:user).order("count_all DESC").limit(10).count
+      # TODO: Have user objects automatically instantiated like the InfoRequest queries above
+      @all_time_commenters = Comment.visible.joins(:user).group("comments.user_id").order("count_all DESC").limit(10).count.map { |u_id,c| [User.find(u_id), c] }
+      # TODO: Have user objects automatically instantiated like the InfoRequest queries above
+      @last_28_day_commenters = Comment.where("comments.created_at >= ?", 28.days.ago).visible.joins(:user).group("comments.user_id").order("count_all DESC").limit(10).count.map { |u_id,c| [User.find(u_id), c] }
 
       api_data = {
         all_time_requesters: json_for_api(@all_time_requesters),
