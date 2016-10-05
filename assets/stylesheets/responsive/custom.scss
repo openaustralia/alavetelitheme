@@ -1370,10 +1370,11 @@ dt {
   }
 }
 
-.leaderboard-person-details {
+a.leaderboard-person-details {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  color: #333;
 
   p {
     margin: 0;
