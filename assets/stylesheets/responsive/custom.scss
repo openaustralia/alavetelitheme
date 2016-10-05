@@ -1335,6 +1335,7 @@ dt {
 // For People experiment
 
 .leaderboard-block {
+  margin: 0 0 4em;
   @include respond-min( 35em ) {
     display: flex;
   }
