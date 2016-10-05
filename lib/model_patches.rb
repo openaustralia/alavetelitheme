@@ -96,21 +96,45 @@ Rails.configuration.to_prepare do
 
   User.class_eval do
     def self.all_time_requesters
-      InfoRequest.visible.joins(:user).group(:user).order("count_all DESC").limit(10).count
+      InfoRequest.visible.
+                  joins(:user).
+                  group(:user).
+                  order("count_all DESC").
+                  limit(10).
+                  count
     end
 
     def self.last_28_day_requesters
-      InfoRequest.visible.where("info_requests.created_at >= ?", 28.days.ago).joins(:user).group(:user).order("count_all DESC").limit(10).count
+      InfoRequest.visible.
+                  where("info_requests.created_at >= ?", 28.days.ago).
+                  joins(:user).
+                  group(:user).
+                  order("count_all DESC").
+                  limit(10).
+                  count
     end
 
     def self.all_time_commenters
+      commenters = Comment.visible.
+                           joins(:user).
+                           group("comments.user_id").
+                           order("count_all DESC").
+                           limit(10).
+                           count
       # TODO: Have user objects automatically instantiated like the InfoRequest queries above
-      Comment.visible.joins(:user).group("comments.user_id").order("count_all DESC").limit(10).count.map { |u_id,c| [User.find(u_id), c] }
+      commenters.map { |u_id,c| [User.find(u_id), c] }
     end
 
     def self.last_28_day_commenters
+      commenters = Comment.visible.
+                           where("comments.created_at >= ?", 28.days.ago).
+                           joins(:user).
+                           group("comments.user_id").
+                           order("count_all DESC").
+                           limit(10).
+                           count
       # TODO: Have user objects automatically instantiated like the InfoRequest queries above
-      Comment.where("comments.created_at >= ?", 28.days.ago).visible.joins(:user).group("comments.user_id").order("count_all DESC").limit(10).count.map { |u_id,c| [User.find(u_id), c] }
+      commenters.map { |u_id,c| [User.find(u_id), c] }
     end
   end
 end
