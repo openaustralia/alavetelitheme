@@ -105,6 +105,7 @@ Rails.configuration.to_prepare do
     end
 
     def self.last_28_day_requesters
+      # TODO: Refactor as it's basically the same as all_time_requesters
       InfoRequest.visible.
                   where("info_requests.created_at >= ?", 28.days.ago).
                   joins(:user).
@@ -126,6 +127,7 @@ Rails.configuration.to_prepare do
     end
 
     def self.last_28_day_commenters
+      # TODO: Refactor as it's basically the same as all_time_commenters
       commenters = Comment.visible.
                            where("comments.created_at >= ?", 28.days.ago).
                            joins(:user).
