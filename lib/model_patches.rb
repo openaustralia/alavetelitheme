@@ -93,4 +93,24 @@ Rails.configuration.to_prepare do
       Holiday.due_date_from(date_initial_request_last_sent_at, public_body.reply_late_after_days, public_body.working_or_calendar_days)
     end
   end
+
+  User.class_eval do
+    def self.all_time_requesters
+      InfoRequest.visible.joins(:user).group(:user).order("count_all DESC").limit(10).count
+    end
+
+    def self.last_28_day_requesters
+      InfoRequest.visible.where("info_requests.created_at >= ?", 28.days.ago).joins(:user).group(:user).order("count_all DESC").limit(10).count
+    end
+
+    def self.all_time_commenters
+      # TODO: Have user objects automatically instantiated like the InfoRequest queries above
+      Comment.visible.joins(:user).group("comments.user_id").order("count_all DESC").limit(10).count.map { |u_id,c| [User.find(u_id), c] }
+    end
+
+    def self.last_28_day_commenters
+      # TODO: Have user objects automatically instantiated like the InfoRequest queries above
+      Comment.where("comments.created_at >= ?", 28.days.ago).visible.joins(:user).group("comments.user_id").order("count_all DESC").limit(10).count.map { |u_id,c| [User.find(u_id), c] }
+    end
+  end
 end
