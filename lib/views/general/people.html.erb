@@ -7,212 +7,36 @@
     <h3>Last 28 days</h3>
 
     <ol class="leaderboard-people">
+    <% @last_28_day_requesters.each do |user, count| %>
       <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/henare_degan/photo.png" alt="image of person" />
+        <%= link_to user, class: "leaderboard-person-details" do %>
+          <img src="<%= get_profile_photo_url(:url_name => user.url_name) %>" alt="Avatar image for <%= user.name %>" />
           <div>
-            <h4 class="u-name">Henare Degan</h4>
-            <p>Joined in 2012</p>
+            <h4 class="u-name"><%= user.name %></h4>
+            <p><%= _('Joined in {{year}}.', :year => user.created_at.year) %></p>
           </div>
-        </a>
-        <p class="leaderboard-count">17</p>
+        <% end %>
+        <p class="leaderboard-count"><%= count %></p>
       </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="http://lorempixel.com/100/100/nature/" alt="image of person" />
-          <div>
-            <h4 class="u-name">Sarah Van Winkle</h4>
-            <p>Joined in July 2016</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">14</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/henare_degan/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Henare Degan</h4>
-            <p>Joined in 2012</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">7</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="http://lorempixel.com/100/100/nature/" alt="image of person" />
-          <div>
-            <h4 class="u-name">Sarah Van Winkle</h4>
-            <p>Joined in July 2016</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">4</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
+    <% end %>
     </ol>
   </div>
   <div class="leaderboard-item">
     <h3>All time</h3>
 
     <ol class="leaderboard-people">
+    <% @all_time_requesters.each do |user, count| %>
       <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/henare_degan/photo.png" alt="image of person" />
+        <%= link_to user, class: "leaderboard-person-details" do %>
+          <img src="<%= get_profile_photo_url(:url_name => user.url_name) %>" alt="Avatar image for <%= user.name %>" />
           <div>
-            <h4 class="u-name">Henare Degan</h4>
-            <p>Joined in 2012</p>
+            <h4 class="u-name"><%= user.name %></h4>
+            <p><%= _('Joined in {{year}}.', :year => user.created_at.year) %></p>
           </div>
-        </a>
-        <p class="leaderboard-count">17</p>
+        <% end %>
+        <p class="leaderboard-count"><%= count %></p>
       </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="http://lorempixel.com/100/100/nature/" alt="image of person" />
-          <div>
-            <h4 class="u-name">Sarah Van Winkle</h4>
-            <p>Joined in July 2016</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">14</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/henare_degan/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Henare Degan</h4>
-            <p>Joined in 2012</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">7</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="http://lorempixel.com/100/100/nature/" alt="image of person" />
-          <div>
-            <h4 class="u-name">Sarah Van Winkle</h4>
-            <p>Joined in July 2016</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">4</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
+    <% end %>
     </ol>
   </div>
 </div>
@@ -224,212 +48,36 @@
     <h3>Last 28 days</h3>
 
     <ol class="leaderboard-people">
+    <% @last_28_day_commenters.each do |user, count| %>
       <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="https://www.righttoknow.org.au/user/henare_degan">
-          <img src="https://www.righttoknow.org.au/user/henare_degan/photo.png" alt="image of person" />
+        <%= link_to user, class: "leaderboard-person-details" do %>
+          <img src="<%= get_profile_photo_url(:url_name => user.url_name) %>" alt="Avatar image for <%= user.name %>" />
           <div>
-            <h4 class="u-name">Henare Degan</h4>
-            <p>Joined in 2012</p>
+            <h4 class="u-name"><%= user.name %></h4>
+            <p><%= _('Joined in {{year}}.', :year => user.created_at.year) %></p>
           </div>
-        </a>
-        <p class="leaderboard-count">17</p>
+        <% end %>
+        <p class="leaderboard-count"><%= count %></p>
       </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="http://lorempixel.com/100/100/nature/" alt="image of person" />
-          <div>
-            <h4 class="u-name">Sarah Van Winkle</h4>
-            <p>Joined in July 2016</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">14</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/henare_degan/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Henare Degan</h4>
-            <p>Joined in 2012</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">7</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="http://lorempixel.com/100/100/nature/" alt="image of person" />
-          <div>
-            <h4 class="u-name">Sarah Van Winkle</h4>
-            <p>Joined in July 2016</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">4</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
+    <% end %>
     </ol>
   </div>
   <div class="leaderboard-item">
     <h3>All time</h3>
 
     <ol class="leaderboard-people">
+    <% @last_28_day_commenters.each do |user, count| %>
       <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/henare_degan/photo.png" alt="image of person" />
+        <%= link_to user, class: "leaderboard-person-details" do %>
+          <img src="<%= get_profile_photo_url(:url_name => user.url_name) %>" alt="Avatar image for <%= user.name %>" />
           <div>
-            <h4 class="u-name">Henare Degan</h4>
-            <p>Joined in 2012</p>
+            <h4 class="u-name"><%= user.name %></h4>
+            <p><%= _('Joined in {{year}}.', :year => user.created_at.year) %></p>
           </div>
-        </a>
-        <p class="leaderboard-count">17</p>
+        <% end %>
+        <p class="leaderboard-count"><%= count %></p>
       </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="http://lorempixel.com/100/100/nature/" alt="image of person" />
-          <div>
-            <h4 class="u-name">Sarah Van Winkle</h4>
-            <p>Joined in July 2016</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">14</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/henare_degan/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Henare Degan</h4>
-            <p>Joined in 2012</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">7</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="http://lorempixel.com/100/100/nature/" alt="image of person" />
-          <div>
-            <h4 class="u-name">Sarah Van Winkle</h4>
-            <p>Joined in July 2016</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">4</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
-      <li class="leaderboard-person">
-        <a class="leaderboard-person-details" href="/">
-          <img src="https://www.righttoknow.org.au/user/luke_bacon/photo.png" alt="image of person" />
-          <div>
-            <h4 class="u-name">Luke Bacon</h4>
-            <p>Joined in 2013</p>
-          </div>
-        </a>
-        <p class="leaderboard-count">2</p>
-      </li>
+    <% end %>
     </ol>
   </div>
 </div>
