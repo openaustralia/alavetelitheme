@@ -1332,6 +1332,36 @@ dt {
   font-weight: normal;
 }
 
+// Override status text color to match icon
+$status-success: #62b356;
+$status-failure: #e04b4b;
+$status-pending: #d87c10;
+
+.icon_successful,
+.icon_partially_successful {
+  color: $status-success;
+}
+
+.icon_waiting_classification,
+.icon_waiting_response,
+.icon_waiting_clarification,
+.icon_attention_requested,
+.icon_not_held,
+.icon_gone_postal,
+.icon_internal_review,
+.icon_user_withdrawn {
+  color: $status-pending;
+}
+
+.icon_requires_admin,
+.icon_waiting_response_overdue,
+.icon_waiting_response_very_overdue,
+.icon_error_message,
+.icon_failed,
+.icon_rejected {
+  color: $status-failure;
+}
+
 // For People experiment
 
 #general_people {
