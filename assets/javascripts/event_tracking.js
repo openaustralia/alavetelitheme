@@ -2,11 +2,11 @@ $(document).ready(function() {
   // check if the Google Analytics function is available
   if (typeof ga == 'function') {
     function trackFollow() {
-      ga('send', 'event', 'following', 'click Follow buttom');
+      ga('send', 'event', 'Following', 'click Follow button');
     };
 
     function trackUnsubscribe() {
-      ga('send', 'event', 'following', 'click Unsubscribe buttom');
+      ga('send', 'event', 'Following', 'click Unsubscribe button');
     };
 
     $('.track-request-action').click(function(e) { trackFollow(); });
