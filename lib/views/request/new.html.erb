@@ -215,7 +215,9 @@
               Please email your request directly to NSW Police Force using:
               <%= mail_to "gipaapp@police.nsw.gov.au" %>
             </p>
-            <p>You cannot make requests for personal information using this site. If you do you will be posting your information publicly on the internet for anyone to see.</p>
+            <p>
+              You <%= link_to "cannot make requests for personal information", help_requesting_path(:anchor => "data_protection") %>
+              using this site. If you do you will be posting your information publicly on the internet for anyone to see.</p>
           </div>
         </fieldset>
       <% end %>
