@@ -211,7 +211,10 @@
           <input type="radio" name="personal_request" id="request_personal_switch_no" value="no" />
           <label for="request_personal_switch_no">No</label>
           <div class="request_personal_message">
-            <p>Please email your request directly to NSW Police Force using: gipaapp@police.nsw.gov.au</p>
+            <p>
+              Please email your request directly to NSW Police Force using:
+              <%= mail_to "gipaapp@police.nsw.gov.au" %>
+            </p>
             <p>You cannot make requests for personal information using this site. If you do you will be posting your information publicly on the internet for anyone to see.</p>
           </div>
         </fieldset>
