@@ -212,7 +212,7 @@
           <label for="request_personal_switch_no">No</label>
           <div class="request_personal_message">
             <p>
-              Please <strong>email your request</strong> directly to <%= @info_request.public_body.name %>:
+              <strong>Email your request</strong> directly to <%= @info_request.public_body.name %>:
               <%= mail_to @info_request.public_body.request_email, @info_request.public_body.request_email, class: "request_email" %>
             </p>
             <p>
