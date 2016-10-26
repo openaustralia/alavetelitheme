@@ -213,7 +213,7 @@
           <div class="request_personal_message">
             <p>
               <strong>Email your request</strong> directly to <%= @info_request.public_body.name %>:
-              <%= mail_to @info_request.public_body.request_email, @info_request.public_body.request_email, class: "request_email" %>
+              <%= mail_to @info_request.public_body.request_email, @info_request.public_body.request_email, subject: "Request for personal information", class: "request_email" %>
             </p>
             <p>
               You <%= link_to "cannot make requests for personal information", help_requesting_path(:anchor => "data_protection") %>
