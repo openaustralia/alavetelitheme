@@ -1440,6 +1440,13 @@ a.leaderboard-person-details {
   input#request_personal_switch_yes:checked ~ & {
     display: block;
   }
+
+  a.request_email {
+    display: block;
+    margin: 1em;
+    text-align: center;
+    font-weight: bold;
+  }
 }
 
 #request_personal_switch legend {

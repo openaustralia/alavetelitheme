@@ -212,8 +212,8 @@
           <label for="request_personal_switch_no">No</label>
           <div class="request_personal_message">
             <p>
-              Please email your request directly to <%= @info_request.public_body.name %> using:
-              <%= mail_to @info_request.public_body.request_email %>
+              Please <strong>email your request</strong> directly to <%= @info_request.public_body.name %>:
+              <%= mail_to @info_request.public_body.request_email, @info_request.public_body.request_email, class: "request_email" %>
             </p>
             <p>
               You <%= link_to "cannot make requests for personal information", help_requesting_path(:anchor => "data_protection") %>
