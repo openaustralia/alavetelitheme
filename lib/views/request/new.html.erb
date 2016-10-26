@@ -205,7 +205,8 @@
     <div id="request_form" class="request_form">
       <% if !@batch && @info_request.public_body.info_requests_hidden_count >= 2 %>
         <fieldset id="request_personal_switch" class="request_personal_switch">
-          <legend>Are you asking for <strong>personal information</strong> about yourself or someone else?</legend>
+          <legend>Are you asking for <strong>personal information</strong> that should be confidential?</legend>
+          <p>This includes <em>police incident reports</em>, <em>medical records</em>, <em>paperwork for insurance</em>, etc.</p>
           <input type="radio" name="personal_request" id="request_personal_switch_yes" value="yes" />
           <label for="request_personal_switch_yes">Yes</label>
           <input type="radio" name="personal_request" id="request_personal_switch_no" value="no" />
