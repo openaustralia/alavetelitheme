@@ -1433,11 +1433,15 @@ a.leaderboard-person-details {
   padding: 0 0 1em 1em;
 }
 
-// Request for personal information switch
+// Requests for personal information
 .request_personal_message {
   display: none;
 
   input#request_personal_switch_yes:checked ~ & {
     display: block;
   }
+}
+
+#request_personal_switch legend {
+  font-weight: normal;
 }
