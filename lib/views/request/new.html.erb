@@ -213,7 +213,7 @@
           <div class="request_personal_message">
             <p>
               Please email your request directly to <%= @info_request.public_body.name %> using:
-              <%= mail_to "gipaapp@police.nsw.gov.au" %>
+              <%= mail_to @info_request.public_body.request_email %>
             </p>
             <p>
               You <%= link_to "cannot make requests for personal information", help_requesting_path(:anchor => "data_protection") %>
