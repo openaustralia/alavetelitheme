@@ -51,6 +51,10 @@ Rails.configuration.to_prepare do
         'calendar'
       end
     end
+
+    def info_requests_hidden_count
+      info_requests.where("prominence != ?", "normal").count
+    end
   end
 
   InfoRequest.class_eval do
