@@ -204,53 +204,62 @@
 
     <div id="request_form" class="request_form">
       <% if !@batch && @info_request.public_body.info_requests_hidden_count >= 2 %>
-          <p>Are you asking for personal information about yourself?</p>
-      <% else %>
-        <div id="request_header_subject" class="request_header_subject">
-          <p>
-            <label class="form_label" for="typeahead_search"><%= _('Summary:') %></label>
-            <%= f.text_field :title, :size => 50, :id =>"typeahead_search" %>
-          </p>
-
-          <div class="form_item_note">
-            <%= _("A one line summary of the information you are requesting, e.g.") %>
-            <%= render :partial => "summary_suggestion" %>
+        <fieldset id="request_personal_switch" class="request_personal_switch">
+          <legend>Are you asking for personal information about yourself?</legend>
+          <input type="radio" name="personal_request" id="request_personal_switch_yes" value="yes" />
+          <label for="request_personal_switch_yes">Yes</label>
+          <input type="radio" name="personal_request" id="request_personal_switch_no" value="no" />
+          <label for="request_personal_switch_no">No</label>
+          <div class="request_personal_message">
+            <p>Please email your request directly to NSW Police Force using: gipaapp@police.nsw.gov.au</p>
+            <p>You cannot make requests for personal information using this site. If you do you will be posting your information publicly on the internet for anyone to see.</p>
           </div>
+        </fieldset>
+      <% end %>
+      <div id="request_header_subject" class="request_header_subject">
+        <p>
+          <label class="form_label" for="typeahead_search"><%= _('Summary:') %></label>
+          <%= f.text_field :title, :size => 50, :id =>"typeahead_search" %>
+        </p>
+
+        <div class="form_item_note">
+          <%= _("A one line summary of the information you are requesting, e.g.") %>
+          <%= render :partial => "summary_suggestion" %>
         </div>
+      </div>
 
-        <div id="typeahead_response" class="typeahead_response">
-        </div>
+      <div id="typeahead_response" class="typeahead_response">
+      </div>
 
-        <%= fields_for :outgoing_message do |o| %>
-          <p>
-            <label class="form_label" for="outgoing_message_body">
-              <%= _('Your request:') %></label>
-            <%= o.text_area :body, :rows => 20, :cols => 60 %>
-          </p>
-        <% end %>
+      <%= fields_for :outgoing_message do |o| %>
+        <p>
+          <label class="form_label" for="outgoing_message_body">
+            <%= _('Your request:') %></label>
+          <%= o.text_area :body, :rows => 20, :cols => 60 %>
+        </p>
+      <% end %>
 
-        <div class="form_button">
-          <% if @batch %>
-            <% params[:public_body_ids].each do |public_body_id| %>
-              <%= hidden_field_tag("public_body_ids[]", public_body_id)%>
-            <% end %>
-          <% else %>
-            <%= f.hidden_field(:public_body_id, { :value => @info_request.public_body_id } ) %>
+      <div class="form_button">
+        <% if @batch %>
+          <% params[:public_body_ids].each do |public_body_id| %>
+            <%= hidden_field_tag("public_body_ids[]", public_body_id)%>
           <% end %>
-          <%= hidden_field_tag(:submitted_new_request, 1 ) %>
-          <%= hidden_field_tag(:preview, 1 ) %>
-          <%= submit_tag _("Preview your public request") %>
-        </div>
-
-        <% if !@info_request.tag_string.empty? %>
-          <p class="form_note">
-            <!-- <label class="form_label" for="info_request_tag_string"><%= _("Tags (separated by a space):") %></label>
-              <%= f.text_field :tag_string, :size => 50 %> -->
-
-              <%= f.hidden_field(:tag_string) %>
-              <strong>Tags:</strong> <%=h @info_request.tag_string %>
-          </p>
+        <% else %>
+          <%= f.hidden_field(:public_body_id, { :value => @info_request.public_body_id } ) %>
         <% end %>
+        <%= hidden_field_tag(:submitted_new_request, 1 ) %>
+        <%= hidden_field_tag(:preview, 1 ) %>
+        <%= submit_tag _("Preview your public request") %>
+      </div>
+
+      <% if !@info_request.tag_string.empty? %>
+        <p class="form_note">
+          <!-- <label class="form_label" for="info_request_tag_string"><%= _("Tags (separated by a space):") %></label>
+            <%= f.text_field :tag_string, :size => 50 %> -->
+
+            <%= f.hidden_field(:tag_string) %>
+            <strong>Tags:</strong> <%=h @info_request.tag_string %>
+        </p>
       <% end %>
     </div>
   </div>
