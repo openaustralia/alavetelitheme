@@ -14,5 +14,17 @@ $(document).ready(function() {
 
     $('.unsubscribe__action').click(function(e) { trackUnsubscribe() });
     $('.unsubscribe-request-action').click(function(e) { trackUnsubscribe() });
+
+    $("#request_personal_switch_yes").click(function(e) {
+      ga('send', 'event', 'Request for personal information question', 'click Yes');
+    });
+
+    $("#request_personal_switch_no").click(function(e) {
+      ga('send', 'event', 'Request for personal information question', 'click No');
+    });
+
+    $(".request_personal_message .request_email a").click(function(e) {
+      ga('send', 'event', 'Request for personal information question', 'click Authority email address');
+    });
   }
 })
