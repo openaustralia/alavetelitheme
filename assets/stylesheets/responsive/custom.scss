@@ -1452,3 +1452,7 @@ a.leaderboard-person-details {
 #request_personal_switch legend {
   font-weight: normal;
 }
+
+.personal_request_switcher_focused ~ * {
+   display: none;
+ }
