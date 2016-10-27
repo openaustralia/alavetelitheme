@@ -1,6 +1,7 @@
 $(document).ready(function() {
   // check if the Google Analytics function is available
   if (typeof ga == 'function') {
+    // Following
     function trackFollow() {
       ga('send', 'event', 'Following', 'click Follow button');
     };
@@ -15,6 +16,7 @@ $(document).ready(function() {
     $('.unsubscribe__action').click(function(e) { trackUnsubscribe() });
     $('.unsubscribe-request-action').click(function(e) { trackUnsubscribe() });
 
+    // Request for personal information question
     $("#request_personal_switch_yes").click(function(e) {
       ga('send', 'event', 'Request for personal information question', 'click Yes');
     });
