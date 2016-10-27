@@ -1435,6 +1435,7 @@ a.leaderboard-person-details {
 
 // Requests for personal information
 .request_personal_message {
+  margin: 2em 0;
   display: none;
 
   input#request_personal_switch_yes:checked ~ & {
@@ -1459,7 +1460,7 @@ a.leaderboard-person-details {
 
 #request_personal_switch input[type="radio"] + label {
   font-size: 1.125em;
-  margin: 0 2em 1em 0;
+  margin: 0 2em 0 0;
   padding: .5em 1.5em;
   border: 2px solid #ccc;
   border-radius: 2px;
