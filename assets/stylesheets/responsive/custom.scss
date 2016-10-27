@@ -1451,6 +1451,10 @@ a.leaderboard-person-details {
 
 #request_personal_switch legend {
   font-weight: normal;
+
+  & + p {
+    margin: 0 0 1em;
+  }
 }
 
 #request_personal_switch input[type="radio"] + label {
