@@ -1453,6 +1453,17 @@ a.leaderboard-person-details {
   font-weight: normal;
 }
 
+#request_personal_switch input[type="radio"],
+#request_personal_switch input[type="radio"] + label {
+  font-size: 1.125em;
+}
+
+#request_personal_switch input[type="radio"] + label {
+  font-weight: bold;
+  margin: 0 2em 0 0;
+  padding: .5em 1em 1em .5em;
+}
+
 .personal_request_switcher_focused ~ * {
    display: none;
  }
