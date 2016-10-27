@@ -4,9 +4,10 @@ $(document).ready(function() {
   personalRequestClass = "personal_request_switcher_focused";
 
   if ($switcherFieldGroup.length) {
-    // If an error is showing they must have selected 'no'
+    // If an error is showing or the subject has been filled then
+    // they must have selected 'no' already
     // so set this and don't hide the form.
-    if ($(".errorExplanation").length) {
+    if ($(".errorExplanation").length || $("#request_header_subject input")[0].value) {
       $("#request_personal_switch_no").prop("checked", true);
     } else {
       $switcherFieldGroup.addClass(personalRequestClass);
