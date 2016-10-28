@@ -9,7 +9,8 @@ THEME_NAME = File.split(File.expand_path("../..", __FILE__))[1]
     Rails.application.config.assets.paths.unshift theme_asset_path
 end
 
-Rails.application.config.assets.precompile << "event_tracking.js"
+Rails.application.config.assets.precompile << ["event_tracking.js",
+                                               "personal_message_toggler.js"]
 
 class ActionController::Base
     # The following prepends the path of the current theme's views to
