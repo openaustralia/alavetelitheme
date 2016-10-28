@@ -28,5 +28,18 @@ $(document).ready(function() {
     $(".request_personal_message .request_email a").click(function(e) {
       ga('send', 'event', 'Request for personal information question', 'click Authority email address');
     });
+
+    // Making a request
+    $("#request_new input[type='submit']").click(function(e) {
+      ga('send', 'event', 'Make a request', 'click Preview Request button');
+    });
+
+    $(".new_info_request .preview-pane #reedit_button").click(function(e) {
+      ga('send', 'event', 'Make a request', 'click Edit Your Request button from preview');
+    });
+
+    $(".new_info_request .preview-pane #submit_button").click(function(e) {
+      ga('send', 'event', 'Make a request', 'click Send Request button from preview');
+    });
   }
 })
