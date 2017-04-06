@@ -1,0 +1,27 @@
+<h1>Humans of <%= site_name %></h1>
+
+<h2>Most frequent requesters</h2>
+
+<div class="leaderboard-block">
+  <div class="leaderboard-item">
+    <h3>Last 28 days</h3>
+    <%= render "people_leaderboard", users_with_counts: @last_28_day_requesters %>
+  </div>
+  <div class="leaderboard-item">
+    <h3>All time</h3>
+    <%= render "people_leaderboard", users_with_counts: @all_time_requesters %>
+  </div>
+</div>
+
+<h2>Most frequent annotators</h2>
+
+<div class="leaderboard-block">
+  <div class="leaderboard-item">
+    <h3>Last 28 days</h3>
+    <%= render "people_leaderboard", users_with_counts: @last_28_day_commenters %>
+  </div>
+  <div class="leaderboard-item">
+    <h3>All time</h3>
+    <%= render "people_leaderboard", users_with_counts: @all_time_commenters %>
+  </div>
+</div>

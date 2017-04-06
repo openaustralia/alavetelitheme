@@ -666,7 +666,7 @@ display: inline-block;
 border-radius: 2px;
 -moz-border-radius: 2px;
 cursor: pointer;
-background: url(/assets/small-white-cross-967f7527d59a4f21507413a91151f598.png) no-repeat #444;
+background: image-url('small-white-cross.png') no-repeat #444;
 width: 15px;
 height: 15px;
 border: solid 0 #FFF;
@@ -1331,3 +1331,150 @@ table, th, tr, td {
 dt {
   font-weight: normal;
 }
+
+// Override status text color to match icon
+$status-success: #62b356;
+$status-failure: #e04b4b;
+$status-pending: #d87c10;
+
+.icon_successful,
+.icon_partially_successful {
+  color: $status-success;
+}
+
+.icon_waiting_classification,
+.icon_waiting_response,
+.icon_waiting_clarification,
+.icon_attention_requested,
+.icon_not_held,
+.icon_gone_postal,
+.icon_internal_review,
+.icon_user_withdrawn {
+  color: $status-pending;
+}
+
+.icon_requires_admin,
+.icon_waiting_response_overdue,
+.icon_waiting_response_very_overdue,
+.icon_error_message,
+.icon_failed,
+.icon_rejected {
+  color: $status-failure;
+}
+
+// For People experiment
+
+#general_people {
+  h2 {
+    margin-top: 2em;
+    font-weight: bold;
+  }
+}
+
+.leaderboard-block {
+  margin: 0 0 4em;
+  @include respond-min( 35em ) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.leaderboard-item {
+  @include respond-min( 35em ) {
+    width: 45%;
+  }
+}
+
+.leaderboard-people {
+  padding: 0;
+  list-style: none;
+}
+
+.leaderboard-person {
+  margin: 0 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  img,
+  .leaderboard-person-initial {
+    margin: 0 1rem 0 0;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .u-name {
+    font-size: 1.125em;
+    margin: 0 0 .5em;
+  }
+}
+
+.leaderboard-person-initial {
+  padding: .6rem;
+  font-size: 1.5em;
+  text-align: center;
+  background: lighten(desaturate($righttoknow-primary-color, 50), 40);
+}
+
+a.leaderboard-person-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #333;
+
+  p {
+    margin: 0;
+  }
+}
+
+.leaderboard-count {
+  margin: 0;
+  font-size: 1.125em;
+  padding: 0 0 1em 1em;
+}
+
+// Requests for personal information
+.request_personal_message {
+  margin: 2em 0;
+  display: none;
+
+  input#request_personal_switch_yes:checked ~ & {
+    display: block;
+  }
+
+  .request_email {
+    font-size: 1.125em;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+#request_personal_switch legend {
+  font-weight: normal;
+
+  & + p {
+    margin: 0 0 1em;
+  }
+}
+
+#request_personal_switch input[type="radio"] + label {
+  margin: 0 2em 0 0;
+  padding: .5em 1.5em;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+}
+
+#request_personal_switch input[type="radio"]:focus + label,
+#request_personal_switch input[type="radio"] + label:hover {
+  border-color: #005068;
+}
+
+#request_personal_switch input[type="radio"]:checked + label {
+  font-weight: bold;
+  background-color: #f5f5f5;
+  box-shadow: inset 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.personal_request_switcher_focused ~ * {
+   display: none;
+ }
