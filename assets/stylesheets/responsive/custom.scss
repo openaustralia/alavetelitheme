@@ -1358,8 +1358,14 @@ $status-pending: #d87c10;
 .icon_waiting_response_very_overdue,
 .icon_error_message,
 .icon_failed,
+.icon_not_foi,
 .icon_rejected {
   color: $status-failure;
+}
+
+.icon_not_foi {
+  background-image:image-url('navimg/status-icons-fail.png');
+  background-size: 22px 22px;
 }
 
 // For People experiment

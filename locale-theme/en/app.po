@@ -26,3 +26,11 @@ msgstr "Ask for <strong>specific documents</strong>, this site is not suitable f
 
 msgid "e.g. Ministry of Defence"
 msgstr "e.g. Department of Health"
+
+msgid "This request has been <strong>hidden</strong> from the site, because an administrator considers it not to be an FOI request"
+msgstr "This request has been <strong>hidden</strong> from the site by an administrator."
+
+msgid "Considered by administrators as not an FOI request and hidden from site."
+msgstr "Hidden from the site by an administrator."
+
+ 
