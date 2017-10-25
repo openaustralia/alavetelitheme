@@ -42,6 +42,15 @@ font-weight:400;
   }
 }
 
+/* TODO: Remove this once 9829b113ad16515cdd451a30154e35a0bc1bd3b2 is merged (or Right To Know is upgraded to 0.29 version of alaveteli)
+see https://github.com/mysociety/alaveteli/pull/3884#issuecomment-292203899 */
+
+.preview-pane {
+  .correspondence_text {
+    padding-left: 0;
+  }
+}
+
 h3 {
 color: $righttoknow-heading-color;
 font-weight:400;
@@ -445,6 +454,7 @@ color: $righttoknow-heading-color;
 }
 
 .make-request-quick-button {
+  max-width: 11em;
   margin-top: 1em;
 }
 
