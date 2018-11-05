@@ -8,5 +8,9 @@ Alaveteli::Application.routes.draw do
       :via => 'get',
       :as => 'help_complaints'
 
+    get '/help/beginners'  => 'help#beginners',
+      :via => 'get',
+      :as => 'help_beginners'
+
     match '/people' => 'general#people', :as => :people
 end

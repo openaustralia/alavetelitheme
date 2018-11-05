@@ -1,0 +1,21 @@
+<% @title = "Beginner’s Guide" %>
+<%= render :partial => 'sidebar' %>
+<div id="left_column_flip" class="left_column_flip">
+  <h1>
+    <%= @title %>
+  </h1>
+  <p>
+    Detailed information on how to make a Freedom of Information request using
+    this website, can be found in this <a
+    href="https://www.oaf.org.au/2016/11/24/theres-no-better-way-to-learn-how-easy-foi-requests-are-than-to-make-one/">
+    blog post</a>.
+  </p>
+  <p>
+    We also have written a <a href="https://www.oaf.org.au/2015/01/20/how-to-find-what-youre-looking-for-on-right-to-know/">
+    blog post </a> which shows you how to find what you're looking for.
+  </p>
+  <p>
+    If you need further advice, please don't heistate to <a href="<%=  help_contact_path
+    %>">contact the <%= site_name %> team.</a>
+  </p>
+</div>
