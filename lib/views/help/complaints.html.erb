@@ -1,0 +1,40 @@
+<% @title = "Complaints about us" %>
+<%= render :partial => 'sidebar' %>
+<div id="left_column_flip" class="left_column_flip">
+  <h1>
+    <%= @title %>
+  </h1>
+  <dl>
+    <dt id="complaints">
+      How do we deal with complaints about us?
+      <a href="#complaints">#</a>
+    </dt>
+    <dd>
+      <p>
+        If you have a complaint about the way we are running the <%= site_name %>
+        website, please <a href="<%=  help_contact_path %>">tell us</a>.
+      </p>
+      <p>
+        The <%= site_name %> volunteers will seek to apply the site’s existing
+        policies or discuss adapting the policies to respond to any novel
+        circumstances which arise.
+      </p>
+      <p>
+        We endeavour to deal with complaints promptly, however some cases raise
+        unique issues which require further consideration. We may take time to
+        discuss the case in one of our regular team meetings or seek advice.
+      </p>
+      <p>
+        If you're unhappy with a decision made by the <%= site_name %> team,
+        you may ask for the decision to be reviewed internally with a group
+        including a director of the OpenAustralia Foundation.
+        <%= site_name %> is a project of the OpenAustralia Foundation.
+      </p>
+      <p>
+        Ultimately, the directors of the OpenAustralia Foundation are
+        responsible for the running of <%= site_name %> and will make the final
+        decision in relation to any complaint.
+      </p>
+    </dd>
+  </dl>
+</div>
