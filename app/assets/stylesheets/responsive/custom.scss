@@ -231,6 +231,7 @@ background: $righttoknow-primary-color-lighter;
     font-weight: bold;
 
     @include respond-min( $main_menu-mobile_menu_cutoff ){
+      position: absolute;
       top: 1.05em;
       right: 20.8em;
       font-weight: normal;
@@ -238,6 +239,8 @@ background: $righttoknow-primary-color-lighter;
     }
 
     a, .greeting {
+      display: block;
+      padding: 0.5em 1em;
       @include respond-min( $main_menu-mobile_menu_cutoff ){
         font-size: 13.5px;
         font-weight: normal;
