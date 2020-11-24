@@ -32,5 +32,3 @@ msgstr "This request has been <strong>hidden</strong> from the site by an admini
 
 msgid "Considered by administrators as not an FOI request and hidden from site."
 msgstr "Hidden from the site by an administrator."
-
- 

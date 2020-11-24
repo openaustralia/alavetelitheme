@@ -1,4 +1,7 @@
-THEME_NAME = File.split(File.expand_path("../..", __FILE__))[1]
+# -*- encoding : utf-8 -*-
+theme_name = File.split(File.expand_path("../..", __FILE__))[1]
+theme_name.gsub!('-', '_')
+THEME_NAME = theme_name
 
 # Prepend the asset directories in this theme to the asset path:
 ['stylesheets', 'images', 'javascripts', 'files'].each do |asset_type|
@@ -13,15 +16,15 @@ Rails.application.config.assets.precompile << ["event_tracking.js",
                                                "personal_message_toggler.js"]
 
 class ActionController::Base
-    # The following prepends the path of the current theme's views to
-    # the "filter_path" that Rails searches when deciding which
-    # template to use for a view.  It does so by creating a method
-    # uniquely named for this theme.
-    path_function_name = "set_view_paths_for_#{THEME_NAME}"
-    before_filter path_function_name.to_sym
-    send :define_method, path_function_name do
-        self.prepend_view_path File.join(File.dirname(__FILE__), "views")
-    end
+  # The following prepends the path of the current theme's views to
+  # the "filter_path" that Rails searches when deciding which
+  # template to use for a view.  It does so by creating a method
+  # uniquely named for this theme.
+  path_function_name = "set_view_paths_for_#{THEME_NAME}"
+  before_action path_function_name.to_sym
+  send :define_method, path_function_name do
+    self.prepend_view_path File.join(File.dirname(__FILE__), "views")
+  end
 end
 
 # In order to have the theme lib/ folder ahead of the main app one,
@@ -37,19 +40,49 @@ end
 for patch in ['controller_patches.rb',
               'model_patches.rb',
               'patch_mailer_paths.rb']
-    require File.expand_path "../#{patch}", __FILE__
+  require File.expand_path "../#{patch}", __FILE__
 end
 
 # Note you should rename the file at "config/custom-routes.rb" to
 # something unique (e.g. yourtheme-custom-routes.rb":
 $alaveteli_route_extensions << 'custom-routes.rb'
 
+# Append individual theme assets to the asset path
+theme_asset_path = File.join(File.dirname(__FILE__),
+                             '..',
+                             'app',
+                             'assets')
+theme_asset_path = Pathname.new(theme_asset_path).cleanpath.to_s
+
+LOOSE_THEME_ASSETS = lambda do |logical_path, filename|
+  filename.start_with?(theme_asset_path) &&
+  !['.js', '.css', ''].include?(File.extname(logical_path))
+end
+Rails.application.config.assets.precompile.unshift(LOOSE_THEME_ASSETS)
+
+def prepend_theme_assets
+  # Prepend the asset directories in this theme to the asset path:
+  ['stylesheets', 'images', 'javascripts'].each do |asset_type|
+    theme_asset_path = File.join(File.dirname(__FILE__),
+                                 '..',
+                                 'app',
+                                 'assets',
+                                 asset_type)
+
+    Rails.application.config.assets.paths.unshift theme_asset_path
+  end
+end
+
+Rails.application.config.to_prepare do
+  prepend_theme_assets
+end
+
 # Tell FastGettext about the theme's translations: look in the theme's
 # locale-theme directory for a translation in the first place, and if
 # it isn't found, look in the Alaveteli locale directory next:
 repos = [
-    FastGettext::TranslationRepository.build('app', :path=>File.join(File.dirname(__FILE__), '..', 'locale-theme'), :type => :po),
-    FastGettext::TranslationRepository.build('app', :path=>Rails.root.join('locale'), :type => :po)
+  FastGettext::TranslationRepository.build('app', :path=>File.join(File.dirname(__FILE__), '..', 'locale-theme'), :type => :po),
+  FastGettext::TranslationRepository.build('app', :path=>'locale', :type => :po)
 ]
 FastGettext.add_text_domain 'app', :type=>:chain, :chain=>repos
 FastGettext.default_text_domain = 'app'
