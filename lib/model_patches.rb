@@ -100,21 +100,21 @@ Rails.configuration.to_prepare do
 
   User.class_eval do
     def self.all_time_requesters
-      InfoRequest.visible.
+      InfoRequest.is_searchable.
                   joins(:user).
                   group(:user).
-                  order("count_all DESC").
+                  order("count_info_requests_all DESC").
                   limit(10).
                   count
     end
 
     def self.last_28_day_requesters
       # TODO: Refactor as it's basically the same as all_time_requesters
-      InfoRequest.visible.
+      InfoRequest.is_searchable.
                   where("info_requests.created_at >= ?", 28.days.ago).
                   joins(:user).
                   group(:user).
-                  order("count_all DESC").
+                  order("count_info_requests_all DESC").
                   limit(10).
                   count
     end
