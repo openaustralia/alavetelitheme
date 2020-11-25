@@ -1461,3 +1461,9 @@ a.leaderboard-person-details {
 .personal_request_switcher_focused ~ * {
    display: none;
  }
+
+
+// Make button slightly wider
+.body_listing__request-button {
+  max-width: 11em;
+}
