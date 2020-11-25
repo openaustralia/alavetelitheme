@@ -585,6 +585,10 @@ div.outgoing.correspondence {
   background: linear-gradient(0deg, #F5F5C7 0%, #FFFFD2 25%, #FFFFD2 75%, #F5F5C7 100%);*/
 }
 
+.correspondence__header, .correspondence__footer {
+  background-color: transparent;
+}
+
 div.correspondence:before, div.correspondence:after {
   background: none;
   bottom: 12px;
