@@ -242,7 +242,6 @@ background: $righttoknow-primary-color-lighter;
       display: block;
       padding: 0.5em 1em;
       @include respond-min( $main_menu-mobile_menu_cutoff ){
-        display: inline;
         font-size: 13.5px;
         font-weight: normal;
         padding: 0;
