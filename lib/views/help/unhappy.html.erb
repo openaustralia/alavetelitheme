@@ -1,37 +1,36 @@
 <% @title = "Unhappy about a Freedom of Information request?" %>
 
 
-<% if @info_request %>
-  <h1>Unhappy about the response you got
-    to your request '<%=request_link(@info_request) %>'?
-  </h1>
+<% if !@info_request.nil? %>
+<h1>Unhappy about the response you got
+to your request '<%=request_link(@info_request) %>'?
+</h1>
 <% else %>
-  <h1>Unhappy about the response you got?</h1>
+<h1>Unhappy about the response you got?</h1>
 <% end %>
 
 <p>If ...</p>
 
 <ul>
-  <li>You didn't get a reply within <%= link_to "a reasonable timeframe", help_requesting_path(:anchor => "quickly_response")%></li>
-  <li>You did not get all of the information that you requested <strong>or</strong></li>
-  <li>Your request was refused, but without a reason valid under the law</li>
+<li>You didn't get a reply within <%= link_to "a reasonable timeframe", help_requesting_path(:anchor => "quickly_response")%></li>
+<li>You did not get all of the information that you requested <strong>or</strong></li>
+<li>Your request was refused, but without a reason valid under the law</li>
 </ul>
 
 <p>... you can</p>
 
 <ol>
-  <li>Ask for an <strong>internal review</strong> at the public authority.</li>
-  <li>Or go to an <strong>external reviewer</strong> such as an an Information Commissioner, Ombudsman, or Tribunal to review the decision or make a complaint.</li>
-  <li>Either way, also <strong>use other means</strong> to answer your question.</li>
+<li>Ask for an <strong>internal review</strong> at the public authority.</li>
+<li>Or go to an <strong>external reviewer</strong> such as an an Information Commissioner, Ombudsman, or Tribunal to review the decision or make a complaint.</li>
+<li>Either way, also <strong>use other means</strong> to answer your question.</li>
 </ol>
 
 <h1 id="internal_review">1. Asking for an internal review <a class="hover_a" href="#internal_review">#</a> </h1>
-
 <p>In an internal review the request goes back to the original authority but gets handled by a different, often more senior, officer.</p>
 <p>
-  <% if !@info_request.nil? %>
+<% if !@info_request.nil? %>
     <%= link_to "Request an internal review", new_request_followup_path(:request_id => @info_request.id) + "?internal_review=1#followup", :class => 'link_button_green request-internal-review-action' %> and then write a message asking the authority to review your request.
-  <% else %>
+<% else %>
     At the bottom of the relevant request page on <%= site_name %> choose
     "request an internal review". Then write a message asking for an internal
     review of your request. You may want to include a link to the

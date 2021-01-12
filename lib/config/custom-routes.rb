@@ -1,12 +1,11 @@
-# -*- encoding : utf-8 -*-
 # Here you can override or add to the pages in the core website
 
-Rails.application.routes.draw do
+Alaveteli::Application.routes.draw do
     # brand new controller example
-    # get '/mycontroller' => 'general#mycontroller'
+    match '/mycontroller' => 'general#mycontroller', :as => :mycontroller
 
     # Additional help page example
-    # get '/help/help_out' => 'help#help_out'
+    match '/help/help_out' => 'help#help_out', :as => :help_out
 
-    get '/people' => 'general#people'
+    match '/people' => 'general#people', :as => :people
 end

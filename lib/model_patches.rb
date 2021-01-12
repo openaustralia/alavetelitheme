@@ -1,4 +1,3 @@
-# -*- encoding : utf-8 -*-
 # Add a callback - to be executed before each request in development,
 # and at startup in production - to patch existing app classes.
 # Doing so in init/environment.rb wouldn't work in development, since
@@ -101,21 +100,21 @@ Rails.configuration.to_prepare do
 
   User.class_eval do
     def self.all_time_requesters
-      InfoRequest.is_searchable.
+      InfoRequest.visible.
                   joins(:user).
                   group(:user).
-                  order("count_info_requests_all DESC").
+                  order("count_all DESC").
                   limit(10).
                   count
     end
 
     def self.last_28_day_requesters
       # TODO: Refactor as it's basically the same as all_time_requesters
-      InfoRequest.is_searchable.
+      InfoRequest.visible.
                   where("info_requests.created_at >= ?", 28.days.ago).
                   joins(:user).
                   group(:user).
-                  order("count_info_requests_all DESC").
+                  order("count_all DESC").
                   limit(10).
                   count
     end

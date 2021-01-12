@@ -214,3 +214,4 @@ When adding authorities for jurisdictions we don't yet cover we need to:
   * [https://www.righttoknow.org.au/body/list/all](https://github.com/openaustralia/righttoknow/blob/338b2d26891b81f326fb5e4dda9a26861f01d2d5/lib/views/public_body/_list_sidebar_extra.html.erb#L1-L3)
 * Upload the new authorities (with the correct tags, see above)
 * Add categories (see above)
+
