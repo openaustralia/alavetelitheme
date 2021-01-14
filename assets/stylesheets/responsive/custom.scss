@@ -585,6 +585,10 @@ div.outgoing.correspondence {
   background: linear-gradient(0deg, #F5F5C7 0%, #FFFFD2 25%, #FFFFD2 75%, #F5F5C7 100%);*/
 }
 
+.correspondence__header, .correspondence__footer {
+  background-color: transparent;
+}
+
 div.correspondence:before, div.correspondence:after {
   background: none;
   bottom: 12px;
@@ -1332,40 +1336,10 @@ dt {
   font-weight: normal;
 }
 
-// Override status text color to match icon
-$status-success: #62b356;
-$status-failure: #e04b4b;
-$status-pending: #d87c10;
-
-.icon_successful,
-.icon_partially_successful {
-  color: $status-success;
-}
-
-.icon_waiting_classification,
-.icon_waiting_response,
-.icon_waiting_clarification,
-.icon_attention_requested,
-.icon_not_held,
-.icon_gone_postal,
-.icon_internal_review,
-.icon_user_withdrawn {
-  color: $status-pending;
-}
-
-.icon_requires_admin,
-.icon_waiting_response_overdue,
-.icon_waiting_response_very_overdue,
-.icon_error_message,
-.icon_failed,
-.icon_not_foi,
-.icon_rejected {
-  color: $status-failure;
-}
-
-.icon_not_foi {
-  background-image:image-url('navimg/status-icons-fail.png');
-  background-size: 22px 22px;
+.request-status-message {
+  p {
+    margin-top: 0;
+  }
 }
 
 // For People experiment
