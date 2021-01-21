@@ -1,11 +1,11 @@
 # Here you can override or add to the pages in the core website
 
-Alaveteli::Application.routes.draw do
+Rails.application.routes.draw do
     # brand new controller example
-    match '/mycontroller' => 'general#mycontroller', :as => :mycontroller
+    # get '/mycontroller' => 'general#mycontroller'
 
     # Additional help page example
-    match '/help/help_out' => 'help#help_out', :as => :help_out
+    # get '/help/help_out' => 'help#help_out'
 
-    match '/people' => 'general#people', :as => :people
+    get '/people' => 'general#people'
 end
