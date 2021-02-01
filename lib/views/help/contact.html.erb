@@ -94,6 +94,9 @@
 
     <div class="form_button">
         <%= hidden_field_tag(:submitted_contact_form, 1) %>
+        <% if @recaptcha_required %>
+          <%= recaptcha_tags %><br />
+        <% end %>
         <%= submit_tag "Send message to the charity", :disable_with => "Sending..." %>
         &lt;-- we run this site, not the Government!
     </div>
