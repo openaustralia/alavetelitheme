@@ -32,7 +32,7 @@
                 <label for="internal_review<%=id_suffix%>"><%= _('I\'m waiting for an <strong>internal review</strong> response') %></label>
             </div>
         <% end %>
-        
+
         <%= render :partial => 'general/custom_state_transitions_pending', :locals => {:id_suffix => id_suffix } %>
 
         <hr>
@@ -68,7 +68,7 @@
         <div>
            <%= radio_button "incoming_message", "described_state", "error_message", :id => 'error_message' + id_suffix %>
             <label for="error_message<%=id_suffix%>">
-            <%= _('I\'ve received an <strong>error message</strong>') %>
+            <%= _('I\'ve received an <strong>error message</strong>') %> 
             </label>
         </div>
 
@@ -76,18 +76,18 @@
           <div>
              <%= radio_button "incoming_message", "described_state", "requires_admin", :id => 'requires_admin' + id_suffix %>
               <label for="requires_admin<%=id_suffix%>">
-              <%= _('This request <strong>requires administrator attention</strong>') %>
+              <%= _('This request <strong>requires administrator attention</strong>') %> 
               </label>
           </div>
-
+        
           <div>
              <%= radio_button "incoming_message", "described_state", "user_withdrawn", :id => 'user_withdrawn' + id_suffix %>
               <label for="user_withdrawn<%=id_suffix%>">
-              <%= _('I would like to <strong>withdraw this request</strong>') %>
+              <%= _('I would like to <strong>withdraw this request</strong>') %> 
               </label>
           </div>
         <% end %>
-
+        
         <hr>
 
         <p>
@@ -105,3 +105,4 @@
 	if you are {{user_link}} please <a href="{{url}}">sign in</a> and let everyone know.',:user_link=>user_link(@info_request.user), :url=>signin_url(:r => request.fullpath)) %>
   <% end %>
 <% end %>
+
