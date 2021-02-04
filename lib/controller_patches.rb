@@ -7,10 +7,6 @@
 Rails.configuration.to_prepare do
   # Example adding an instance variable to the frontpage controller
   GeneralController.class_eval do
-    def mycontroller
-      @say_something = "Greetings friend"
-    end
-
     def people
       @all_time_requesters = User.all_time_requesters
       @last_28_day_requesters = User.last_28_day_requesters
