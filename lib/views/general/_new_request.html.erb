@@ -1,2 +1,4 @@
 <h2 class="new-request__title"><%= _("Want to know something?") %></h2>
-<a class="link_button_green_large" href="<%= select_authority_path %>"><%= _("Make a request &raquo;") %></a>
+<%= link_to select_authority_path, :class => "link_button_green_large" do %>
+  <%= _("Make a request &raquo;") %>
+<% end %>
