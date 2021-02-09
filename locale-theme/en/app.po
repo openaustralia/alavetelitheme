@@ -37,7 +37,4 @@ msgid "Disclaimer: This message and any reply that you make will be published on
 msgstr "This request has been made by an individual using Right to Know. This message and any reply that you make will be published on the internet. More information on how Right to Know works can be found at:"
 
 msgid "Your right to know"
-msgstr "Your Right to Know"
-
-msgid "Want to know something?"
-msgstr "Make a new<br/><strong>Freedom <span>of</span><br/>Information<br/>request</strong>"
+msgstr "Get answers from the government and public sector"

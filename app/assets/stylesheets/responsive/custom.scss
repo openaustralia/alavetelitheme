@@ -978,113 +978,11 @@ padding-top:1em;
 
 // Front Page
 
-.homepage-hero {
-  .new-request__title {
-    font-family: $heading-font-family;
-    color: $righttoknow-heading-color;
-    font-weight:400;
-    font-size: 2em;
-    margin:0 0 20px;
-
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      font-size:39px;
-    }
-
-    strong {
-      font-family: $heading-font-family;
-      font-size: 1.5em;
-      line-height: 1em;
-      color: $righttoknow-heading-color;
-      font-weight:400;
-
-      @include respond-min( $main_menu-mobile_menu_cutoff ) {
-        font-size:54px;
-      }
-    }
-
-    span {
-      font-family: $heading-font-family;
-      font-style:inherit;
-      font-size:39px;
-      color: $righttoknow-heading-color;
-    }
-  }
-
-  h2, .intro__title {
-    font-size:26px;
-    font-weight:400;
-    color: $righttoknow-heading-color;
-    font-family: $heading-font-family;
-
-    strong {
-      font-size:31px;
-      color: $righttoknow-heading-color;
-      font-family: $heading-font-family;
-    }
-
-    span {
-      color: $righttoknow-heading-color;
-      font-style:inherit;
-      font-size:19px;
-      font-family: $heading-font-family;
-    }
-  }
-}
-
-#frontpage_right_to_know {
-  line-height:20px;
-  @include grid-column($columns:12);
-
-  @include respond-min( 30em ) {
-        margin-bottom: 3em;
-  }
-
+.new-request__content {
+  padding-top: 3em;
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-top: 80px;
-    @include grid-column($columns:4);
+    padding: 3em;
   }
-}
-
-#frontpage_start_request {
-  @include grid-column($columns:12);
-
-  @include respond-min( 30em ) {
-    @include grid-column($columns:6);
-  }
-
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-top: 49px;
-    @include grid-column($columns:4);
-  }
-}
-
-#frontpage_search_box {
-  margin-top: 2em;
-  @include grid-column($columns:12);
-
-  @include respond-min( 30em ) {
-    @include grid-column($columns:6);
-  }
-
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    margin-top: 80px;
-    margin-bottom: 0px;
-    @include grid-column($columns:4);
-    padding-left: 2.5%;
-
-    h2 {
-      margin-bottom: 15px;
-    }
-
-    #query {
-      margin-bottom: 0;
-      width: 212px;
-    }
-  }
-}
-
-#frontpage_right_to_know h2, #frontpage_search_box h2 {
-  margin-top: 0px;
 }
 
 .front h3 {
