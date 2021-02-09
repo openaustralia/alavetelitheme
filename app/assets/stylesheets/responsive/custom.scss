@@ -980,7 +980,7 @@ padding-top:1em;
 
 #frontpage_splash {
   background: none;
-  padding-top: 7px;
+  padding-top: 19px;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
     min-height: 401px;
@@ -1036,11 +1036,6 @@ padding-top:1em;
       font-family: $heading-font-family;
     }
   }
-}
-
-// These styles added back after being remove in Alaveteli 0.23
-#frontpage_splash {
-  @include grid-row($behavior: nest);
 }
 
 #frontpage_right_to_know {

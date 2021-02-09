@@ -1,1 +1,14 @@
-<%# TODO: Move part of frontpage.html.erb to here %>
+<div class="row">
+  <div id="frontpage_splash">
+    <div id="frontpage_right_to_know">
+      <%= render :partial => 'frontpage_intro_sentence'  %>
+    </div>
+    <div id="frontpage_start_request">
+      <%= render :partial => "frontpage_new_request" %>
+    </div>
+    <div id="frontpage_search_box">
+      <%= render :partial => "frontpage_search_box" %>
+    </div>
+    <div style="clear:both"></div>
+  </div>
+</div>
