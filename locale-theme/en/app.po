@@ -38,3 +38,6 @@ msgstr "This request has been made by an individual using Right to Know. This me
 
 msgid "Your right to know"
 msgstr "Your Right to Know"
+
+msgid "Want to know something?"
+msgstr "Make a new<br/><strong>Freedom <span>of</span><br/>Information<br/>request</strong>"
