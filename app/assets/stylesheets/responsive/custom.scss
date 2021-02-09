@@ -978,14 +978,7 @@ padding-top:1em;
 
 // Front Page
 
-#frontpage_splash {
-  background: none;
-  padding-top: 19px;
-
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    min-height: 401px;
-  }
-
+.homepage-hero {
   h1 {
     font-family: $heading-font-family;
     color: $righttoknow-heading-color;
