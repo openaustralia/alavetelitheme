@@ -1,5 +1,9 @@
-<h2>
-  Your Right to Know
-</h2>
-<p><%= link_to "Everyone", help_requesting_path(:anchor => "who") %> has the right to access information held by Australian public authorities. By law, they have to respond.</p>
+<h2>Your Right to Know</h2>
+<p>
+  <%= link_to "Everyone", help_requesting_path(:anchor => "who") %> has the right to access information held by Australian public authorities.
+  
+  <% if AlaveteliConfiguration.authority_must_respond %>
+    <%= _("By law, they have to respond.") %>
+  <% end %>
+</p>
 <p><a href="<%= help_about_url %>">Find out more about Freedom of Information.</a></p>
