@@ -35,3 +35,6 @@ msgstr "Hidden from the site by an administrator."
 
 msgid "Disclaimer: This message and any reply that you make will be published on the internet. Our privacy and copyright policies:"
 msgstr "This request has been made by an individual using Right to Know. This message and any reply that you make will be published on the internet. More information on how Right to Know works can be found at:"
+
+msgid "Your right to know"
+msgstr "Your Right to Know"
