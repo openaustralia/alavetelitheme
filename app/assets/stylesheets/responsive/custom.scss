@@ -1041,18 +1041,10 @@ padding-top:1em;
 // These styles added back after being remove in Alaveteli 0.23
 #frontpage_splash {
   @include grid-row($behavior: nest);
-
-  #frontpage_splash #frontpage_search_box {
-    margin-bottom:30px;
-    margin-top:-10px;
-  }
-
-  #frontpage_right_to_know {
-    line-height:20px;
-  }
 }
 
 #frontpage_right_to_know {
+  line-height:20px;
   @include grid-column($columns:12);
 
   @include respond-min( 30em ) {
