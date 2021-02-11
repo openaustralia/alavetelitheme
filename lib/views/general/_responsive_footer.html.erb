@@ -8,8 +8,7 @@
           </li>
           <% unless AlaveteliConfiguration::twitter_username.blank? %>
             <li>
-              <%= image_tag "twitter-16.png", :alt => "twitter icon", :class =>"twitter-icon" %>
-              <a href="https://twitter.com/<%= AlaveteliConfiguration::twitter_username %>"><%= _("Follow us on twitter") %></a>
+              <a href="https://twitter.com/<%= AlaveteliConfiguration::twitter_username %>" class="social-link social-link--twitter" onclick="<%= track_analytics_event(AnalyticsEvent::Category::OUTBOUND, AnalyticsEvent::Action::TWITTER_EXIT, :label => "Footer link")%>">@<%= AlaveteliConfiguration::twitter_username %></a>
             </li>
           <% end %>
         </ul>
@@ -17,7 +16,7 @@
     <div id="oaf">
       <p><%= AlaveteliConfiguration::site_name %> is another project from the
         <%= link_to "https://www.openaustraliafoundation.org.au" do %>
-          <%= image_tag "openaustralia_foundation.png", :width => "200", :id => "oaf_logo", :alt => "OpenAustralia Foundation logo" %>
+          OpenAustralia Foundation
         <% end %>
       </p>
       <p>Like it? Then also take a look at</p>
