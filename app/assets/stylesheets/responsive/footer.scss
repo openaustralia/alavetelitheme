@@ -1,0 +1,85 @@
+// Site Footer
+
+#footer {
+  padding: 0.5em 0;
+  margin-top: 4.95em;
+  border-top: 1px #ddd solid;
+  background-color: #f0f0f0;
+  font-size: 1em;
+  text-align: left;
+
+  img {
+    border: 1px #ddd solid;
+    vertical-align: middle;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    margin-top: 5px;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .footer_right {
+    margin-top: 15px;
+
+    @include respond-min(51em) {
+      float: right;
+      text-align: left;
+    }
+
+    ul {
+      margin-top: 0;
+    }
+
+    li:first-child {
+      margin-bottom: 1em;
+    }
+
+    p {
+      margin-top: 5px;
+    }
+  }
+}
+
+#footer_inner {
+max-width:$row-width;
+margin: auto;
+@include grid-column(12);
+@include clearfix;
+float: none;
+
+  @include ie8{
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+  }
+
+  @include lte-ie7 {
+    width: 56.125em;
+  }
+
+  > div {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      font-size: .85em;
+    }
+  }
+}
+
+#oaf_logo {
+  border: 1px #bbb solid;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+#oaf {
+  margin-top: 1em;
+  margin-bottom: 50px;
+  float: left;
+  text-align: left;
+}
