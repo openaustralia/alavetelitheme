@@ -163,8 +163,8 @@ box-shadow: 0 0 10px;
 
 a#logo {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    position: relative;
-    top:50px;
+    position: absolute;
+    top:75px;
   }
 }
 
