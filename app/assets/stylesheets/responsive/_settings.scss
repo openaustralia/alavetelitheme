@@ -23,22 +23,23 @@ $color_off_white: #f3f1eb;
 $color_light_grey: #e2dfd9;
 $color_mid_grey: #959287;
 $color_dark_grey: #6c6b68;
+$color_cyan: #00dcf0;
 
 $color_neutral_light: $color_sand;
 $color_neutral_dark: $color_black;
-$color_primary: $color_violet;
-$color_secondary: $color_orange;
+$color_primary: $color_cyan;
+$color_secondary: $color_yellow;
 
 $body-bg: $color_neutral_light;
 
 $body-font-color: $color_neutral_dark;
-$link-color: darken($color_blue, 20%);
+$link-color: darken($color_blue, 30%);
 $action-color: $color_green;
 $font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $form_input-bg: $color_white;
 $form-label-font-color: $color_black;
 
-$button-bg: darken($color_green, 10%);
+$button-bg: darken($color_cyan, 10%);
 $button-color: $color_white;
 
 $status-success: darken($color_green, 18%);
