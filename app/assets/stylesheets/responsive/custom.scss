@@ -4,6 +4,10 @@ $righttoknow-heading-color: #005068;
 $righttoknow-link-color: #A60201;
 $heading-font-family: 'Actor', Arial, sans-serif;
 
+@import "responsive/rtk/footer";
+@import "responsive/rtk/request_personal_message";
+@import "responsive/rtk/supporting_orgs";
+
 // Basic styles
 
 body {
