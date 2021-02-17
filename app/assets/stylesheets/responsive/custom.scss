@@ -606,14 +606,6 @@ p.locale-list-trigger {
 
 /* Request page */
 .request-header__action-bar__actions {
-  .action-menu__button {
-    @include button-secondary();
-    &:after {
-      border-color: #a5a5a5 transparent transparent transparent;
-      right: 7%;
-    }
-  }
-
   .action-bar__follow-button {
     .track__action {
       @include button-primary();
@@ -621,8 +613,24 @@ p.locale-list-trigger {
     }
   }
 
+}
+
+.request-header__action-bar__actions, .request-footer__action-bar__actions {
+  .action-menu__button {
+    @include button-secondary();
+    &:after {
+      border-color: #a5a5a5 transparent transparent transparent;
+      right: 7%;
+    }
+  }
   .action-bar__follower-count {
     @include follower-count();
+  }
+}
+
+.request-footer__action-bar__actions {
+  .action-menu__button {
+    padding-right: 2em;
   }
 }
 
