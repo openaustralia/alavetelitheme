@@ -768,6 +768,7 @@ a.link_to_this {
 #header_right {
   .link_button_green {
     @include button-secondary;
+    margin-bottom: 1em;
   }
 }
 
