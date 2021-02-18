@@ -7,3 +7,4 @@ to document other aspects of the theme if necessary.
 * supporting - directory of Krita files that are used to generate double resolution versions of the logos
 * Original for Open Knowledge Foundation Australia logo - https://github.com/okfn/ok-media/blob/master/graphics/local-group-logos/australia/OK_LG_LOGO_AUSTRALIA_BLACK_RGB.png
 * supporting/CPD-logo.png - Original for Centre for Policy Development logo - https://cpd.org.au/wp-content/uploads/2019/02/CPD-logo.png
+* supporting/getup-logo.png - Original full size logo downloaded from http://cdn.getup.org.au/2417-getup-logos.zip
