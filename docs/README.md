@@ -5,3 +5,4 @@ to document other aspects of the theme if necessary.
 * nate-watson-ArnSNszzd1M-unsplash.jpg - original, full size image of [Bourke Street in Melbourne by Nate Watson](https://unsplash.com/photos/ArnSNszzd1M) on unsplash.
 * background.kra - used to make homepage-background.jpg
 * supporting - directory of Krita files that are used to generate double resolution versions of the logos
+* Original for Open Knowledge Foundation Australia logo - https://github.com/okfn/ok-media/blob/master/graphics/local-group-logos/australia/OK_LG_LOGO_AUSTRALIA_BLACK_RGB.png
