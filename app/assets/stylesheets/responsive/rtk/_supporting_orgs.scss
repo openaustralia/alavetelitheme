@@ -13,8 +13,11 @@
     -webkit-transition: opacity .2s ease-in-out;
   }
 
-  .logos a {
-    text-decoration: none;
+  .logos {
+    margin-bottom: 1em;
+    a {
+      text-decoration: none;
+    }
   }
 
   img#openforum_logo {
