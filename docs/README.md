@@ -8,3 +8,4 @@ to document other aspects of the theme if necessary.
 * Original for Open Knowledge Foundation Australia logo - https://github.com/okfn/ok-media/blob/master/graphics/local-group-logos/australia/OK_LG_LOGO_AUSTRALIA_BLACK_RGB.png
 * supporting/CPD-logo.png - Original for Centre for Policy Development logo - https://cpd.org.au/wp-content/uploads/2019/02/CPD-logo.png
 * supporting/getup-logo.png - Original full size logo downloaded from http://cdn.getup.org.au/2417-getup-logos.zip
+* supporting/Crikey_FB_share_1200x628.png - Original full size Crikey logo downloaded from https://www.crikey.com.au/wp-content/uploads/2020/11/Crikey_FB_share_1200x628.png
