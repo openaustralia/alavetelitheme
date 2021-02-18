@@ -3,133 +3,115 @@
 #frontpage_supporting {
   clear: both;
   padding-top: 1em;
-}
 
-#frontpage_supporting img {
-  margin-right: 20px;
-  margin-bottom: 10px;
-  vertical-align: middle;
-}
+  img {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+  }
 
-#frontpage_supporting .logos a {
-  text-decoration: none;
-}
+  .logos a {
+    text-decoration: none;
+  }
 
-#frontpage_supporting img {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
+  img#openforum_logo {
+    opacity: 0.6;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 
-#openforum_logo {
-  opacity: 0.6;
-}
+  img#okfa_logo {
+    opacity: 0.8;
+    &:hover {
+      opacity: 1.0;
+    }
+  }
 
-#openforum_logo:hover {
-  opacity: 0.8;
-}
+  img#cpd_logo {
+    opacity: 0.55;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
 
-#okfa_logo {
-  opacity: 0.8;
-}
+  img#getup_logo {
+    opacity: 0.5;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 
-#okfa_logo:hover {
-  opacity: 1.0;
-}
+  img#crikey_logo {
+    opacity: 0.55;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
 
-#cpd_logo {
-  opacity: 0.55;
-}
+  img#newmatilda_logo {
+    margin-right: 0;
+    opacity: 0.6;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 
-#cpd_logo:hover {
-  opacity: 0.75;
-}
+  img#ausgoal_logo {
+    opacity: 0.65;
+    &:hover {
+      opacity: 0.85;
+    }
+  }
 
-#getup_logo {
-  opacity: 0.5;
-}
+  img#blueprintforfreespeech_logo {
+    opacity: 0.7;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
 
-#getup_logo:hover {
-  opacity: 0.7;
-}
+  img#efa_logo {
+    margin-right: 16px;
+    padding-bottom: 6px;
+    opacity: 0.75;
+    &:hover {
+      opacity: 0.95;
+    }
+  }
 
-#crikey_logo {
-  opacity: 0.55;
-}
+  img#tia_logo {
+    margin-right: 16px;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1.0;
+    }
+  }
 
-#crikey_logo:hover {
-  opacity: 0.75;
-}
+  img#mysociety_logo {
+    margin-right: 16px;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1.0;
+    }
+  }
 
-#newmatilda_logo {
-  opacity: 0.6;
-}
+  img#opennorth_logo {
+    margin-right: 16px;
+    opacity: 0.65;
+    &:hover {
+      opacity: 0.85;
+    }
+  }
 
-#newmatilda_logo:hover {
-  opacity: 0.8;
-}
-
-#ausgoal_logo {
-  opacity: 0.65;
-}
-
-#ausgoal_logo:hover {
-  opacity: 0.85;
-}
-
-#blueprintforfreespeech_logo {
-  opacity: 0.7;
-}
-
-#blueprintforfreespeech_logo:hover {
-  opacity: 0.9;
-}
-
-#frontpage_supporting img#newmatilda_logo, #frontpage_supporting img#opennz_logo {
-  margin-right: 0;
-}
-
-#frontpage_supporting img#efa_logo {
-  margin-right: 16px;
-  opacity: 0.75;
-  padding-bottom: 6px;
-}
-
-#frontpage_supporting img#efa_logo:hover {
-  opacity: 0.95;
-}
-
-#frontpage_supporting img#tia_logo {
-  margin-right: 16px;
-  opacity: 0.8;
-}
-
-#frontpage_supporting img#tia_logo:hover {
-  opacity: 1.0;
-}
-
-#frontpage_supporting img#mysociety_logo {
-  margin-right: 16px;
-  opacity: 0.8;
-}
-
-#frontpage_supporting img#mysociety_logo:hover {
-  opacity: 1.0;
-}
-
-#frontpage_supporting img#opennorth_logo {
-  margin-right: 16px;
-  opacity: 0.65;
-}
-
-#frontpage_supporting img#opennorth_logo:hover {
-  opacity: 0.85;
-}
-
-#opennz_logo {
-  opacity: 0.6;
-}
-
-#opennz_logo:hover {
-  opacity: 0.8;
+  img#opennz_logo {
+    margin-right: 0;
+    opacity: 0.6;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
