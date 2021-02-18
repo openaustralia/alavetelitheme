@@ -14,3 +14,4 @@ to document other aspects of the theme if necessary.
 * supporting/TIA-logo-strip_blue_web.png - Original TIA logo from https://probonoaustralia.com.au/wp-content/uploads/2020/04/TIA-logo-strip_blue_web.png
 * supporting/mysociety-logo-vector.svg - Original vector of MySociety logo - downloaded from https://www.logosvgpng.com/download-vector-logo-2407/#
 * supporting/opennorth-logo.svg - Original vector of OpenNorth logo - downloaded from https://opennorth.ca/assets/img/logo.svg
+* supporting/bp_2018_626x340.png - Original download of Blueprint for Free Speech - downloaded from https://images.squarespace-cdn.com/content/5e249291de6f0056c7b1099b/1579514030813-UY9G07PLMF4AL1W4FX3O/bp_2018_626x340.png?content-type=image%2Fpng
