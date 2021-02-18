@@ -15,18 +15,18 @@
   text-decoration: none;
 }
 
-#openforum_logo {
-  opacity: 0.7;
-}
-
 #frontpage_supporting img {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
 }
 
+#openforum_logo {
+  opacity: 0.6;
+}
+
 #openforum_logo:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 #okfa_logo {
