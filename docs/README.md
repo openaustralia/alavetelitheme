@@ -10,3 +10,4 @@ to document other aspects of the theme if necessary.
 * supporting/getup-logo.png - Original full size logo downloaded from http://cdn.getup.org.au/2417-getup-logos.zip
 * supporting/Crikey_FB_share_1200x628.png - Original full size Crikey logo downloaded from https://www.crikey.com.au/wp-content/uploads/2020/11/Crikey_FB_share_1200x628.png
 * supporting/newmatildalogo_retina.png - Original New Matilda logo downloaded from https://newmatilda.com/wp-content/uploads/2015/09/newmatildalogo_retina.png
+* supporting/efa-logo-old.png - Original efa logo downloaded from https://www.efa.org.au/main/wp-content/themes/efatheme/images/logo-old.png - Unfortunately it's not very big
