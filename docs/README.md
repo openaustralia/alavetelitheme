@@ -13,3 +13,4 @@ to document other aspects of the theme if necessary.
 * supporting/efa-logo-old.png - Original efa logo downloaded from https://www.efa.org.au/main/wp-content/themes/efatheme/images/logo-old.png - Unfortunately it's not very big
 * supporting/TIA-logo-strip_blue_web.png - Original TIA logo from https://probonoaustralia.com.au/wp-content/uploads/2020/04/TIA-logo-strip_blue_web.png
 * supporting/mysociety-logo-vector.svg - Original vector of MySociety logo - downloaded from https://www.logosvgpng.com/download-vector-logo-2407/#
+* supporting/opennorth-logo.svg - Original vector of OpenNorth logo - downloaded from https://opennorth.ca/assets/img/logo.svg
