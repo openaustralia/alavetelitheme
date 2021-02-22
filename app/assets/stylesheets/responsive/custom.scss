@@ -898,11 +898,11 @@ ul {
 }
 
 .homepage-hero {
-  background-color: $color_neutral_dark;
+  background-color: #020e16;
   background-image: image-url('homepage-background-small.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: center top -140px;
+  background-size: 1700px;
   color: $color_white;
   padding: 2em 0 5em;
   position: relative;
@@ -922,11 +922,6 @@ ul {
 
   .intro__title {
     color: $color_white;
-    text-shadow: 1px 0 2px $color_black, 0 -1px 2px $color_black, 0 1px 2px $color_black, -1px 0 2px $color_black;
-  }
-
-  .intro__description, .intro__browse {
-    text-shadow: 1px 0 1px $color_black, 0 -1px 1px $color_black, 0 1px 1px $color_black, -1px 0 1px $color_black;
   }
 
   .new-request__content {
