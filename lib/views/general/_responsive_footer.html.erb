@@ -1,31 +1,78 @@
-<div class="footer" id="footer" role="contentinfo">
-  <div id="footer_inner">
-    <div class="footer_right" id="contact_footer">
-        <ul>
-          <%= render :partial => 'general/responsive_credits' %>
-          <li>
-            <%= link_to _("Contact {{site_name}}", :site_name => site_name), help_contact_url %>
-          </li>
-          <% unless AlaveteliConfiguration::twitter_username.blank? %>
-            <li>
-              <a href="https://twitter.com/<%= AlaveteliConfiguration::twitter_username %>" class="social-link social-link--twitter" onclick="<%= track_analytics_event(AnalyticsEvent::Category::OUTBOUND, AnalyticsEvent::Action::TWITTER_EXIT, :label => "Footer link")%>">@<%= AlaveteliConfiguration::twitter_username %></a>
-            </li>
-          <% end %>
-        </ul>
+<div class="mysoc-footer" role="contentinfo">
+    <div class="row">
+
+        <div class="col-sm-5">
+            <h2 class="mysoc-footer__site-name"><%= site_name %></h2>
+            <div class="mysoc-footer__site-description">
+                <p>A site to help anyone submit a Freedom of Information request. <%= site_name %> also publishes and archives requests and responses, building a massive archive of information.</p>
+                <p>Powered by <%= link_to 'Alaveteli',  help_alaveteli_path %>.</p>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <nav class="mysoc-footer__links">
+                <ul>
+                    <li role="presentation"><%= link_to 'Make a request', select_authority_path %></li>
+                    <li role="presentation"><%= link_to 'Browse requests', request_list_successful_path %></li>
+                    <li role="presentation"><%= link_to 'View authorities', list_public_bodies_default_path %></li>
+                    <% if feature_enabled?(:alaveteli_pro) %>
+                      <li role="presentation"><%= link_to 'Journalist?', account_request_index_path %></li>
+                    <% end %>
+                </ul>
+                <ul>
+                    <li role="presentation"><%= link_to 'Help', help_path %></li>
+                    <li role="presentation"><%= link_to 'Contact us', help_contact_path %></li>
+                    <li role="presentation"><%= link_to 'Privacy', help_privacy_path %></li>
+                    <li role="presentation"><%= link_to 'API', help_api_path %></li>
+                    <% if feature_enabled?(:pro_pricing) %>
+                      <li>
+                        <%= link_to 'Pro Terms', pro_page_path(:id => 'legal') %>
+                      </li>
+                    <% end %>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="mysoc-footer__donate">
+                <p>Your donations keep this site and others like it running</p>
+                <a href="https://www.oaf.org.au/donate/" class="mysoc-footer__donate__button">Donate now</a>
+            </div>
+        </div>
     </div>
-    <div id="oaf">
-      <p><%= AlaveteliConfiguration::site_name %> is another project from the
-        <%= link_to "https://www.openaustraliafoundation.org.au" do %>
-          OpenAustralia Foundation
-        <% end %>
-      </p>
-      <p>Like it? Then also take a look at</p>
-      <ul>
-        <li><%= image_tag "projects/oa.png"%> <%= link_to "OpenAustralia.org", "https://www.openaustralia.org.au" %></li>
-        <li><%= image_tag "projects/el.png"%> <%= link_to "Election Leaflets", "http://www.electionleaflets.org.au" %></li>
-        <li><%= image_tag "projects/pa.png"%> <%= link_to "PlanningAlerts", "http://www.planningalerts.org.au" %></li>
-        <li><%= image_tag "projects/tvfy.png"%> <%= link_to "They Vote For You", "https://theyvoteforyou.org.au/" %></li>
-      </ul>
+    <hr class="mysoc-footer__divider" role="presentation">
+    <div class="row">
+        <div class="col-sm-5">
+            <div class="mysoc-footer__orgs">
+                <p class="mysoc-footer__org">
+                    Built by
+                    <a href="https://mysociety.org?utm_source=whatdotheyknow.com&amp;utm_content=footer+logo&amp;utm_medium=link&amp;utm_campaign=mysoc_footer" class="mysoc-footer__org__logo mysoc-footer__org__logo--mysociety">mySociety</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="mysoc-footer__legal">
+                <p>
+                    <a href="https://www.oaf.org.au/">OpenAustralia Foundation</a> is a <a href="https://www.acnc.gov.au/charity/55c2c06e21ac71e9359a0590b9fc100e">registered charity</a> in Australia - company limited by guarantee and endorsed as a deductible gift recipient.
+                    ABN&nbsp;<a href="https://www.abr.business.gov.au/ABN/View/24138089942">24&nbsp;138&nbsp;089&nbsp;942</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <ul class="mysoc-footer__badges">
+                <li role="presentation"><a href="https://github.com/mysociety/whatdotheyknow-theme" class="mysoc-footer__badge mysoc-footer__badge--github">Github</a></li>
+              <% unless AlaveteliConfiguration::twitter_username.blank? %>
+                <li role="presentation">
+                  <a href="https://twitter.com/<%= AlaveteliConfiguration::twitter_username %>" class="mysoc-footer__badge mysoc-footer__badge--twitter" onclick="<%= track_analytics_event(AnalyticsEvent::Category::OUTBOUND, AnalyticsEvent::Action::TWITTER_EXIT, :label => 'Footer link')%>">@<%= AlaveteliConfiguration::twitter_username %></a>
+                </li>
+              <% end %>
+              <% unless AlaveteliConfiguration::facebook_username.blank? %>
+                <li role="presentation"><a href="https://facebook.com/whatdotheyknowcom" class="mysoc-footer__badge mysoc-footer__badge--facebook" onclick="<%= track_analytics_event(AnalyticsEvent::Category::OUTBOUND, AnalyticsEvent::Action::FACEBOOK_EXIT, :label => 'Footer link')%>">Facebook</a></li>
+              <% end %>
+            </ul>
+        </div>
+
     </div>
-  </div>
 </div>
