@@ -165,9 +165,9 @@ $high-dpi-screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi
   width: 253px;
   background: transparent image-url('oaf_logo_white.png') 0 0 no-repeat;
   background-size: 253px 27px;
-  @media ($high-dpi-screen) {
-    background-image: image-url('mysoc-footer/logo-mysociety@2x.png');
-  }
+  // @media ($high-dpi-screen) {
+  //   background-image: image-url('mysoc-footer/logo-mysociety@2x.png');
+  // }
   // background-image: image-url('mysoc-footer/logo-mysociety.svg'), none;
 }
 
