@@ -902,13 +902,14 @@ ul {
   background-image: image-url('homepage-background-small.jpg');
   background-repeat: no-repeat;
   background-position: center top -140px;
-  background-size: 1700px;
+  background-size: 1800px;
   color: $color_white;
   padding: 2em 0 5em;
   position: relative;
   @include respond-min($main_menu-mobile_menu_cutoff) {
     padding: 5em 0 8em;
     background-image: image-url('homepage-background.jpg');
+    background-size: 1650px;
   }
 
   a {
