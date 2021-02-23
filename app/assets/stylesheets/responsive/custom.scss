@@ -971,47 +971,4 @@ ul {
   background-color: desaturate(darken($color_secondary, 10%), 5%);
 }
 
-$mysoc-footer-background-color: $color_black;
-$mysoc-footer-text-color: lighten($color_mid_grey, 4%); // tweak color to pass WCAG AA contrast check
-$mysoc-footer-site-name-text-color: #fff;
-$mysoc-footer-link-text-color: $color_white;
-$mysoc-footer-link-hover-text-color: $button-bg;
-$mysoc-footer-divider-color: #4C4C4C;
-$mysoc-footer-donate-background-color: #434343;
-$mysoc-footer-donate-text-color: #fff;
-$mysoc-footer-donate-button-background-color: $button-bg;
-$mysoc-footer-legal-text-color: $mysoc-footer-text-color;
-$mysoc-footer-image-path: '/assets/mysoc-footer/';
-$mysoc-footer-breakpoint-sm: 42em;
-
-@import "responsive/rtk/mysoc_footer";
-
-.mysoc-footer {
-  margin-top: 5em;
-  a {
-    text-decoration: none;
-  }
-  .row {
-    @include grid-row();
-  }
-
-  .col-sm-5,
-  .col-sm-4,
-  .col-sm-3 {
-    @include grid-column(12);
-  }
-
-  @media (min-width: $mysoc-footer-breakpoint-sm) {
-    .col-sm-5 {
-      @include grid-column(5);
-    }
-
-    .col-sm-4 {
-      @include grid-column(4);
-    }
-
-    .col-sm-3 {
-      @include grid-column(3);
-    }
-  }
-}
+@import "responsive/rtk/footer";
