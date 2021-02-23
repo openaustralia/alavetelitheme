@@ -50,7 +50,7 @@
 
 .logged_in_bar {
   @include respond-min( $main_menu-mobile_menu_cutoff ){
-    padding-top: 1.6em;
+    padding-top: 1.4em;
   }
 }
 
@@ -334,7 +334,14 @@ a.link_button_green_large {
   }
 }
 
+@media (min-width: $main_menu-mobile_menu_cutoff) {
+  #navigation_search {
+    padding-top: 1.4em;
+  }
+}
+
 #navigation_search_button{
+  padding-top: 0.7em;
   background-color: $color_white;
   border: none;
   transition: all 0.3s ease-out;
