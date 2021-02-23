@@ -202,28 +202,28 @@ $high-dpi-screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi
 }
 
 .mysoc-footer__badge--github {
-  background: transparent image-url('mysoc-footer/icon-github.png') 0 0 no-repeat;
+  background: transparent image-url('icon-github.png') 0 0 no-repeat;
   background-size: 32px 32px;
   @media ($high-dpi-screen) {
-    background-image: image-url('mysoc-footer/icon-github@2x.png');
+    background-image: image-url('icon-github@2x.png');
   }
-  background-image: image-url('mysoc-footer/icon-github.svg'), none;
+  background-image: image-url('icon-github-white.svg'), none;
 }
 
 .mysoc-footer__badge--twitter {
-  background: transparent image-url('mysoc-footer/icon-twitter.png') 0 0 no-repeat;
+  background: transparent image-url('icon-twitter.png') 0 0 no-repeat;
   background-size: 32px 32px;
   @media ($high-dpi-screen) {
-    background-image: image-url('mysoc-footer/icon-twitter@2x.png');
+    background-image: image-url('icon-twitter@2x.png');
   }
-  background-image: image-url('mysoc-footer/icon-twitter.svg'), none;
+  background-image: image-url('icon-twitter-white.svg'), none;
 }
 
 .mysoc-footer__badge--facebook {
-  background: transparent image-url('mysoc-footer/icon-facebook.png') 0 0 no-repeat;
+  background: transparent image-url('icon-facebook.png') 0 0 no-repeat;
   background-size: 32px 32px;
   @media ($high-dpi-screen) {
-    background-image: image-url('mysoc-footer/icon-facebook@2x.png');
+    background-image: image-url('icon-facebook@2x.png');
   }
-  background-image: image-url('mysoc-footer/icon-facebook.svg'), none;
+  background-image: image-url('icon-facebook-white.svg'), none;
 }
