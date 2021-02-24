@@ -130,7 +130,7 @@ body{
 }
 
 a {
-  &:link,
+  color: $link-color;
   &:visited {
     color: $link-color;
   }
