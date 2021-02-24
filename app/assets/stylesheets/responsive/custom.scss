@@ -658,16 +658,10 @@ div.correspondence {
   .correspondence_text a {
     color: $color_secondary;
   }
-  a.link_to_this {
-    background-color: $color_secondary;
-  }
 }
 
 .outgoing.correspondence {
   border-top: 8px solid $color_primary;
-  a.link_to_this {
-    background-color: $color_primary;
-  }
 }
 
 a.correspondence__header__date,
@@ -677,19 +671,6 @@ a.correspondence__header__date:visited {
 
 .describe_state_form input[type="radio"] + label {
   display:inline;
-}
-
-a.link_to_this {
-  background-image: image-url('link-icon.png');
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-     background-image:image-url('link-icon@2.png');
-  }
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 14px;
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
 }
 
 #link_box {
