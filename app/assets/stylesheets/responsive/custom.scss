@@ -950,3 +950,9 @@ ul {
 }
 
 @import "responsive/rtk/footer";
+
+.request_listing .head, .body_listing .head, .user_listing .head {
+  // Provide a tiny bit of extra room at the top of headers in lists so that
+  // the top of letters don't get chopped off
+  margin-top: 0.1em;
+}
