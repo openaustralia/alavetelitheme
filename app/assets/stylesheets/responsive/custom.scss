@@ -116,7 +116,7 @@
 .pro-pill {
   color: #567386;
   font-weight: 600;
-  background-color: #FFFF00;
+  background-color: desaturate(darken($color_secondary, 10%), 5%);
 }
 
 /* General styles */
@@ -950,11 +950,6 @@ dt {
       background-color: darken($color_secondary, 20%);
     }
   }
-}
-
-// User menu
-.pro-pill {
-  background-color: desaturate(darken($color_secondary, 10%), 5%);
 }
 
 @import "responsive/rtk/footer";
