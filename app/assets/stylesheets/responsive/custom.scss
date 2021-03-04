@@ -114,9 +114,9 @@
 }
 
 .pro-pill {
-  color: #567386;
+  color: $color_neutral_dark;
   font-weight: 600;
-  background-color: desaturate(darken($color_secondary, 10%), 5%);
+  background-color: $color_secondary;
 }
 
 /* General styles */
