@@ -701,6 +701,10 @@ a.correspondence__header__date:visited {
       @include button-primary();
     }
   }
+  .sidebar__section.pro-upsell {
+    background-color: #faf785;
+    padding: 0.85em;
+  }
 }
 
 .feed_link_sidebar .link_button_green {
