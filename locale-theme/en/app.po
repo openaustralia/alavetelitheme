@@ -38,3 +38,16 @@ msgstr "This request has been made by an individual using Right to Know. This me
 
 msgid "Your right to know"
 msgstr "Get answers from government and the public sector"
+
+# Pro marketing copy
+msgid "The Bureau of investigative Journalism used Pro to send requests to councils up and down the county, and build a nationwide picture of the public properties being sold off by councils in the face of austerity."
+msgstr " "
+
+msgid "Debt Resistance UK uncovered which councils are paying exorbitant LOBO loans, in some cases meaning that a large proportion of council tax income is being channelled directly into interest payments."
+msgstr " "
+
+msgid "The Wales Governance Centre sent FOI requests through Pro to discover the prison populations across Wales and England for their report ‘Sentencing and Imprisonment in Wales’."
+msgstr " "
+
+msgid "<strong>{{pro_site_name}}</strong> runs on the UK’s best-known FOI service"
+msgstr "<strong>{{pro_site_name}}</strong> runs on Australia’s best-known FOI service"

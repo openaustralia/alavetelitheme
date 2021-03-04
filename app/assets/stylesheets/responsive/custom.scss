@@ -959,3 +959,10 @@ dt {
   // the top of letters don't get chopped off
   margin-top: 0.1em;
 }
+
+.marketing__roles__researcher {
+  // Workaround to deal with line breaks being used for visual formatting
+  br {
+    display: none;
+  }
+}
