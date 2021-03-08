@@ -554,7 +554,7 @@ p.locale-list-trigger {
 
   .rsp_menu_button{
     position: absolute;
-    top: 5px; // vertically centre the button in the header
+    top: 9px; // vertically centre the button in the header
     right: 4px; // 15px for margin minus 9 for background offset
     @extend .image-replacement;
     background-image: image-url('hamburger.png');
@@ -573,7 +573,7 @@ p.locale-list-trigger {
 
   &:target {
     .rsp_menu_button {
-      top: 5px;
+      top: 9px;
       right: 4px;
     }
   }
