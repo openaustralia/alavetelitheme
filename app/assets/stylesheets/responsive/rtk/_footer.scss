@@ -159,12 +159,14 @@ $high-dpi-screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi
 }
 
 .oaf-footer__org__logo--oaf {
-  width: 253px;
+  margin-top: 5px;
+  width: 267px;
   background: transparent image-url('footer/oaf_logo_white.png') 0 0 no-repeat;
-  background-size: 253px 27px;
+  background-size: 267px 24px;
   @media ($high-dpi-screen) {
     background-image: image-url('footer/oaf_logo_white@2x.png');
   }
+  background-image: image-url('footer/oaf_logo_white.svg'), none;
 }
 
 .oaf-footer__legal {
