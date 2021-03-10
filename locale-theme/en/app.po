@@ -41,3 +41,6 @@ msgstr "This request has been made by an individual using Right to Know. This me
 
 msgid "Your right to know"
 msgstr "Get answers from government and the public sector"
+
+msgid "We consider it is not a valid FOI request as it was correspondence about your personal circumstances, and we have therefore hidden it from other users."
+msgstr "We don't allow requests for personal information on Right to Know. We have therefore hidden it from other users."
