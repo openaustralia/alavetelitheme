@@ -29,6 +29,8 @@ msgstr "e.g. Department of Health"
 
 msgid "This request has been reviewed by an administrator and is considered not to be an FOI request"
 msgstr "This request has been <strong>hidden</strong> from the site by an administrator."
+
+msgid "This request has been reviewed by an administrator and is considered to be vexatious"
 msgstr "This request has been <strong>hidden</strong> from the site by an administrator."
 
 msgid "Considered by administrators as not an FOI request and hidden from site."
