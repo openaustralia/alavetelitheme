@@ -25,12 +25,12 @@ msgstr "<strong><code>requested_from:abc</code></strong> to search requests from
 msgid "e.g. Ministry of Defence"
 msgstr "e.g. Department of Health"
 
-msgid "This request has been <strong>hidden</strong> from the site, because an administrator considers it not to be an FOI request"
 # Admin Generic Changes
+msgid "This request has been reviewed by an administrator and is considered not to be an FOI request"
 msgstr "This request has been <strong>hidden</strong> from the site by an administrator."
 
-msgid "Considered by administrators as not an FOI request and hidden from site."
-msgstr "Hidden from the site by an administrator."
+msgid "This request has been reviewed by an administrator and is considered to be vexatious"
+msgstr "This request has been <strong>hidden</strong> from the site by an administrator."
 
 # Email Footer
 msgid "Disclaimer: This message and any reply that you make will be published on the internet. Our privacy and copyright policies:"
