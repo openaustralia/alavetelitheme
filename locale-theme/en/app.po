@@ -6,6 +6,7 @@
 #msgid "Make and browse Freedom of Information (FOI) requests"
 #msgstr "Make and browse Right to Know (RTI) requests"
 
+# Australian Authorities
 msgid "'Crime statistics by ward level for Wales'"
 msgstr "'Pollution levels from 2005 through 2010 for the Murray River'"
 
@@ -28,14 +29,17 @@ msgid "e.g. Ministry of Defence"
 msgstr "e.g. Department of Health"
 
 msgid "This request has been <strong>hidden</strong> from the site, because an administrator considers it not to be an FOI request"
+# Admin Generic Changes
 msgstr "This request has been <strong>hidden</strong> from the site by an administrator."
 
 msgid "Considered by administrators as not an FOI request and hidden from site."
 msgstr "Hidden from the site by an administrator."
 
+# Email Footer
 msgid "Disclaimer: This message and any reply that you make will be published on the internet. Our privacy and copyright policies:"
 msgstr "This request has been made by an individual using Right to Know. This message and any reply that you make will be published on the internet. More information on how Right to Know works can be found at:"
 
+# General
 msgid "Your right to know"
 msgstr "Get answers from government and the public sector"
 
