@@ -23,6 +23,12 @@ describe 'Take Pro marketing screenshots', js: true do
     Capybara.server = :webrick
   end
 
+  def screenshot(name)
+    path = page.save_screenshot("screenshot.png")
+    i = Magick::ImageList.new(path)
+    i.write(File.join(Rails.root, "lib", "themes", ALAVETELI_TEST_THEME, "app", "assets", "images", "alaveteli-pro", "#{name}.jpg"))
+  end
+
   let(:pro_user) { FactoryBot.create(:pro_user) }
   let!(:pro_user_session) { login(pro_user) }
   let!(:public_body) { FactoryBot.create(:public_body, :name => 'example') }
@@ -84,9 +90,7 @@ describe 'Take Pro marketing screenshots', js: true do
         visit "/"
       end
 
-      path = page.save_screenshot("screenshot.png")
-      i = Magick::ImageList.new(path)
-      i.write(File.join(Rails.root, "lib", "themes", ALAVETELI_TEST_THEME, "app", "assets", "images", "alaveteli-pro", "screenshot-dashboard.jpg"))
+      screenshot("screenshot-dashboard")
 
       # The user puts in another draft and another request
       Timecop.freeze(now - 68.minutes) do
@@ -98,9 +102,7 @@ describe 'Take Pro marketing screenshots', js: true do
         visit alaveteli_pro_info_requests_path
       end
 
-      path = page.save_screenshot("screenshot.png")
-      i = Magick::ImageList.new(path)
-      i.write(File.join(Rails.root, "lib", "themes", ALAVETELI_TEST_THEME, "app", "assets", "images", "alaveteli-pro", "screenshot-requests.jpg"))
+      screenshot("screenshot-requests")
     end
   end
 
@@ -126,9 +128,7 @@ describe 'Take Pro marketing screenshots', js: true do
       fill_in "Search for an authority by name", with: "ministry"
       expect(page).to have_content("Ministry of Defence")
 
-      path = page.save_screenshot("screenshot.png")
-      i = Magick::ImageList.new(path)
-      i.write(File.join(Rails.root, "lib", "themes", ALAVETELI_TEST_THEME, "app", "assets", "images", "alaveteli-pro", "screenshot-batch-selection.jpg"))
+      screenshot("screenshot-batch-selection")
     end
   end
 
@@ -155,9 +155,7 @@ describe 'Take Pro marketing screenshots', js: true do
       visit alaveteli_pro_info_requests_path
       find(".batch-request label").click
 
-      path = page.save_screenshot("screenshot.png")
-      i = Magick::ImageList.new(path)
-      i.write(File.join(Rails.root, "lib", "themes", ALAVETELI_TEST_THEME, "app", "assets", "images", "alaveteli-pro", "screenshot-batch-list.jpg"))
+      screenshot("screenshot-batch-list")
     end
   end
 end
