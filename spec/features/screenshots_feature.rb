@@ -86,8 +86,7 @@ describe 'Take Pro marketing screenshots', js: true do
 
       path = page.save_screenshot("screenshot.png")
       i = Magick::ImageList.new(path)
-      cropped = i.crop(55, 155, 1159, 784)
-      cropped.write(File.join(Rails.root, "lib", "themes", ALAVETELI_TEST_THEME, "app", "assets", "images", "alaveteli-pro", "screenshot-dashboard.jpg"))
+      i.write(File.join(Rails.root, "lib", "themes", ALAVETELI_TEST_THEME, "app", "assets", "images", "alaveteli-pro", "screenshot-dashboard.jpg"))
 
       # The user puts in another draft and another request
       Timecop.freeze(now - 68.minutes) do
@@ -101,8 +100,7 @@ describe 'Take Pro marketing screenshots', js: true do
 
       path = page.save_screenshot("screenshot.png")
       i = Magick::ImageList.new(path)
-      cropped = i.crop(55, 155, 1159, 784)
-      cropped.write(File.join(Rails.root, "lib", "themes", ALAVETELI_TEST_THEME, "app", "assets", "images", "alaveteli-pro", "screenshot-requests.jpg"))
+      i.write(File.join(Rails.root, "lib", "themes", ALAVETELI_TEST_THEME, "app", "assets", "images", "alaveteli-pro", "screenshot-requests.jpg"))
     end
   end
 
@@ -130,8 +128,7 @@ describe 'Take Pro marketing screenshots', js: true do
 
       path = page.save_screenshot("screenshot.png")
       i = Magick::ImageList.new(path)
-      cropped = i.crop(55, 155, 1159, 784)
-      cropped.write(File.join(Rails.root, "lib", "themes", ALAVETELI_TEST_THEME, "app", "assets", "images", "alaveteli-pro", "screenshot-batch-selection.jpg"))
+      i.write(File.join(Rails.root, "lib", "themes", ALAVETELI_TEST_THEME, "app", "assets", "images", "alaveteli-pro", "screenshot-batch-selection.jpg"))
     end
   end
 
@@ -160,8 +157,7 @@ describe 'Take Pro marketing screenshots', js: true do
 
       path = page.save_screenshot("screenshot.png")
       i = Magick::ImageList.new(path)
-      cropped = i.crop(55, 155, 1159, 784)
-      cropped.write(File.join(Rails.root, "lib", "themes", ALAVETELI_TEST_THEME, "app", "assets", "images", "alaveteli-pro", "screenshot-batch-list.jpg"))
+      i.write(File.join(Rails.root, "lib", "themes", ALAVETELI_TEST_THEME, "app", "assets", "images", "alaveteli-pro", "screenshot-batch-list.jpg"))
     end
   end
 end
