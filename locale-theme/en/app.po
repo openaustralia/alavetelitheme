@@ -25,6 +25,9 @@ msgstr "<strong><code>requested_from:abc</code></strong> to search requests from
 msgid "e.g. Ministry of Defence"
 msgstr "e.g. Department of Health"
 
+msgid "eg. Cabinet Office"
+msgstr "eg. Department of the Prime Minister and Cabinet"
+
 # Admin Generic Changes
 msgid "This request has been reviewed by an administrator and is considered not to be an FOI request"
 msgstr "This request has been <strong>hidden</strong> from the site by an administrator."
