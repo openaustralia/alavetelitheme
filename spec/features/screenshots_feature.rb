@@ -40,7 +40,7 @@ describe 'Take Pro marketing screenshots', js: true do
     i.write(File.join(Rails.root, "lib", "themes", ALAVETELI_TEST_THEME, "app", "assets", "images", "alaveteli-pro", "#{name}.jpg"))
   end
 
-  let(:pro_user) { FactoryBot.create(:pro_user, name: "Katherine") }
+  let(:pro_user) { FactoryBot.create(:pro_user, name: "Jacinda") }
   let!(:pro_user_session) { login(pro_user) }
   let!(:public_body) { FactoryBot.create(:public_body, :name => 'example') }
   let(:kingston) { FactoryBot.create(:public_body, name: "Kingston Hospital NHS Trust") }
