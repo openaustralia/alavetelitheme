@@ -6,6 +6,7 @@
 #msgid "Make and browse Freedom of Information (FOI) requests"
 #msgstr "Make and browse Right to Know (RTI) requests"
 
+# Australian Authorities
 msgid "'Crime statistics by ward level for Wales'"
 msgstr "'Pollution levels from 2005 through 2010 for the Murray River'"
 
@@ -21,23 +22,26 @@ msgstr "Use quotes when you want to find an exact phrase, e.g. <strong><code>"El
 msgid "<strong><code>requested_from:home_office</code></strong> to search requests from the Home Office, typing the name as in the URL."
 msgstr "<strong><code>requested_from:abc</code></strong> to search requests from the Australian Broadcasting Corporation, typing the name as in the URL."
 
-msgid "Ask for <strong>specific</strong> documents or information, this site is not suitable for general enquiries."
-msgstr "Ask for <strong>specific documents</strong>, this site is not suitable for general enquiries (<a href="/help/requesting#documents">why?</a>)."
-
 msgid "e.g. Ministry of Defence"
 msgstr "e.g. Department of Health"
 
-msgid "This request has been <strong>hidden</strong> from the site, because an administrator considers it not to be an FOI request"
+# Admin Generic Changes
+msgid "This request has been reviewed by an administrator and is considered not to be an FOI request"
 msgstr "This request has been <strong>hidden</strong> from the site by an administrator."
 
-msgid "Considered by administrators as not an FOI request and hidden from site."
-msgstr "Hidden from the site by an administrator."
+msgid "This request has been reviewed by an administrator and is considered to be vexatious"
+msgstr "This request has been <strong>hidden</strong> from the site by an administrator."
 
+# Email Footer
 msgid "Disclaimer: This message and any reply that you make will be published on the internet. Our privacy and copyright policies:"
 msgstr "This request has been made by an individual using Right to Know. This message and any reply that you make will be published on the internet. More information on how Right to Know works can be found at:"
 
+# General
 msgid "Your right to know"
 msgstr "Get answers from government and the public sector"
+
+msgid "Ask for <strong>specific</strong> documents or information, this site is not suitable for general enquiries."
+msgstr "Ask for <strong>specific documents</strong>, this site is not suitable for general enquiries (<a href="/help/requesting#documents">why?</a>)."
 
 # Pro marketing copy
 msgid "The Bureau of investigative Journalism used Pro to send requests to councils up and down the county, and build a nationwide picture of the public properties being sold off by councils in the face of austerity."
