@@ -9,6 +9,12 @@
 #     gem 'selenium-webdriver'
 #     gem "timecop"
 #     gem "rmagick"
+#
+# Also make sure the following things are set in the main application config/general.yml
+# so that they match the values you are using in production:
+# * SITE_NAME
+# * ENABLE_ALAVETELI_PRO
+# * PRO_SITE_NAME
 
 # This tells config/initializers/theme_loader.rb to load the theme
 ALAVETELI_TEST_THEME = 'righttoknow'
@@ -17,10 +23,15 @@ require File.expand_path('spec/spec_helper')
 require File.expand_path('spec/integration/alaveteli_dsl')
 
 describe 'Take Pro marketing screenshots', js: true do
-  # Allow connections to selenium
+
   before do
+    # Allow connections to selenium
     WebMock.disable_net_connect!(allow_localhost: true)
     Capybara.server = :webrick
+    # For some reasons the tests override the locales set in the configuration
+    # So, set the locale explicitly here so we don't get the menu at the top
+    # of the screen
+    AlaveteliLocalization.set_locales('en', 'en')
   end
 
   def screenshot(name)
