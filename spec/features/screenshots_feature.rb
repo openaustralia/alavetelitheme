@@ -14,7 +14,6 @@
 # so that they match the values you are using in production:
 # * SITE_NAME
 # * ENABLE_ALAVETELI_PRO
-# * PRO_SITE_NAME
 
 # This tells config/initializers/theme_loader.rb to load the theme
 ALAVETELI_TEST_THEME = 'righttoknow'
