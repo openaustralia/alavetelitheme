@@ -17,3 +17,4 @@ to document other aspects of the theme if necessary.
 * supporting/opennorth-logo.svg - Original vector of OpenNorth logo - downloaded from https://opennorth.ca/assets/img/logo.svg
 * supporting/bp_2018_626x340.png - Original download of Blueprint for Free Speech - downloaded from https://images.squarespace-cdn.com/content/5e249291de6f0056c7b1099b/1579514030813-UY9G07PLMF4AL1W4FX3O/bp_2018_626x340.png?content-type=image%2Fpng
 * oaf_logo_white.svg - Vector format of OpenAustralia Foundation logo in Hypatia Sans Pro Semibold
+* opengraph.kra - used to make logo-opengraph.png and logo-opengraph-pro.png
