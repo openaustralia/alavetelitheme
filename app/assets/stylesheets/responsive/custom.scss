@@ -309,6 +309,12 @@ a.link_button_green_large {
                     linear-gradient(transparent, transparent);
 }
 
+.banner--pro .site-title__logo {
+  background-image: image-url("alaveteli-pro/logo.png");
+  background-image: image-url("alaveteli-pro/logo.svg"),
+                    linear-gradient(transparent, transparent);
+}
+
 .navigation {
   border-bottom: none;
   a {
