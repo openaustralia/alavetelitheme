@@ -302,10 +302,11 @@ a.link_button_green_large {
   background-color: $banner_inner_bg;
 }
 
+// SVG fallback for logo
 .site-title__logo {
-  width: $logo-width;
-  height: $logo-height;
-  background-size: $logo-width $logo-height;
+  // https://css-tricks.com/a-complete-guide-to-svg-fallbacks/
+  background-image: image-url("logo.svg"),
+                    linear-gradient(transparent, transparent);
 }
 
 .navigation {
