@@ -161,12 +161,11 @@ $high-dpi-screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi
 .oaf-footer__org__logo--oaf {
   margin-top: 5px;
   width: 267px;
-  background: transparent image-url('footer/oaf_logo_white.png') 0 0 no-repeat;
   background-size: 267px 24px;
-  @media ($high-dpi-screen) {
-    background-image: image-url('footer/oaf_logo_white@2x.png');
-  }
-  background-image: image-url('footer/oaf_logo_white.svg'), none;
+  background: transparent image-url('footer/oaf_logo_white.png') 0 0 no-repeat;
+  // https://css-tricks.com/a-complete-guide-to-svg-fallbacks/
+  background-image: image-url('footer/oaf_logo_white.svg'),
+                    linear-gradient(transparent, transparent);
 }
 
 .oaf-footer__legal {
@@ -200,30 +199,25 @@ $high-dpi-screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi
 }
 
 .oaf-footer__badge--github {
-  background: transparent image-url('footer/icon-github.png') 0 0 no-repeat;
   background-size: 32px 32px;
-  @media ($high-dpi-screen) {
-    background-image: image-url('footer/icon-github@2x.png');
-  }
-  background-image: image-url('footer/icon-github-white.svg'), none;
+  background: transparent image-url('footer/icon-github.png') 0 0 no-repeat;
+  // https://css-tricks.com/a-complete-guide-to-svg-fallbacks/
+  background-image: image-url('footer/icon-github-white.svg'),
+                    linear-gradient(transparent, transparent);
 }
 
 .oaf-footer__badge--twitter {
-  background: transparent image-url('footer/icon-twitter.png') 0 0 no-repeat;
   background-size: 32px 32px;
-  @media ($high-dpi-screen) {
-    background-image: image-url('footer/icon-twitter@2x.png');
-  }
-  background-image: image-url('footer/icon-twitter-white.svg'), none;
+  background: transparent image-url('footer/icon-twitter.png') 0 0 no-repeat;
+  background-image: image-url('footer/icon-twitter-white.svg'),
+                    linear-gradient(transparent, transparent);
 }
 
 .oaf-footer__badge--facebook {
-  background: transparent image-url('footer/icon-facebook.png') 0 0 no-repeat;
   background-size: 32px 32px;
-  @media ($high-dpi-screen) {
-    background-image: image-url('footer/icon-facebook@2x.png');
-  }
-  background-image: image-url('footer/icon-facebook-white.svg'), none;
+  background: transparent image-url('footer/icon-facebook.png') 0 0 no-repeat;
+  background-image: image-url('footer/icon-facebook-white.svg'),
+                    linear-gradient(transparent, transparent);
 }
 
 .oaf-footer {
